@@ -7667,8 +7667,8 @@ export function GenerateLocalizationData(): LocalizationData
 				ability_specials_override:
 				[
 					{
-							ability_special: "max_charges",
-							text: "MAX. AUFLADUNGEN",
+						ability_special: "max_charges",
+						text: "MAX. AUFLADUNGEN",
 					},
 
 				]
@@ -7680,8 +7680,8 @@ export function GenerateLocalizationData(): LocalizationData
 				ability_specials_override:
 				[
 					{
-							ability_special: "max_charges",
-							text: "МАКС. ЗАРЯДОВ",
+						ability_special: "max_charges",
+						text: "МАКС. ЗАРЯДОВ",
 					},
 
 				]
@@ -7693,8 +7693,8 @@ export function GenerateLocalizationData(): LocalizationData
 				ability_specials_override:
 				[
 					{
-							ability_special: "max_charges",
-							text: "最大能量：",
+						ability_special: "max_charges",
+						text: "最大能量：",
 					},
 
 				]
@@ -7722,8 +7722,8 @@ export function GenerateLocalizationData(): LocalizationData
 				ability_specials_override:
 				[
 					{
-							ability_special: "fade_duration",
-							text: "MAX. ÜBERGANGSZEIT",
+						ability_special: "fade_duration",
+						text: "MAX. ÜBERGANGSZEIT",
 					},
 
 				]
@@ -7735,8 +7735,8 @@ export function GenerateLocalizationData(): LocalizationData
 				ability_specials_override:
 				[
 					{
-							ability_special: "fade_duration",
-							text: "МАКС. ВРЕМЯ ДО НЕВИДИМОСТИ",
+						ability_special: "fade_duration",
+						text: "МАКС. ВРЕМЯ ДО НЕВИДИМОСТИ",
 					},
 
 				]
@@ -7748,8 +7748,8 @@ export function GenerateLocalizationData(): LocalizationData
 				ability_specials_override:
 				[
 					{
-							ability_special: "fade_duration",
-							text: "最大渐隐时间：",
+						ability_special: "fade_duration",
+						text: "最大渐隐时间：",
 					},
 
 				]
@@ -7787,7 +7787,7 @@ export function GenerateLocalizationData(): LocalizationData
 
 	Abilities.push({
 		ability_classname: "item_satanic",
-		description: "<h1>Active: Unholy Rage</h1>Increases Lifesteal percentage to <font color='#F40000'>${unholy_lifesteal_total_tooltip}%</font> for ${unholy_duration} seconds. \n<h1>Passive: Lifesteal</h1>Heals the attacker for <font color='#F40000'>${lifesteal_percent}%</font> of attack damage dealt.",
+		description: "<h1>Active: Unholy Rage</h1>Increases Lifesteal percentage to <font color='#F40000'>${unholy_lifesteal_total_tooltip}%</font> for ${unholy_duration} seconds. \\n<h1>Passive: Lifesteal</h1>Heals the attacker for <font color='#F40000'>${lifesteal_percent}%</font> of attack damage dealt.",
 		lore: "Immense power at the cost of your soul.",
 		ability_specials:
 		[
@@ -7814,25 +7814,25 @@ export function GenerateLocalizationData(): LocalizationData
 		[
 			{
 				language: Language.German,
-				description_override: "<h1>Aktiv: Gottlose Wut</h1>Erhöht für ${unholy_duration} Sekunden den Lebensraub um <font color='#F40000'>${unholy_lifesteal_total_tooltip} %%</font>.\n<h1>Passiv: Lebensraub</h1>Heilt den Angreifer um <font color='#F40000'>${lifesteal_percent} %%</font> des ausgeteilten Angriffsschadens.",
+				description_override: "<h1>Aktiv: Gottlose Wut</h1>Erhöht für ${unholy_duration} Sekunden den Lebensraub um <font color='#F40000'>${unholy_lifesteal_total_tooltip} %%</font>.\\n<h1>Passiv: Lebensraub</h1>Heilt den Angreifer um <font color='#F40000'>${lifesteal_percent} %%</font> des ausgeteilten Angriffsschadens.",
 				lore_override: "Ungeheure Macht auf Kosten Ihrer Seele.",
 				ability_specials_override:
 				[
 					{
-							ability_special: "bonus_strength",
-							text: "+$str",
+						ability_special: "bonus_strength",
+						text: "+$str",
 							item_stat: true,
 					},
 
 					{
-							ability_special: "bonus_damage",
-							text: "+$damage",
+						ability_special: "bonus_damage",
+						text: "+$damage",
 							item_stat: true,
 					},
 
 					{
-							ability_special: "status_resistance",
-							text: "+Statusresisten",
+						ability_special: "status_resistance",
+						text: "+Statusresisten",
 							percentage: true,
 					},
 
@@ -7841,25 +7841,25 @@ export function GenerateLocalizationData(): LocalizationData
 
 			{
 				language: Language.Russian,
-				description_override: "<h1>Активируемая: Unholy Rage</h1> Увеличивает эффект вампиризма до <font color='#F40000'>${unholy_lifesteal_total_tooltip}%</font> на ${unholy_duration} сек.\n<h1>Пассивная: Lifesteal</h1>Каждая атака восстанавливает владельцу здоровье в размере <font color='#F40000'>${lifesteal_percent}%</font> от нанесённого урона.",
+				description_override: "<h1>Активируемая: Unholy Rage</h1> Увеличивает эффект вампиризма до <font color='#F40000'>${unholy_lifesteal_total_tooltip}%</font> на ${unholy_duration} сек.\\n<h1>Пассивная: Lifesteal</h1>Каждая атака восстанавливает владельцу здоровье в размере <font color='#F40000'>${lifesteal_percent}%</font> от нанесённого урона.",
 				lore_override: "Колоссальная сила в обмен на вашу душу.",
 				ability_specials_override:
 				[
 					{
-							ability_special: "bonus_strength",
-							text: "+$str",
+						ability_special: "bonus_strength",
+						text: "+$str",
 							item_stat: true,
 					},
 
 					{
-							ability_special: "bonus_damage",
-							text: "+$damage",
+						ability_special: "bonus_damage",
+						text: "+$damage",
 							item_stat: true,
 					},
 
 					{
-							ability_special: "status_resistance",
-							text: "+к сопротивлению эффекта",
+						ability_special: "status_resistance",
+						text: "+к сопротивлению эффекта",
 							percentage: true,
 					},
 
@@ -7868,25 +7868,25 @@ export function GenerateLocalizationData(): LocalizationData
 
 			{
 				language: Language.SChinese,
-				description_override: "<h1>主动：不洁狂热</h1>吸血效果提升至<font color='#F40000'>${unholy_lifesteal_total_tooltip}%</font>，持续${unholy_duration}秒。\n<h1>被动：吸血</h1>攻击者每次攻击都将根据造成的伤害回复<font color='#F40000'>${lifesteal_percent}%</font>的生命值。",
+				description_override: "<h1>主动：不洁狂热</h1>吸血效果提升至<font color='#F40000'>${unholy_lifesteal_total_tooltip}%</font>，持续${unholy_duration}秒。\\n<h1>被动：吸血</h1>攻击者每次攻击都将根据造成的伤害回复<font color='#F40000'>${lifesteal_percent}%</font>的生命值。",
 				lore_override: "无穷的力量，需要你付出灵魂作为代价。",
 				ability_specials_override:
 				[
 					{
-							ability_special: "bonus_strength",
-							text: "+$str",
+						ability_special: "bonus_strength",
+						text: "+$str",
 							item_stat: true,
 					},
 
 					{
-							ability_special: "bonus_damage",
-							text: "+$damage",
+						ability_special: "bonus_damage",
+						text: "+$damage",
 							item_stat: true,
 					},
 
 					{
-							ability_special: "status_resistance",
-							text: "+状态抗",
+						ability_special: "status_resistance",
+						text: "+状态抗",
 							percentage: true,
 					},
 
@@ -8030,13 +8030,13 @@ export function GenerateLocalizationData(): LocalizationData
 				ability_specials_override:
 				[
 					{
-							ability_special: "damage",
-							text: "SCHADEN PRO SEKUNDE",
+						ability_special: "damage",
+						text: "SCHADEN PRO SEKUNDE",
 					},
 
 					{
-							ability_special: "radius",
-							text: "RADIUS",
+						ability_special: "radius",
+						text: "RADIUS",
 					},
 
 				]
@@ -8049,13 +8049,13 @@ export function GenerateLocalizationData(): LocalizationData
 				ability_specials_override:
 				[
 					{
-							ability_special: "damage",
-							text: "УРОН В СЕКУНДУ",
+						ability_special: "damage",
+						text: "УРОН В СЕКУНДУ",
 					},
 
 					{
-							ability_special: "radius",
-							text: "РАДИУС",
+						ability_special: "radius",
+						text: "РАДИУС",
 					},
 
 				]
@@ -8068,13 +8068,13 @@ export function GenerateLocalizationData(): LocalizationData
 				ability_specials_override:
 				[
 					{
-							ability_special: "damage",
-							text: "每秒伤害：",
+						ability_special: "damage",
+						text: "每秒伤害：",
 					},
 
 					{
-							ability_special: "radius",
-							text: "作用范围：",
+						ability_special: "radius",
+						text: "作用范围：",
 					},
 
 				]
@@ -8284,13 +8284,13 @@ export function GenerateLocalizationData(): LocalizationData
 				ability_specials_override:
 				[
 					{
-							ability_special: "heal",
-							text: "HEILUNG/SCHADEN",
+						ability_special: "heal",
+						text: "HEILUNG/SCHADEN",
 					},
 
 					{
-							ability_special: "radius",
-							text: "SCHADENSRADIUS",
+						ability_special: "radius",
+						text: "SCHADENSRADIUS",
 					},
 
 				]
@@ -8303,13 +8303,13 @@ export function GenerateLocalizationData(): LocalizationData
 				ability_specials_override:
 				[
 					{
-							ability_special: "heal",
-							text: "ЛЕЧЕНИЕ/УРОН",
+						ability_special: "heal",
+						text: "ЛЕЧЕНИЕ/УРОН",
 					},
 
 					{
-							ability_special: "radius",
-							text: "РАДИУС УРОНА",
+						ability_special: "radius",
+						text: "РАДИУС УРОНА",
 					},
 
 				]
@@ -8322,13 +8322,13 @@ export function GenerateLocalizationData(): LocalizationData
 				ability_specials_override:
 				[
 					{
-							ability_special: "heal",
-							text: "治疗/伤害：",
+						ability_special: "heal",
+						text: "治疗/伤害：",
 					},
 
 					{
-							ability_special: "radius",
-							text: "伤害作用范围：",
+						ability_special: "radius",
+						text: "伤害作用范围：",
 					},
 
 				]
@@ -8367,13 +8367,13 @@ export function GenerateLocalizationData(): LocalizationData
 				ability_specials_override:
 				[
 					{
-							ability_special: "radius",
-							text: "RAIO",
+						ability_special: "radius",
+						text: "RAIO",
 					},
 
 					{
-							ability_special: "duration",
-							text: "DURAÇÃO",
+						ability_special: "duration",
+						text: "DURAÇÃO",
 					},
 
 				]
@@ -8391,13 +8391,13 @@ export function GenerateLocalizationData(): LocalizationData
 				ability_specials_override:
 				[
 					{
-							ability_special: "radius",
-							text: "RADIUS",
+						ability_special: "radius",
+						text: "RADIUS",
 					},
 
 					{
-							ability_special: "duration",
-							text: "DAUER",
+						ability_special: "duration",
+						text: "DAUER",
 					},
 
 				]
@@ -8415,13 +8415,13 @@ export function GenerateLocalizationData(): LocalizationData
 				ability_specials_override:
 				[
 					{
-							ability_special: "radius",
-							text: "РАДИУС",
+						ability_special: "radius",
+						text: "РАДИУС",
 					},
 
 					{
-							ability_special: "duration",
-							text: "ДЛИТЕЛЬНОСТЬ",
+						ability_special: "duration",
+						text: "ДЛИТЕЛЬНОСТЬ",
 					},
 
 				]
@@ -8439,13 +8439,13 @@ export function GenerateLocalizationData(): LocalizationData
 				ability_specials_override:
 				[
 					{
-							ability_special: "radius",
-							text: "作用范围：",
+						ability_special: "radius",
+						text: "作用范围：",
 					},
 
 					{
-							ability_special: "duration",
-							text: "持续时间：",
+						ability_special: "duration",
+						text: "持续时间：",
 					},
 
 				]
@@ -8504,38 +8504,38 @@ export function GenerateLocalizationData(): LocalizationData
 				ability_specials_override:
 				[
 					{
-							ability_special: "duration",
-							text: "DURAÇÃO",
+						ability_special: "duration",
+						text: "DURAÇÃO",
 					},
 
 					{
-							ability_special: "bonus_movement_speed",
-							text: "VEL. DE MOV. ADICIONAL",
+						ability_special: "bonus_movement_speed",
+						text: "VEL. DE MOV. ADICIONAL",
 					},
 
 					{
-							ability_special: "bonus_attack_range",
-							text: "ALCANCE DE ATAQUE ADICIONAL",
+						ability_special: "bonus_attack_range",
+						text: "ALCANCE DE ATAQUE ADICIONAL",
 					},
 
 					{
-							ability_special: "bonus_attack_damage",
-							text: "DANO ADICIONAL",
+						ability_special: "bonus_attack_damage",
+						text: "DANO ADICIONAL",
 					},
 
 					{
-							ability_special: "magic_resistance",
-							text: "RESISTÊNCIA MÁGICA",
+						ability_special: "magic_resistance",
+						text: "RESISTÊNCIA MÁGICA",
 					},
 
 					{
-							ability_special: "splash_radius",
-							text: "RAIO DE DANO",
+						ability_special: "splash_radius",
+						text: "RAIO DE DANO",
 					},
 
 					{
-							ability_special: "splash_damage_percent",
-							text: "PORCENTAGEM DE DANO EM ÁREA",
+						ability_special: "splash_damage_percent",
+						text: "PORCENTAGEM DE DANO EM ÁREA",
 					},
 
 				]
@@ -8548,38 +8548,38 @@ export function GenerateLocalizationData(): LocalizationData
 				ability_specials_override:
 				[
 					{
-							ability_special: "duration",
-							text: "DAUER",
+						ability_special: "duration",
+						text: "DAUER",
 					},
 
 					{
-							ability_special: "bonus_movement_speed",
-							text: "BONUSBEWEGUNGSTEMPO",
+						ability_special: "bonus_movement_speed",
+						text: "BONUSBEWEGUNGSTEMPO",
 					},
 
 					{
-							ability_special: "bonus_attack_range",
-							text: "BONUSANGRIFFSREICHWEITE",
+						ability_special: "bonus_attack_range",
+						text: "BONUSANGRIFFSREICHWEITE",
 					},
 
 					{
-							ability_special: "bonus_attack_damage",
-							text: "BONUSSCHADEN",
+						ability_special: "bonus_attack_damage",
+						text: "BONUSSCHADEN",
 					},
 
 					{
-							ability_special: "magic_resistance",
-							text: "MAGIERESISTENZ",
+						ability_special: "magic_resistance",
+						text: "MAGIERESISTENZ",
 					},
 
 					{
-							ability_special: "splash_radius",
-							text: "RADIUS (FLÄCHENSCHADEN)",
+						ability_special: "splash_radius",
+						text: "RADIUS (FLÄCHENSCHADEN)",
 					},
 
 					{
-							ability_special: "splash_damage_percent",
-							text: "FLÄCHENSCHADEN",
+						ability_special: "splash_damage_percent",
+						text: "FLÄCHENSCHADEN",
 					},
 
 				]
@@ -8592,38 +8592,38 @@ export function GenerateLocalizationData(): LocalizationData
 				ability_specials_override:
 				[
 					{
-							ability_special: "duration",
-							text: "ДЛИТЕЛЬНОСТЬ",
+						ability_special: "duration",
+						text: "ДЛИТЕЛЬНОСТЬ",
 					},
 
 					{
-							ability_special: "bonus_movement_speed",
-							text: "ДОП. СКОРОСТЬ ПЕРЕДВИЖЕНИЯ",
+						ability_special: "bonus_movement_speed",
+						text: "ДОП. СКОРОСТЬ ПЕРЕДВИЖЕНИЯ",
 					},
 
 					{
-							ability_special: "bonus_attack_range",
-							text: "ДОП. ДАЛЬНОСТЬ АТАКИ",
+						ability_special: "bonus_attack_range",
+						text: "ДОП. ДАЛЬНОСТЬ АТАКИ",
 					},
 
 					{
-							ability_special: "bonus_attack_damage",
-							text: "ДОПОЛНИТЕЛЬНЫЙ УРОН",
+						ability_special: "bonus_attack_damage",
+						text: "ДОПОЛНИТЕЛЬНЫЙ УРОН",
 					},
 
 					{
-							ability_special: "magic_resistance",
-							text: "СОПРОТИВЛЕНИЕ МАГИИ",
+						ability_special: "magic_resistance",
+						text: "СОПРОТИВЛЕНИЕ МАГИИ",
 					},
 
 					{
-							ability_special: "splash_radius",
-							text: "РАДИУС УРОНА ПО ОБЛАСТИ",
+						ability_special: "splash_radius",
+						text: "РАДИУС УРОНА ПО ОБЛАСТИ",
 					},
 
 					{
-							ability_special: "splash_damage_percent",
-							text: "ДОЛЯ УРОНА ПО ОБЛАСТИ",
+						ability_special: "splash_damage_percent",
+						text: "ДОЛЯ УРОНА ПО ОБЛАСТИ",
 					},
 
 				]
@@ -8636,38 +8636,38 @@ export function GenerateLocalizationData(): LocalizationData
 				ability_specials_override:
 				[
 					{
-							ability_special: "duration",
-							text: "持续时间：",
+						ability_special: "duration",
+						text: "持续时间：",
 					},
 
 					{
-							ability_special: "bonus_movement_speed",
-							text: "移动速度加成：",
+						ability_special: "bonus_movement_speed",
+						text: "移动速度加成：",
 					},
 
 					{
-							ability_special: "bonus_attack_range",
-							text: "攻击距离加成：",
+						ability_special: "bonus_attack_range",
+						text: "攻击距离加成：",
 					},
 
 					{
-							ability_special: "bonus_attack_damage",
-							text: "攻击力加成：",
+						ability_special: "bonus_attack_damage",
+						text: "攻击力加成：",
 					},
 
 					{
-							ability_special: "magic_resistance",
-							text: "魔法抗性：",
+						ability_special: "magic_resistance",
+						text: "魔法抗性：",
 					},
 
 					{
-							ability_special: "splash_radius",
-							text: "溅射范围：",
+						ability_special: "splash_radius",
+						text: "溅射范围：",
 					},
 
 					{
-							ability_special: "splash_damage_percent",
-							text: "溅射伤害百分比：",
+						ability_special: "splash_damage_percent",
+						text: "溅射伤害百分比：",
 					},
 
 				]
@@ -8709,19 +8709,19 @@ export function GenerateLocalizationData(): LocalizationData
 				ability_specials_override:
 				[
 					{
-							ability_special: "duration",
-							text: "DAUER",
+						ability_special: "duration",
+						text: "DAUER",
 					},
 
 					{
-							ability_special: "cooldown_reduction_pct",
-							text: "ABKLINGZEITREDUZIERUNG",
+						ability_special: "cooldown_reduction_pct",
+						text: "ABKLINGZEITREDUZIERUNG",
 							percentage: true,
 					},
 
 					{
-							ability_special: "manacost_reduction_pct",
-							text: "MANAKOSTENREDUZIERUNG",
+						ability_special: "manacost_reduction_pct",
+						text: "MANAKOSTENREDUZIERUNG",
 							percentage: true,
 					},
 
@@ -8735,19 +8735,19 @@ export function GenerateLocalizationData(): LocalizationData
 				ability_specials_override:
 				[
 					{
-							ability_special: "duration",
-							text: "ДЛИТЕЛЬНОСТЬ",
+						ability_special: "duration",
+						text: "ДЛИТЕЛЬНОСТЬ",
 					},
 
 					{
-							ability_special: "cooldown_reduction_pct",
-							text: "УМЕНЬШЕНИЕ ПЕРЕЗАРЯДКИ",
+						ability_special: "cooldown_reduction_pct",
+						text: "УМЕНЬШЕНИЕ ПЕРЕЗАРЯДКИ",
 							percentage: true,
 					},
 
 					{
-							ability_special: "manacost_reduction_pct",
-							text: "УМЕНЬШЕНИЕ РАСХОДА МАНЫ",
+						ability_special: "manacost_reduction_pct",
+						text: "УМЕНЬШЕНИЕ РАСХОДА МАНЫ",
 							percentage: true,
 					},
 
@@ -8761,19 +8761,19 @@ export function GenerateLocalizationData(): LocalizationData
 				ability_specials_override:
 				[
 					{
-							ability_special: "duration",
-							text: "持续时间：",
+						ability_special: "duration",
+						text: "持续时间：",
 					},
 
 					{
-							ability_special: "cooldown_reduction_pct",
-							text: "冷却时间减少",
+						ability_special: "cooldown_reduction_pct",
+						text: "冷却时间减少",
 							percentage: true,
 					},
 
 					{
-							ability_special: "manacost_reduction_pct",
-							text: "魔法消耗降低",
+						ability_special: "manacost_reduction_pct",
+						text: "魔法消耗降低",
 							percentage: true,
 					},
 
@@ -8813,18 +8813,18 @@ export function GenerateLocalizationData(): LocalizationData
 				ability_specials_override:
 				[
 					{
-							ability_special: "echo_slam_echo_damage",
-							text: "DANO DO ECO",
+						ability_special: "echo_slam_echo_damage",
+						text: "DANO DO ECO",
 					},
 
 					{
-							ability_special: "echo_slam_damage_range",
-							text: "RAIO",
+						ability_special: "echo_slam_damage_range",
+						text: "RAIO",
 					},
 
 					{
-							ability_special: "echo_slam_initial_damage",
-							text: "DANO INICIAL",
+						ability_special: "echo_slam_initial_damage",
+						text: "DANO INICIAL",
 					},
 
 				]
@@ -8837,18 +8837,18 @@ export function GenerateLocalizationData(): LocalizationData
 				ability_specials_override:
 				[
 					{
-							ability_special: "echo_slam_echo_damage",
-							text: "ECHOSCHADEN",
+						ability_special: "echo_slam_echo_damage",
+						text: "ECHOSCHADEN",
 					},
 
 					{
-							ability_special: "echo_slam_damage_range",
-							text: "RADIUS",
+						ability_special: "echo_slam_damage_range",
+						text: "RADIUS",
 					},
 
 					{
-							ability_special: "echo_slam_initial_damage",
-							text: "GRUNDSCHADEN",
+						ability_special: "echo_slam_initial_damage",
+						text: "GRUNDSCHADEN",
 					},
 
 				]
@@ -8861,18 +8861,18 @@ export function GenerateLocalizationData(): LocalizationData
 				ability_specials_override:
 				[
 					{
-							ability_special: "echo_slam_echo_damage",
-							text: "УРОН ОТ ЭХА",
+						ability_special: "echo_slam_echo_damage",
+						text: "УРОН ОТ ЭХА",
 					},
 
 					{
-							ability_special: "echo_slam_damage_range",
-							text: "РАДИУС",
+						ability_special: "echo_slam_damage_range",
+						text: "РАДИУС",
 					},
 
 					{
-							ability_special: "echo_slam_initial_damage",
-							text: "БАЗОВЫЙ УРОН",
+						ability_special: "echo_slam_initial_damage",
+						text: "БАЗОВЫЙ УРОН",
 					},
 
 				]
@@ -8885,18 +8885,18 @@ export function GenerateLocalizationData(): LocalizationData
 				ability_specials_override:
 				[
 					{
-							ability_special: "echo_slam_echo_damage",
-							text: "回音伤害：",
+						ability_special: "echo_slam_echo_damage",
+						text: "回音伤害：",
 					},
 
 					{
-							ability_special: "echo_slam_damage_range",
-							text: "作用范围：",
+						ability_special: "echo_slam_damage_range",
+						text: "作用范围：",
 					},
 
 					{
-							ability_special: "echo_slam_initial_damage",
-							text: "初始伤害：",
+						ability_special: "echo_slam_initial_damage",
+						text: "初始伤害：",
 					},
 
 				]
@@ -8936,19 +8936,19 @@ export function GenerateLocalizationData(): LocalizationData
 				ability_specials_override:
 				[
 					{
-							ability_special: "proc_chance",
-							text: "CHANCE DE ATIVAÇÃO",
+						ability_special: "proc_chance",
+						text: "CHANCE DE ATIVAÇÃO",
 							percentage: true,
 					},
 
 					{
-							ability_special: "torrent_damage",
-							text: "DANO DA TORRENTE",
+						ability_special: "torrent_damage",
+						text: "DANO DA TORRENTE",
 					},
 
 					{
-							ability_special: "stun_duration",
-							text: "DURAÇÃO DO ATORDOAMENTO",
+						ability_special: "stun_duration",
+						text: "DURAÇÃO DO ATORDOAMENTO",
 					},
 
 				]
@@ -8961,19 +8961,19 @@ export function GenerateLocalizationData(): LocalizationData
 				ability_specials_override:
 				[
 					{
-							ability_special: "proc_chance",
-							text: "AUSLÖSECHANCE",
+						ability_special: "proc_chance",
+						text: "AUSLÖSECHANCE",
 							percentage: true,
 					},
 
 					{
-							ability_special: "torrent_damage",
-							text: "STURZFLUTSCHADEN",
+						ability_special: "torrent_damage",
+						text: "STURZFLUTSCHADEN",
 					},
 
 					{
-							ability_special: "stun_duration",
-							text: "BETÄUBUNGSDAUER",
+						ability_special: "stun_duration",
+						text: "BETÄUBUNGSDAUER",
 					},
 
 				]
@@ -8986,19 +8986,19 @@ export function GenerateLocalizationData(): LocalizationData
 				ability_specials_override:
 				[
 					{
-							ability_special: "proc_chance",
-							text: "ШАНС СРАБАТЫВАНИЯ",
+						ability_special: "proc_chance",
+						text: "ШАНС СРАБАТЫВАНИЯ",
 							percentage: true,
 					},
 
 					{
-							ability_special: "torrent_damage",
-							text: "УРОН",
+						ability_special: "torrent_damage",
+						text: "УРОН",
 					},
 
 					{
-							ability_special: "stun_duration",
-							text: "ДЛИТЕЛЬНОСТЬ ОГЛУШЕНИЯ",
+						ability_special: "stun_duration",
+						text: "ДЛИТЕЛЬНОСТЬ ОГЛУШЕНИЯ",
 					},
 
 				]
@@ -9011,19 +9011,19 @@ export function GenerateLocalizationData(): LocalizationData
 				ability_specials_override:
 				[
 					{
-							ability_special: "proc_chance",
-							text: "触发几率",
+						ability_special: "proc_chance",
+						text: "触发几率",
 							percentage: true,
 					},
 
 					{
-							ability_special: "torrent_damage",
-							text: "洪流伤害：",
+						ability_special: "torrent_damage",
+						text: "洪流伤害：",
 					},
 
 					{
-							ability_special: "stun_duration",
-							text: "眩晕时间：",
+						ability_special: "stun_duration",
+						text: "眩晕时间：",
 					},
 
 				]
@@ -9077,8 +9077,8 @@ export function GenerateLocalizationData(): LocalizationData
 				ability_specials_override:
 				[
 					{
-							ability_special: "cast_range",
-							text: "ALCANCE",
+						ability_special: "cast_range",
+						text: "ALCANCE",
 					},
 
 				]
@@ -9096,29 +9096,29 @@ export function GenerateLocalizationData(): LocalizationData
 				ability_specials_override:
 				[
 					{
-							ability_special: "proc_chance",
-							text: "AUSLÖSECHANCE",
+						ability_special: "proc_chance",
+						text: "AUSLÖSECHANCE",
 							percentage: true,
 					},
 
 					{
-							ability_special: "cast_range",
-							text: "REICHWEITE",
+						ability_special: "cast_range",
+						text: "REICHWEITE",
 					},
 
 					{
-							ability_special: "tooltip_max_targets_inc_dazzle",
-							text: "MAX. ZIELE",
+						ability_special: "tooltip_max_targets_inc_dazzle",
+						text: "MAX. ZIELE",
 					},
 
 					{
-							ability_special: "damage_radius",
-							text: "SCHADENSRADIUS",
+						ability_special: "damage_radius",
+						text: "SCHADENSRADIUS",
 					},
 
 					{
-							ability_special: "damage",
-							text: "HEILUNG/SCHADEN",
+						ability_special: "damage",
+						text: "HEILUNG/SCHADEN",
 					},
 
 				]
@@ -9136,29 +9136,29 @@ export function GenerateLocalizationData(): LocalizationData
 				ability_specials_override:
 				[
 					{
-							ability_special: "proc_chance",
-							text: "ШАНС СРАБАТЫВАНИЯ",
+						ability_special: "proc_chance",
+						text: "ШАНС СРАБАТЫВАНИЯ",
 							percentage: true,
 					},
 
 					{
-							ability_special: "cast_range",
-							text: "ДАЛЬНОСТЬ",
+						ability_special: "cast_range",
+						text: "ДАЛЬНОСТЬ",
 					},
 
 					{
-							ability_special: "tooltip_max_targets_inc_dazzle",
-							text: "МАКС. ЦЕЛЕЙ ЛЕЧЕНИЯ",
+						ability_special: "tooltip_max_targets_inc_dazzle",
+						text: "МАКС. ЦЕЛЕЙ ЛЕЧЕНИЯ",
 					},
 
 					{
-							ability_special: "damage_radius",
-							text: "РАДИУС УРОНА",
+						ability_special: "damage_radius",
+						text: "РАДИУС УРОНА",
 					},
 
 					{
-							ability_special: "damage",
-							text: "ЛЕЧЕНИЕ/УРОН",
+						ability_special: "damage",
+						text: "ЛЕЧЕНИЕ/УРОН",
 					},
 
 				]
@@ -9176,28 +9176,28 @@ export function GenerateLocalizationData(): LocalizationData
 				ability_specials_override:
 				[
 					{
-							ability_special: "proc_chance",
-							text: "触发几率：",
+						ability_special: "proc_chance",
+						text: "触发几率：",
 					},
 
 					{
-							ability_special: "cast_range",
-							text: "距离：",
+						ability_special: "cast_range",
+						text: "距离：",
 					},
 
 					{
-							ability_special: "tooltip_max_targets_inc_dazzle",
-							text: "最大治疗目标数：",
+						ability_special: "tooltip_max_targets_inc_dazzle",
+						text: "最大治疗目标数：",
 					},
 
 					{
-							ability_special: "damage_radius",
-							text: "伤害作用范围：",
+						ability_special: "damage_radius",
+						text: "伤害作用范围：",
 					},
 
 					{
-							ability_special: "damage",
-							text: "治疗/伤害：",
+						ability_special: "damage",
+						text: "治疗/伤害：",
 					},
 
 				]
@@ -9313,18 +9313,18 @@ export function GenerateLocalizationData(): LocalizationData
 				ability_specials_override:
 				[
 					{
-							ability_special: "stun_duration",
-							text: "BETÄUBUNGSDAUER",
+						ability_special: "stun_duration",
+						text: "BETÄUBUNGSDAUER",
 					},
 
 					{
-							ability_special: "beam_damage",
-							text: "SCHADEN",
+						ability_special: "beam_damage",
+						text: "SCHADEN",
 					},
 
 					{
-							ability_special: "radius",
-							text: "<font color='#70EA72'>RADIUS:</font>",
+						ability_special: "radius",
+						text: "<font color='#70EA72'>RADIUS:</font>",
 					},
 
 				]
@@ -9338,18 +9338,18 @@ export function GenerateLocalizationData(): LocalizationData
 				ability_specials_override:
 				[
 					{
-							ability_special: "stun_duration",
-							text: "ДЛИТЕЛЬНОСТЬ ОГЛУШЕНИЯ",
+						ability_special: "stun_duration",
+						text: "ДЛИТЕЛЬНОСТЬ ОГЛУШЕНИЯ",
 					},
 
 					{
-							ability_special: "beam_damage",
-							text: "УРОН",
+						ability_special: "beam_damage",
+						text: "УРОН",
 					},
 
 					{
-							ability_special: "radius",
-							text: "<font color='#70EA72'>РАДИУС:</font>",
+						ability_special: "radius",
+						text: "<font color='#70EA72'>РАДИУС:</font>",
 					},
 
 				]
@@ -9363,18 +9363,18 @@ export function GenerateLocalizationData(): LocalizationData
 				ability_specials_override:
 				[
 					{
-							ability_special: "stun_duration",
-							text: "眩晕时间：",
+						ability_special: "stun_duration",
+						text: "眩晕时间：",
 					},
 
 					{
-							ability_special: "beam_damage",
-							text: "月光伤害：",
+						ability_special: "beam_damage",
+						text: "月光伤害：",
 					},
 
 					{
-							ability_special: "radius",
-							text: "<font color='#70EA72'>作用范围：</font>",
+						ability_special: "radius",
+						text: "<font color='#70EA72'>作用范围：</font>",
 					},
 
 				]
@@ -9452,38 +9452,38 @@ export function GenerateLocalizationData(): LocalizationData
 				ability_specials_override:
 				[
 					{
-							ability_special: "beams",
-							text: "STRAHLEN",
+						ability_special: "beams",
+						text: "STRAHLEN",
 					},
 
 					{
-							ability_special: "hit_count",
-							text: "MAX. TREFFER PRO EINHEIT",
+						ability_special: "hit_count",
+						text: "MAX. TREFFER PRO EINHEIT",
 					},
 
 					{
-							ability_special: "radius",
-							text: "RADIUS",
+						ability_special: "radius",
+						text: "RADIUS",
 					},
 
 					{
-							ability_special: "duration_tooltip",
-							text: "DAUER",
+						ability_special: "duration_tooltip",
+						text: "DAUER",
 					},
 
 					{
-							ability_special: "beams_scepter",
-							text: "STRAHLEN (SCEPTER)",
+						ability_special: "beams_scepter",
+						text: "STRAHLEN (SCEPTER)",
 					},
 
 					{
-							ability_special: "duration_tooltip_scepter",
-							text: "DAUER (SCEPTER)",
+						ability_special: "duration_tooltip_scepter",
+						text: "DAUER (SCEPTER)",
 					},
 
 					{
-							ability_special: "cast_range_tooltip_scepter",
-							text: "ZAUBERREICHWEITE (SCEPTER)",
+						ability_special: "cast_range_tooltip_scepter",
+						text: "ZAUBERREICHWEITE (SCEPTER)",
 					},
 
 				]
@@ -9505,38 +9505,38 @@ export function GenerateLocalizationData(): LocalizationData
 				ability_specials_override:
 				[
 					{
-							ability_special: "beams",
-							text: "ВСЕГО ЛУЧЕЙ",
+						ability_special: "beams",
+						text: "ВСЕГО ЛУЧЕЙ",
 					},
 
 					{
-							ability_special: "hit_count",
-							text: "МАКС. УДАРОВ ПО СУЩЕСТВУ",
+						ability_special: "hit_count",
+						text: "МАКС. УДАРОВ ПО СУЩЕСТВУ",
 					},
 
 					{
-							ability_special: "radius",
-							text: "РАДИУС",
+						ability_special: "radius",
+						text: "РАДИУС",
 					},
 
 					{
-							ability_special: "duration_tooltip",
-							text: "ДЛИТЕЛЬНОСТЬ",
+						ability_special: "duration_tooltip",
+						text: "ДЛИТЕЛЬНОСТЬ",
 					},
 
 					{
-							ability_special: "beams_scepter",
-							text: "ВСЕГО ЛУЧЕЙ СО СКИПЕТРОМ",
+						ability_special: "beams_scepter",
+						text: "ВСЕГО ЛУЧЕЙ СО СКИПЕТРОМ",
 					},
 
 					{
-							ability_special: "duration_tooltip_scepter",
-							text: "ДЛИТЕЛЬНОСТЬ СО СКИПЕТРОМ",
+						ability_special: "duration_tooltip_scepter",
+						text: "ДЛИТЕЛЬНОСТЬ СО СКИПЕТРОМ",
 					},
 
 					{
-							ability_special: "cast_range_tooltip_scepter",
-							text: "ДАЛЬНОСТЬ ПРИМЕНЕНИЯ СО СКИПЕТРОМ",
+						ability_special: "cast_range_tooltip_scepter",
+						text: "ДАЛЬНОСТЬ ПРИМЕНЕНИЯ СО СКИПЕТРОМ",
 					},
 
 				]
@@ -9558,38 +9558,38 @@ export function GenerateLocalizationData(): LocalizationData
 				ability_specials_override:
 				[
 					{
-							ability_special: "beams",
-							text: "月光数量：",
+						ability_special: "beams",
+						text: "月光数量：",
 					},
 
 					{
-							ability_special: "hit_count",
-							text: "最大单体打击次数：",
+						ability_special: "hit_count",
+						text: "最大单体打击次数：",
 					},
 
 					{
-							ability_special: "radius",
-							text: "作用范围：",
+						ability_special: "radius",
+						text: "作用范围：",
 					},
 
 					{
-							ability_special: "duration_tooltip",
-							text: "月蚀持续时间：",
+						ability_special: "duration_tooltip",
+						text: "月蚀持续时间：",
 					},
 
 					{
-							ability_special: "beams_scepter",
-							text: "神杖升级月光数量：",
+						ability_special: "beams_scepter",
+						text: "神杖升级月光数量：",
 					},
 
 					{
-							ability_special: "duration_tooltip_scepter",
-							text: "神杖升级持续时间：",
+						ability_special: "duration_tooltip_scepter",
+						text: "神杖升级持续时间：",
 					},
 
 					{
-							ability_special: "cast_range_tooltip_scepter",
-							text: "神杖升级施法距离：",
+						ability_special: "cast_range_tooltip_scepter",
+						text: "神杖升级施法距离：",
 					},
 
 				]
@@ -9864,7 +9864,7 @@ export function GenerateLocalizationData(): LocalizationData
 	Abilities.push({
 		ability_classname: "item_creed_of_omniscience",
 		name: "Creed of Omniscience",
-		description: "<h1>Passive: Study</h1>Grants bonus experience.\n",
+		description: "<h1>Passive: Study</h1>Grants bonus experience.\\n",
 		lore: "The Omniscience honors me!",
 		ability_specials:
 		[
@@ -9880,13 +9880,13 @@ export function GenerateLocalizationData(): LocalizationData
 			{
 				language: Language.German,
 				name_override: "Wappen des Allwissenden",
-				description_override: "<h1>Passiv: Studieren</h1>Gewährt Bonuserfahrung.\n",
+				description_override: "<h1>Passiv: Studieren</h1>Gewährt Bonuserfahrung.\\n",
 				lore_override: "Der Allwissende ehrt mich!",
 				ability_specials_override:
 				[
 					{
-							ability_special: "bonus_xp",
-							text: "BONUS-EP",
+						ability_special: "bonus_xp",
+						text: "BONUS-EP",
 							percentage: true,
 					},
 
@@ -9896,13 +9896,13 @@ export function GenerateLocalizationData(): LocalizationData
 			{
 				language: Language.Russian,
 				name_override: "Creed of Omniscience",
-				description_override: "<h1>Пассивная: Study</h1>Даёт бонусный опыт.\n",
+				description_override: "<h1>Пассивная: Study</h1>Даёт бонусный опыт.\\n",
 				lore_override: "Всезнание удостоило меня своим присутствием!",
 				ability_specials_override:
 				[
 					{
-							ability_special: "bonus_xp",
-							text: "ДОП. ОПЫТ",
+						ability_special: "bonus_xp",
+						text: "ДОП. ОПЫТ",
 							percentage: true,
 					},
 
@@ -9912,13 +9912,13 @@ export function GenerateLocalizationData(): LocalizationData
 			{
 				language: Language.SChinese,
 				name_override: "全能信条",
-				description_override: "<h1>被动：研习</h1>获得额外经验。\n",
+				description_override: "<h1>被动：研习</h1>获得额外经验。\\n",
 				lore_override: "全能之神赐我荣耀！",
 				ability_specials_override:
 				[
 					{
-							ability_special: "bonus_xp",
-							text: "额外经验",
+						ability_special: "bonus_xp",
+						text: "额外经验",
 							percentage: true,
 					},
 
@@ -9931,7 +9931,7 @@ export function GenerateLocalizationData(): LocalizationData
 	Abilities.push({
 		ability_classname: "item_oblivions_locket",
 		name: "Oblivion's Locket",
-		description: "<h1>Active: Spook</h1>CHANNELLED - Become ethereal, immune to physical but taking ${extra_spell_damage_percent}% extra magic damage for up to 1 second.\n",
+		description: "<h1>Active: Spook</h1>CHANNELLED - Become ethereal, immune to physical but taking ${extra_spell_damage_percent}% extra magic damage for up to 1 second.\\n",
 		lore: "A skeleton's charm. Used to prevent having a bad time.",
 		ability_specials:
 		[
@@ -9946,13 +9946,13 @@ export function GenerateLocalizationData(): LocalizationData
 			{
 				language: Language.German,
 				name_override: "Oblivions Medaillon",
-				description_override: "<h1>Aktiv: Geist</h1>KANALISIEREND – Ätherische Form. Sie werden immun gegenüber physischen Angriffen, erleiden jedoch ${extra_spell_damage_percent} %% zusätzlichen Magieschaden für bis zu 1 Sekunde.\n",
+				description_override: "<h1>Aktiv: Geist</h1>KANALISIEREND – Ätherische Form. Sie werden immun gegenüber physischen Angriffen, erleiden jedoch ${extra_spell_damage_percent} %% zusätzlichen Magieschaden für bis zu 1 Sekunde.\\n",
 				lore_override: "Amulett eines Skeletts. Hat Schlechtes vom Träger abgewendet.",
 				ability_specials_override:
 				[
 					{
-							ability_special: "bonus_all_stats",
-							text: "BONUS AUF ALLE ATTRIBUTE",
+						ability_special: "bonus_all_stats",
+						text: "BONUS AUF ALLE ATTRIBUTE",
 					},
 
 				]
@@ -9961,13 +9961,13 @@ export function GenerateLocalizationData(): LocalizationData
 			{
 				language: Language.Russian,
 				name_override: "Oblivion's Locket",
-				description_override: "<h1>Активная: Spook</h1>ПРЕРЫВАЕМАЯ — на 1 секунду придаёт герою призрачную форму, в которой он защищён от физического урона, но получает на ${extra_spell_damage_percent}% больше магического урона.\n",
+				description_override: "<h1>Активная: Spook</h1>ПРЕРЫВАЕМАЯ — на 1 секунду придаёт герою призрачную форму, в которой он защищён от физического урона, но получает на ${extra_spell_damage_percent}% больше магического урона.\\n",
 				lore_override: "Амулет скелета. Для тех, кто не хочет неприятностей.",
 				ability_specials_override:
 				[
 					{
-							ability_special: "bonus_all_stats",
-							text: "УВЕЛИЧЕНИЕ ВСЕХ АТРИБУТОВ",
+						ability_special: "bonus_all_stats",
+						text: "УВЕЛИЧЕНИЕ ВСЕХ АТРИБУТОВ",
 					},
 
 				]
@@ -9976,13 +9976,13 @@ export function GenerateLocalizationData(): LocalizationData
 			{
 				language: Language.SChinese,
 				name_override: "湮灭挂件",
-				description_override: "<h1>主动：闹鬼</h1>持续施法 - 变成虚无状态，对物理伤害免疫，但承受${extra_spell_damage_percent}%额外魔法伤害，最多持续1秒。\n",
+				description_override: "<h1>主动：闹鬼</h1>持续施法 - 变成虚无状态，对物理伤害免疫，但承受${extra_spell_damage_percent}%额外魔法伤害，最多持续1秒。\\n",
 				lore_override: "一具骷髅的护符。用来防止日子难过。",
 				ability_specials_override:
 				[
 					{
-							ability_special: "bonus_all_stats",
-							text: "全属性加成：",
+						ability_special: "bonus_all_stats",
+						text: "全属性加成：",
 					},
 
 				]
@@ -10023,18 +10023,18 @@ export function GenerateLocalizationData(): LocalizationData
 				ability_specials_override:
 				[
 					{
-							ability_special: "bonus_armor",
-							text: "BONUSRÜSTUNG",
+						ability_special: "bonus_armor",
+						text: "BONUSRÜSTUNG",
 					},
 
 					{
-							ability_special: "bonus_move_speed",
-							text: "BONUSBEWEGUNGSTEMPO",
+						ability_special: "bonus_move_speed",
+						text: "BONUSBEWEGUNGSTEMPO",
 					},
 
 					{
-							ability_special: "bonus_evasion",
-							text: "BONUSAUSWEICHCHANCE",
+						ability_special: "bonus_evasion",
+						text: "BONUSAUSWEICHCHANCE",
 							percentage: true,
 					},
 
@@ -10048,18 +10048,18 @@ export function GenerateLocalizationData(): LocalizationData
 				ability_specials_override:
 				[
 					{
-							ability_special: "bonus_armor",
-							text: "ДОП. БРОНЯ",
+						ability_special: "bonus_armor",
+						text: "ДОП. БРОНЯ",
 					},
 
 					{
-							ability_special: "bonus_move_speed",
-							text: "ДОП. СКОРОСТЬ ПЕРЕДВИЖЕНИЯ",
+						ability_special: "bonus_move_speed",
+						text: "ДОП. СКОРОСТЬ ПЕРЕДВИЖЕНИЯ",
 					},
 
 					{
-							ability_special: "bonus_evasion",
-							text: "ДОП. УКЛОНЕНИЕ",
+						ability_special: "bonus_evasion",
+						text: "ДОП. УКЛОНЕНИЕ",
 							percentage: true,
 					},
 
@@ -10073,18 +10073,18 @@ export function GenerateLocalizationData(): LocalizationData
 				ability_specials_override:
 				[
 					{
-							ability_special: "bonus_armor",
-							text: "护甲加成：",
+						ability_special: "bonus_armor",
+						text: "护甲加成：",
 					},
 
 					{
-							ability_special: "bonus_move_speed",
-							text: "移动速度加成：",
+						ability_special: "bonus_move_speed",
+						text: "移动速度加成：",
 					},
 
 					{
-							ability_special: "bonus_evasion",
-							text: "额外闪避",
+						ability_special: "bonus_evasion",
+						text: "额外闪避",
 							percentage: true,
 					},
 
@@ -10097,7 +10097,7 @@ export function GenerateLocalizationData(): LocalizationData
 	Abilities.push({
 		ability_classname: "item_paw_of_lucius",
 		name: "Paw of Lucius",
-		description: "<h1>Passive: Sharp Claws</h1>Attacks have a ${rupture_chance}% chance to inflict Rupture.\n",
+		description: "<h1>Passive: Sharp Claws</h1>Attacks have a ${rupture_chance}% chance to inflict Rupture.\\n",
 		lore: "This claw cuts deep.",
 		ability_specials:
 		[
@@ -10117,18 +10117,18 @@ export function GenerateLocalizationData(): LocalizationData
 			{
 				language: Language.German,
 				name_override: "Lucius' Pfote",
-				description_override: "<h1>Passiv: Scharfe Klauen</h1>Angriffe haben eine ${rupture_chance}%ige Chance, Gegner mit Rupture zu belegen.\n\n",
+				description_override: "<h1>Passiv: Scharfe Klauen</h1>Angriffe haben eine ${rupture_chance}%ige Chance, Gegner mit Rupture zu belegen.\\n\\n",
 				lore_override: "Die Klaue schneidet tief.",
 				ability_specials_override:
 				[
 					{
-							ability_special: "bonus_strength",
-							text: "BONUSSTÄRKE",
+						ability_special: "bonus_strength",
+						text: "BONUSSTÄRKE",
 					},
 
 					{
-							ability_special: "bonus_attack_speed",
-							text: "BONUSANGRIFFSTEMPO",
+						ability_special: "bonus_attack_speed",
+						text: "BONUSANGRIFFSTEMPO",
 					},
 
 				]
@@ -10137,18 +10137,18 @@ export function GenerateLocalizationData(): LocalizationData
 			{
 				language: Language.Russian,
 				name_override: "Paw of Lucius",
-				description_override: "<h1>Пассивная: Sharp Claws</h1>Атаки с вероятностью в ${rupture_chance}% накладывают эффект способности Rupture.\n",
+				description_override: "<h1>Пассивная: Sharp Claws</h1>Атаки с вероятностью в ${rupture_chance}% накладывают эффект способности Rupture.\\n",
 				lore_override: "Эти когти оставляют глубокие раны.",
 				ability_specials_override:
 				[
 					{
-							ability_special: "bonus_strength",
-							text: "ДОП. СИЛА",
+						ability_special: "bonus_strength",
+						text: "ДОП. СИЛА",
 					},
 
 					{
-							ability_special: "bonus_attack_speed",
-							text: "ДОП. СКОРОСТЬ АТАКИ",
+						ability_special: "bonus_attack_speed",
+						text: "ДОП. СКОРОСТЬ АТАКИ",
 					},
 
 				]
@@ -10157,18 +10157,18 @@ export function GenerateLocalizationData(): LocalizationData
 			{
 				language: Language.SChinese,
 				name_override: "卢修兕之爪",
-				description_override: "<h1>被动：利爪</h1>普通攻击有${rupture_chance}%几率触发割裂。\n",
+				description_override: "<h1>被动：利爪</h1>普通攻击有${rupture_chance}%几率触发割裂。\\n",
 				lore_override: "这一爪会深深插入。",
 				ability_specials_override:
 				[
 					{
-							ability_special: "bonus_strength",
-							text: "力量加成：",
+						ability_special: "bonus_strength",
+						text: "力量加成：",
 					},
 
 					{
-							ability_special: "bonus_attack_speed",
-							text: "攻击速度加成：",
+						ability_special: "bonus_attack_speed",
+						text: "攻击速度加成：",
 					},
 
 				]
@@ -10211,20 +10211,20 @@ export function GenerateLocalizationData(): LocalizationData
 				ability_specials_override:
 				[
 					{
-							ability_special: "spell_lifesteal_pct",
-							text: "ZAUBERLEBENSRAUB",
+						ability_special: "spell_lifesteal_pct",
+						text: "ZAUBERLEBENSRAUB",
 							percentage: true,
 					},
 
 					{
-							ability_special: "cooldown_reduction_pct",
-							text: "ABKLINGZEITREDUZIERUNG",
+						ability_special: "cooldown_reduction_pct",
+						text: "ABKLINGZEITREDUZIERUNG",
 							percentage: true,
 					},
 
 					{
-							ability_special: "mana_cost_reduction_pct",
-							text: "MANAKOSTENREDUZIERUNG",
+						ability_special: "mana_cost_reduction_pct",
+						text: "MANAKOSTENREDUZIERUNG",
 							percentage: true,
 					},
 
@@ -10238,20 +10238,20 @@ export function GenerateLocalizationData(): LocalizationData
 				ability_specials_override:
 				[
 					{
-							ability_special: "spell_lifesteal_pct",
-							text: "ВАМПИРИЗМ ЗАКЛИНАНИЯМИ",
+						ability_special: "spell_lifesteal_pct",
+						text: "ВАМПИРИЗМ ЗАКЛИНАНИЯМИ",
 							percentage: true,
 					},
 
 					{
-							ability_special: "cooldown_reduction_pct",
-							text: "УМЕНЬШЕНИЕ ПЕРЕЗАРЯДКИ",
+						ability_special: "cooldown_reduction_pct",
+						text: "УМЕНЬШЕНИЕ ПЕРЕЗАРЯДКИ",
 							percentage: true,
 					},
 
 					{
-							ability_special: "mana_cost_reduction_pct",
-							text: "УМЕНЬШЕНИЕ РАСХОДА МАНЫ",
+						ability_special: "mana_cost_reduction_pct",
+						text: "УМЕНЬШЕНИЕ РАСХОДА МАНЫ",
 							percentage: true,
 					},
 
@@ -10265,20 +10265,20 @@ export function GenerateLocalizationData(): LocalizationData
 				ability_specials_override:
 				[
 					{
-							ability_special: "spell_lifesteal_pct",
-							text: "技能吸血",
+						ability_special: "spell_lifesteal_pct",
+						text: "技能吸血",
 							percentage: true,
 					},
 
 					{
-							ability_special: "cooldown_reduction_pct",
-							text: "冷却时间减少",
+						ability_special: "cooldown_reduction_pct",
+						text: "冷却时间减少",
 							percentage: true,
 					},
 
 					{
-							ability_special: "mana_cost_reduction_pct",
-							text: "魔法消耗降低",
+						ability_special: "mana_cost_reduction_pct",
+						text: "魔法消耗降低",
 							percentage: true,
 					},
 
@@ -10291,7 +10291,7 @@ export function GenerateLocalizationData(): LocalizationData
 	Abilities.push({
 		ability_classname: "item_bogduggs_cudgel",
 		name: "Bogdugg's Cudgel",
-		description: "<h1>Passive: Smash</h1>MELEE ONLY - All attack speed is halved, but attacks deal splash damage in a ${damage_radius} area around the target and stun for ${stun_duration} second.\n",
+		description: "<h1>Passive: Smash</h1>MELEE ONLY - All attack speed is halved, but attacks deal splash damage in a ${damage_radius} area around the target and stun for ${stun_duration} second.\\n",
 		lore: "Bogdugg came to lord over Bonemeal Ridge by carrying the biggest stick.",
 		ability_specials:
 		[
@@ -10311,18 +10311,18 @@ export function GenerateLocalizationData(): LocalizationData
 			{
 				language: Language.German,
 				name_override: "Bogduggs Knüppel",
-				description_override: "<h1>Passiv: Smash</h1>NUR NAHKAMPF – Angriffstempo wird halbiert, aber Angriffe verursachen Flächenschaden in einem Radius von ${damage_radius} Einheiten um das Ziel herum und betäuben für ${stun_duration} Sekunde.\n",
+				description_override: "<h1>Passiv: Smash</h1>NUR NAHKAMPF – Angriffstempo wird halbiert, aber Angriffe verursachen Flächenschaden in einem Radius von ${damage_radius} Einheiten um das Ziel herum und betäuben für ${stun_duration} Sekunde.\\n",
 				lore_override: "Bogdugg wurde zum Chef des Knochenmehlkamms, weil er den längsten Knüppel hatte.",
 				ability_specials_override:
 				[
 					{
-							ability_special: "bonus_strength",
-							text: "BONUSSTÄRKE",
+						ability_special: "bonus_strength",
+						text: "BONUSSTÄRKE",
 					},
 
 					{
-							ability_special: "bonus_damage",
-							text: "BONUSSCHADEN",
+						ability_special: "bonus_damage",
+						text: "BONUSSCHADEN",
 					},
 
 				]
@@ -10331,18 +10331,18 @@ export function GenerateLocalizationData(): LocalizationData
 			{
 				language: Language.Russian,
 				name_override: "Bogdugg's Cudgel",
-				description_override: "<h1>Пассивная: Smash</h1>ТОЛЬКО БЛИЖНИЙ БОЙ — скорость атаки уменьшена вдвое, но каждый удар наносит урон по площади радиусом ${damage_radius} вокруг цели и оглушает на ${stun_duration} сек.\n",
+				description_override: "<h1>Пассивная: Smash</h1>ТОЛЬКО БЛИЖНИЙ БОЙ — скорость атаки уменьшена вдвое, но каждый удар наносит урон по площади радиусом ${damage_radius} вокруг цели и оглушает на ${stun_duration} сек.\\n",
 				lore_override: "Богдагг подчинил Костяной хребет лишь потому, что его дубина была больше.",
 				ability_specials_override:
 				[
 					{
-							ability_special: "bonus_strength",
-							text: "ДОП. СИЛА",
+						ability_special: "bonus_strength",
+						text: "ДОП. СИЛА",
 					},
 
 					{
-							ability_special: "bonus_damage",
-							text: "ДОП. УРОН",
+						ability_special: "bonus_damage",
+						text: "ДОП. УРОН",
 					},
 
 				]
@@ -10351,18 +10351,18 @@ export function GenerateLocalizationData(): LocalizationData
 			{
 				language: Language.SChinese,
 				name_override: "波格达格的巨棍",
-				description_override: "<h1>被动：粉碎</h1>仅近战 - 所有攻击速度减半，但是攻击在目标${damage_radius}范围内造成溅射伤害，并且眩晕${stun_duration}秒。\n",
+				description_override: "<h1>被动：粉碎</h1>仅近战 - 所有攻击速度减半，但是攻击在目标${damage_radius}范围内造成溅射伤害，并且眩晕${stun_duration}秒。\\n",
 				lore_override: "波格达格提着最大的棍子来骨末山脊称王。",
 				ability_specials_override:
 				[
 					{
-							ability_special: "bonus_strength",
-							text: "力量加成：",
+						ability_special: "bonus_strength",
+						text: "力量加成：",
 					},
 
 					{
-							ability_special: "bonus_damage",
-							text: "攻击力加成：",
+						ability_special: "bonus_damage",
+						text: "攻击力加成：",
 					},
 
 				]
@@ -10403,19 +10403,19 @@ export function GenerateLocalizationData(): LocalizationData
 				ability_specials_override:
 				[
 					{
-							ability_special: "bonus_armor",
-							text: "BONUSRÜSTUNG",
+						ability_special: "bonus_armor",
+						text: "BONUSRÜSTUNG",
 					},
 
 					{
-							ability_special: "disable_resist_pct",
-							text: "BETÄUBUNGSDAUERREDUZIERUNG",
+						ability_special: "disable_resist_pct",
+						text: "BETÄUBUNGSDAUERREDUZIERUNG",
 							percentage: true,
 					},
 
 					{
-							ability_special: "move_speed_penalty",
-							text: "BEWEGUNGSTEMPOREDUZIERUNG",
+						ability_special: "move_speed_penalty",
+						text: "BEWEGUNGSTEMPOREDUZIERUNG",
 					},
 
 				]
@@ -10428,19 +10428,19 @@ export function GenerateLocalizationData(): LocalizationData
 				ability_specials_override:
 				[
 					{
-							ability_special: "bonus_armor",
-							text: "ДОП. БРОНЯ",
+						ability_special: "bonus_armor",
+						text: "ДОП. БРОНЯ",
 					},
 
 					{
-							ability_special: "disable_resist_pct",
-							text: "УМЕНЬШЕНИЕ ДЛИТЕЛЬНОСТИ ОГЛУШЕНИЙ",
+						ability_special: "disable_resist_pct",
+						text: "УМЕНЬШЕНИЕ ДЛИТЕЛЬНОСТИ ОГЛУШЕНИЙ",
 							percentage: true,
 					},
 
 					{
-							ability_special: "move_speed_penalty",
-							text: "УМЕНЬШЕНИЕ СКОРОСТИ ПЕРЕДВИЖЕНИЯ",
+						ability_special: "move_speed_penalty",
+						text: "УМЕНЬШЕНИЕ СКОРОСТИ ПЕРЕДВИЖЕНИЯ",
 					},
 
 				]
@@ -10453,19 +10453,19 @@ export function GenerateLocalizationData(): LocalizationData
 				ability_specials_override:
 				[
 					{
-							ability_special: "bonus_armor",
-							text: "护甲加成：",
+						ability_special: "bonus_armor",
+						text: "护甲加成：",
 					},
 
 					{
-							ability_special: "disable_resist_pct",
-							text: "眩晕时间减少",
+						ability_special: "disable_resist_pct",
+						text: "眩晕时间减少",
 							percentage: true,
 					},
 
 					{
-							ability_special: "move_speed_penalty",
-							text: "移动速度减少：",
+						ability_special: "move_speed_penalty",
+						text: "移动速度减少：",
 					},
 
 				]
@@ -10477,7 +10477,7 @@ export function GenerateLocalizationData(): LocalizationData
 	Abilities.push({
 		ability_classname: "item_bogduggs_lucky_femur",
 		name: "Bogdugg's Lucky Femur",
-		description: "<h1>Passive: Skillshot</h1>After an ability is cast, it has a ${refresh_pct}% chance to be immediately refreshed, and Lucky Femur is placed on cooldown for the duration of cooldown of the refreshed ability.\n",
+		description: "<h1>Passive: Skillshot</h1>After an ability is cast, it has a ${refresh_pct}% chance to be immediately refreshed, and Lucky Femur is placed on cooldown for the duration of cooldown of the refreshed ability.\\n",
 		lore: "And another!",
 		ability_specials:
 		[
@@ -10502,23 +10502,23 @@ export function GenerateLocalizationData(): LocalizationData
 			{
 				language: Language.German,
 				name_override: "Bogduggs Glücksknochen",
-				description_override: "<h1>Passiv: Gekonnt</h1>Nachdem eine Fähigkeit eingesetzt wurde, hat diese eine ${refresh_pct}%ige Chance sofort wieder zur Verfügung zu stehen. Der Glücksknochen kann für die Dauer der Abklingzeit der zurückgesetzten Fähigkeit nicht erneut ausgelöst werden.\n",
+				description_override: "<h1>Passiv: Gekonnt</h1>Nachdem eine Fähigkeit eingesetzt wurde, hat diese eine ${refresh_pct}%ige Chance sofort wieder zur Verfügung zu stehen. Der Glücksknochen kann für die Dauer der Abklingzeit der zurückgesetzten Fähigkeit nicht erneut ausgelöst werden.\\n",
 				lore_override: "Und noch einer!",
 				ability_specials_override:
 				[
 					{
-							ability_special: "max_mana_penalty",
-							text: "MAX. MANAREDUZIERUNG",
+						ability_special: "max_mana_penalty",
+						text: "MAX. MANAREDUZIERUNG",
 					},
 
 					{
-							ability_special: "intelligence_penalty",
-							text: "INTELLIGENZREDUZIERUNG",
+						ability_special: "intelligence_penalty",
+						text: "INTELLIGENZREDUZIERUNG",
 					},
 
 					{
-							ability_special: "mana_regen_sec",
-							text: "BONUSMANAREGENERATION",
+						ability_special: "mana_regen_sec",
+						text: "BONUSMANAREGENERATION",
 					},
 
 				]
@@ -10527,23 +10527,23 @@ export function GenerateLocalizationData(): LocalizationData
 			{
 				language: Language.Russian,
 				name_override: "Bogdugg's Lucky Femur",
-				description_override: "<h1>Пассивная: Skillshot</h1>Когда герой применяет способность, она может мгновенно перезарядиться с шансом в ${refresh_pct}%, но этот предмет уйдёт на перезарядку, равную перезарядке применённой способности.\n",
+				description_override: "<h1>Пассивная: Skillshot</h1>Когда герой применяет способность, она может мгновенно перезарядиться с шансом в ${refresh_pct}%, но этот предмет уйдёт на перезарядку, равную перезарядке применённой способности.\\n",
 				lore_override: "Эх, раз, да ещё раз!",
 				ability_specials_override:
 				[
 					{
-							ability_special: "max_mana_penalty",
-							text: "УМЕНЬШЕНИЕ ЗАПАСА МАНЫ",
+						ability_special: "max_mana_penalty",
+						text: "УМЕНЬШЕНИЕ ЗАПАСА МАНЫ",
 					},
 
 					{
-							ability_special: "intelligence_penalty",
-							text: "УМЕНЬШЕНИЕ ИНТЕЛЛЕКТА",
+						ability_special: "intelligence_penalty",
+						text: "УМЕНЬШЕНИЕ ИНТЕЛЛЕКТА",
 					},
 
 					{
-							ability_special: "mana_regen_sec",
-							text: "ДОП. ВОССТАНОВЛЕНИЕ МАНЫ",
+						ability_special: "mana_regen_sec",
+						text: "ДОП. ВОССТАНОВЛЕНИЕ МАНЫ",
 					},
 
 				]
@@ -10552,23 +10552,23 @@ export function GenerateLocalizationData(): LocalizationData
 			{
 				language: Language.SChinese,
 				name_override: "波格达格的幸运股骨",
-				description_override: "<h1>被动：好运连连</h1>在施放一个技能后，有${refresh_pct}%的几率马上刷新该技能，被刷新的技能进入冷却后，幸运股骨也将进入冷却时间。\n",
+				description_override: "<h1>被动：好运连连</h1>在施放一个技能后，有${refresh_pct}%的几率马上刷新该技能，被刷新的技能进入冷却后，幸运股骨也将进入冷却时间。\\n",
 				lore_override: "再来一次！",
 				ability_specials_override:
 				[
 					{
-							ability_special: "max_mana_penalty",
-							text: "最大魔法值降低：",
+						ability_special: "max_mana_penalty",
+						text: "最大魔法值降低：",
 					},
 
 					{
-							ability_special: "intelligence_penalty",
-							text: "智力减少：",
+						ability_special: "intelligence_penalty",
+						text: "智力减少：",
 					},
 
 					{
-							ability_special: "mana_regen_sec",
-							text: "额外魔法恢复：",
+						ability_special: "mana_regen_sec",
+						text: "额外魔法恢复：",
 					},
 
 				]
@@ -10611,19 +10611,19 @@ export function GenerateLocalizationData(): LocalizationData
 				ability_specials_override:
 				[
 					{
-							ability_special: "bonus_agility",
-							text: "BONUSAGILITÄT",
+						ability_special: "bonus_agility",
+						text: "BONUSAGILITÄT",
 					},
 
 					{
-							ability_special: "bonus_move_speed_pct",
-							text: "BONUSBEWEGUNGSTEMPO (AURA)",
+						ability_special: "bonus_move_speed_pct",
+						text: "BONUSBEWEGUNGSTEMPO (AURA)",
 							percentage: true,
 					},
 
 					{
-							ability_special: "attack_speed",
-							text: "BONUSANGRIFFSTEMPO (AURA)",
+						ability_special: "attack_speed",
+						text: "BONUSANGRIFFSTEMPO (AURA)",
 					},
 
 				]
@@ -10637,19 +10637,19 @@ export function GenerateLocalizationData(): LocalizationData
 				ability_specials_override:
 				[
 					{
-							ability_special: "bonus_agility",
-							text: "ДОП. ЛОВКОСТЬ",
+						ability_special: "bonus_agility",
+						text: "ДОП. ЛОВКОСТЬ",
 					},
 
 					{
-							ability_special: "bonus_move_speed_pct",
-							text: "ДОП. СКОРОСТЬ ПЕРЕДВИЖЕНИЯ ОТ АУРЫ",
+						ability_special: "bonus_move_speed_pct",
+						text: "ДОП. СКОРОСТЬ ПЕРЕДВИЖЕНИЯ ОТ АУРЫ",
 							percentage: true,
 					},
 
 					{
-							ability_special: "attack_speed",
-							text: "ДОП. СКОРОСТЬ АТАКИ ОТ АУРЫ",
+						ability_special: "attack_speed",
+						text: "ДОП. СКОРОСТЬ АТАКИ ОТ АУРЫ",
 					},
 
 				]
@@ -10663,19 +10663,19 @@ export function GenerateLocalizationData(): LocalizationData
 				ability_specials_override:
 				[
 					{
-							ability_special: "bonus_agility",
-							text: "敏捷加成：",
+						ability_special: "bonus_agility",
+						text: "敏捷加成：",
 					},
 
 					{
-							ability_special: "bonus_move_speed_pct",
-							text: "光环移动速度加成",
+						ability_special: "bonus_move_speed_pct",
+						text: "光环移动速度加成",
 							percentage: true,
 					},
 
 					{
-							ability_special: "attack_speed",
-							text: "光环攻击速度加成：",
+						ability_special: "attack_speed",
+						text: "光环攻击速度加成：",
 					},
 
 				]
@@ -10718,19 +10718,19 @@ export function GenerateLocalizationData(): LocalizationData
 				ability_specials_override:
 				[
 					{
-							ability_special: "bonus_strength",
-							text: "BONUSSTÄRKE",
+						ability_special: "bonus_strength",
+						text: "BONUSSTÄRKE",
 					},
 
 					{
-							ability_special: "lifesteal_pct",
-							text: "LEBENSRAUB (AURA)",
+						ability_special: "lifesteal_pct",
+						text: "LEBENSRAUB (AURA)",
 							percentage: true,
 					},
 
 					{
-							ability_special: "hp_regen",
-							text: "LP-REGENERATION (AURA)",
+						ability_special: "hp_regen",
+						text: "LP-REGENERATION (AURA)",
 					},
 
 				]
@@ -10744,19 +10744,19 @@ export function GenerateLocalizationData(): LocalizationData
 				ability_specials_override:
 				[
 					{
-							ability_special: "bonus_strength",
-							text: "ДОП. СИЛА",
+						ability_special: "bonus_strength",
+						text: "ДОП. СИЛА",
 					},
 
 					{
-							ability_special: "lifesteal_pct",
-							text: "ОБЩИЙ ВАМПИРИЗМ ОТ АУРЫ",
+						ability_special: "lifesteal_pct",
+						text: "ОБЩИЙ ВАМПИРИЗМ ОТ АУРЫ",
 							percentage: true,
 					},
 
 					{
-							ability_special: "hp_regen",
-							text: "ВОССТАНОВЛЕНИЕ ЗДОРОВЬЯ ОТ АУРЫ",
+						ability_special: "hp_regen",
+						text: "ВОССТАНОВЛЕНИЕ ЗДОРОВЬЯ ОТ АУРЫ",
 					},
 
 				]
@@ -10770,19 +10770,19 @@ export function GenerateLocalizationData(): LocalizationData
 				ability_specials_override:
 				[
 					{
-							ability_special: "bonus_strength",
-							text: "力量加成：",
+						ability_special: "bonus_strength",
+						text: "力量加成：",
 					},
 
 					{
-							ability_special: "lifesteal_pct",
-							text: "光环均摊吸血",
+						ability_special: "lifesteal_pct",
+						text: "光环均摊吸血",
 							percentage: true,
 					},
 
 					{
-							ability_special: "hp_regen",
-							text: "光环生命恢复：",
+						ability_special: "hp_regen",
+						text: "光环生命恢复：",
 					},
 
 				]
@@ -10825,19 +10825,19 @@ export function GenerateLocalizationData(): LocalizationData
 				ability_specials_override:
 				[
 					{
-							ability_special: "bonus_intelligence",
-							text: "BONUSINTELLIGENZ",
+						ability_special: "bonus_intelligence",
+						text: "BONUSINTELLIGENZ",
 					},
 
 					{
-							ability_special: "cooldown_reduction_pct",
-							text: "ABKLINGZEITREDUZIERUNG (AURA)",
+						ability_special: "cooldown_reduction_pct",
+						text: "ABKLINGZEITREDUZIERUNG (AURA)",
 							percentage: true,
 					},
 
 					{
-							ability_special: "aura_mana_regen",
-							text: "MANAREGENERATION (AURA)",
+						ability_special: "aura_mana_regen",
+						text: "MANAREGENERATION (AURA)",
 					},
 
 				]
@@ -10851,19 +10851,19 @@ export function GenerateLocalizationData(): LocalizationData
 				ability_specials_override:
 				[
 					{
-							ability_special: "bonus_intelligence",
-							text: "ДОП. ИНТЕЛЛЕКТ",
+						ability_special: "bonus_intelligence",
+						text: "ДОП. ИНТЕЛЛЕКТ",
 					},
 
 					{
-							ability_special: "cooldown_reduction_pct",
-							text: "УМЕНЬШЕНИЕ ПЕРЕЗАРЯДКИ В АУРЕ",
+						ability_special: "cooldown_reduction_pct",
+						text: "УМЕНЬШЕНИЕ ПЕРЕЗАРЯДКИ В АУРЕ",
 							percentage: true,
 					},
 
 					{
-							ability_special: "aura_mana_regen",
-							text: "ВОССТАНОВЛЕНИЕ МАНЫ ОТ АУРЫ",
+						ability_special: "aura_mana_regen",
+						text: "ВОССТАНОВЛЕНИЕ МАНЫ ОТ АУРЫ",
 					},
 
 				]
@@ -10877,19 +10877,19 @@ export function GenerateLocalizationData(): LocalizationData
 				ability_specials_override:
 				[
 					{
-							ability_special: "bonus_intelligence",
-							text: "智力加成：",
+						ability_special: "bonus_intelligence",
+						text: "智力加成：",
 					},
 
 					{
-							ability_special: "cooldown_reduction_pct",
-							text: "光环冷却时间减少",
+						ability_special: "cooldown_reduction_pct",
+						text: "光环冷却时间减少",
 							percentage: true,
 					},
 
 					{
-							ability_special: "aura_mana_regen",
-							text: "光环魔法恢复：",
+						ability_special: "aura_mana_regen",
+						text: "光环魔法恢复：",
 					},
 
 				]
@@ -10931,18 +10931,18 @@ export function GenerateLocalizationData(): LocalizationData
 				ability_specials_override:
 				[
 					{
-							ability_special: "bonus_movement_speed",
-							text: "BONUSBEWEGUNGSTEMPO",
+						ability_special: "bonus_movement_speed",
+						text: "BONUSBEWEGUNGSTEMPO",
 					},
 
 					{
-							ability_special: "bonus_attack_speed",
-							text: "BONUSANGRIFFSTEMPO",
+						ability_special: "bonus_attack_speed",
+						text: "BONUSANGRIFFSTEMPO",
 					},
 
 					{
-							ability_special: "bonus_all_stats",
-							text: "BONUS AUF ALLE ATTRIBUTE",
+						ability_special: "bonus_all_stats",
+						text: "BONUS AUF ALLE ATTRIBUTE",
 					},
 
 				]
@@ -10956,18 +10956,18 @@ export function GenerateLocalizationData(): LocalizationData
 				ability_specials_override:
 				[
 					{
-							ability_special: "bonus_movement_speed",
-							text: "ДОП. СКОРОСТЬ ПЕРЕДВИЖЕНИЯ",
+						ability_special: "bonus_movement_speed",
+						text: "ДОП. СКОРОСТЬ ПЕРЕДВИЖЕНИЯ",
 					},
 
 					{
-							ability_special: "bonus_attack_speed",
-							text: "ДОП. СКОРОСТЬ АТАКИ",
+						ability_special: "bonus_attack_speed",
+						text: "ДОП. СКОРОСТЬ АТАКИ",
 					},
 
 					{
-							ability_special: "bonus_all_stats",
-							text: "УВЕЛИЧЕНИЕ ВСЕХ АТРИБУТОВ",
+						ability_special: "bonus_all_stats",
+						text: "УВЕЛИЧЕНИЕ ВСЕХ АТРИБУТОВ",
 					},
 
 				]
@@ -10981,18 +10981,18 @@ export function GenerateLocalizationData(): LocalizationData
 				ability_specials_override:
 				[
 					{
-							ability_special: "bonus_movement_speed",
-							text: "移动速度加成：",
+						ability_special: "bonus_movement_speed",
+						text: "移动速度加成：",
 					},
 
 					{
-							ability_special: "bonus_attack_speed",
-							text: "攻击速度加成：",
+						ability_special: "bonus_attack_speed",
+						text: "攻击速度加成：",
 					},
 
 					{
-							ability_special: "bonus_all_stats",
-							text: "全属性加成：",
+						ability_special: "bonus_all_stats",
+						text: "全属性加成：",
 					},
 
 				]
@@ -11044,30 +11044,30 @@ export function GenerateLocalizationData(): LocalizationData
 				ability_specials_override:
 				[
 					{
-							ability_special: "bonus_all_stats",
-							text: "BONUS AUF ALLE ATTRIBUTE",
+						ability_special: "bonus_all_stats",
+						text: "BONUS AUF ALLE ATTRIBUTE",
 					},
 
 					{
-							ability_special: "bonus_damage_pct",
-							text: "BONUSSCHADEN",
+						ability_special: "bonus_damage_pct",
+						text: "BONUSSCHADEN",
 							percentage: true,
 					},
 
 					{
-							ability_special: "damage_reduction",
-							text: "SCHADENRESISTENZ",
+						ability_special: "damage_reduction",
+						text: "SCHADENRESISTENZ",
 							percentage: true,
 					},
 
 					{
-							ability_special: "mana_regen_sec",
-							text: "BONUSMANAREGENERATION",
+						ability_special: "mana_regen_sec",
+						text: "BONUSMANAREGENERATION",
 					},
 
 					{
-							ability_special: "hp_regen_sec",
-							text: "BONUSLEBENSREGENERATION",
+						ability_special: "hp_regen_sec",
+						text: "BONUSLEBENSREGENERATION",
 					},
 
 				]
@@ -11080,30 +11080,30 @@ export function GenerateLocalizationData(): LocalizationData
 				ability_specials_override:
 				[
 					{
-							ability_special: "bonus_all_stats",
-							text: "УВЕЛИЧЕНИЕ ВСЕХ АТРИБУТОВ",
+						ability_special: "bonus_all_stats",
+						text: "УВЕЛИЧЕНИЕ ВСЕХ АТРИБУТОВ",
 					},
 
 					{
-							ability_special: "bonus_damage_pct",
-							text: "ДОПОЛНИТЕЛЬНЫЙ УРОН",
+						ability_special: "bonus_damage_pct",
+						text: "ДОПОЛНИТЕЛЬНЫЙ УРОН",
 							percentage: true,
 					},
 
 					{
-							ability_special: "damage_reduction",
-							text: "СНИЖЕНИЕ ПОЛУЧАЕМОГО УРОНА",
+						ability_special: "damage_reduction",
+						text: "СНИЖЕНИЕ ПОЛУЧАЕМОГО УРОНА",
 							percentage: true,
 					},
 
 					{
-							ability_special: "mana_regen_sec",
-							text: "ДОП. ВОССТАНОВЛЕНИЕ МАНЫ",
+						ability_special: "mana_regen_sec",
+						text: "ДОП. ВОССТАНОВЛЕНИЕ МАНЫ",
 					},
 
 					{
-							ability_special: "hp_regen_sec",
-							text: "ДОП. ВОССТАНОВЛЕНИЕ ЗДОРОВЬЯ",
+						ability_special: "hp_regen_sec",
+						text: "ДОП. ВОССТАНОВЛЕНИЕ ЗДОРОВЬЯ",
 					},
 
 				]
@@ -11116,30 +11116,30 @@ export function GenerateLocalizationData(): LocalizationData
 				ability_specials_override:
 				[
 					{
-							ability_special: "bonus_all_stats",
-							text: "全属性加成：",
+						ability_special: "bonus_all_stats",
+						text: "全属性加成：",
 					},
 
 					{
-							ability_special: "bonus_damage_pct",
-							text: "攻击力加成",
+						ability_special: "bonus_damage_pct",
+						text: "攻击力加成",
 							percentage: true,
 					},
 
 					{
-							ability_special: "damage_reduction",
-							text: "受到伤害降低",
+						ability_special: "damage_reduction",
+						text: "受到伤害降低",
 							percentage: true,
 					},
 
 					{
-							ability_special: "mana_regen_sec",
-							text: "额外魔法恢复：",
+						ability_special: "mana_regen_sec",
+						text: "额外魔法恢复：",
 					},
 
 					{
-							ability_special: "hp_regen_sec",
-							text: "额外生命恢复：",
+						ability_special: "hp_regen_sec",
+						text: "额外生命恢复：",
 					},
 
 				]
@@ -11177,13 +11177,13 @@ export function GenerateLocalizationData(): LocalizationData
 				ability_specials_override:
 				[
 					{
-							ability_special: "bonus_armor",
-							text: "BONUSRÜSTUNG",
+						ability_special: "bonus_armor",
+						text: "BONUSRÜSTUNG",
 					},
 
 					{
-							ability_special: "magic_resistance",
-							text: "BONUSMAGIERESISTENZ",
+						ability_special: "magic_resistance",
+						text: "BONUSMAGIERESISTENZ",
 							percentage: true,
 					},
 
@@ -11198,13 +11198,13 @@ export function GenerateLocalizationData(): LocalizationData
 				ability_specials_override:
 				[
 					{
-							ability_special: "bonus_armor",
-							text: "ДОП. БРОНЯ",
+						ability_special: "bonus_armor",
+						text: "ДОП. БРОНЯ",
 					},
 
 					{
-							ability_special: "magic_resistance",
-							text: "ДОП. СОПРОТИВЛЕНИЕ МАГИИ",
+						ability_special: "magic_resistance",
+						text: "ДОП. СОПРОТИВЛЕНИЕ МАГИИ",
 							percentage: true,
 					},
 
@@ -11219,13 +11219,13 @@ export function GenerateLocalizationData(): LocalizationData
 				ability_specials_override:
 				[
 					{
-							ability_special: "bonus_armor",
-							text: "护甲加成：",
+						ability_special: "bonus_armor",
+						text: "护甲加成：",
 					},
 
 					{
-							ability_special: "magic_resistance",
-							text: "魔法抗性加成",
+						ability_special: "magic_resistance",
+						text: "魔法抗性加成",
 							percentage: true,
 					},
 
@@ -11238,7 +11238,7 @@ export function GenerateLocalizationData(): LocalizationData
 	Abilities.push({
 		ability_classname: "item_watchers_gaze",
 		name: "Watcher's Gaze",
-		description: "<h1>Active: Stone Gaze</h1>Enemies within your frontal cone are turned to stone and take additional physical damage.\n",
+		description: "<h1>Active: Stone Gaze</h1>Enemies within your frontal cone are turned to stone and take additional physical damage.\\n",
 		lore: "Look upon thine enemies and see them petrify before you.",
 		ability_specials:
 		[
@@ -11253,13 +11253,13 @@ export function GenerateLocalizationData(): LocalizationData
 			{
 				language: Language.German,
 				name_override: "Blick des Wächters",
-				description_override: "<h1>Aktiv: Versteinernder Blick</h1>Gegner in Ihrem Sichtfeld werden zu Stein und erleiden so zusätzlichen physischen Schaden.\n",
+				description_override: "<h1>Aktiv: Versteinernder Blick</h1>Gegner in Ihrem Sichtfeld werden zu Stein und erleiden so zusätzlichen physischen Schaden.\\n",
 				lore_override: "Schaut in eure Gegner und seht, wie sie vor euch zu Stein werden.",
 				ability_specials_override:
 				[
 					{
-							ability_special: "bonus_stats",
-							text: "BONUS AUF ALLE ATTRIBUTE",
+						ability_special: "bonus_stats",
+						text: "BONUS AUF ALLE ATTRIBUTE",
 					},
 
 				]
@@ -11268,13 +11268,13 @@ export function GenerateLocalizationData(): LocalizationData
 			{
 				language: Language.Russian,
 				name_override: "Watcher's Gaze",
-				description_override: "<h1>Активная: Stone Gaze</h1>Враги перед героем обращаются в камень и получают дополнительный физический урон.\n",
+				description_override: "<h1>Активная: Stone Gaze</h1>Враги перед героем обращаются в камень и получают дополнительный физический урон.\\n",
 				lore_override: "Взгляни же на врагов своих; вот они обращаются в камень.",
 				ability_specials_override:
 				[
 					{
-							ability_special: "bonus_stats",
-							text: "УВЕЛИЧЕНИЕ ВСЕХ АТРИБУТОВ",
+						ability_special: "bonus_stats",
+						text: "УВЕЛИЧЕНИЕ ВСЕХ АТРИБУТОВ",
 					},
 
 				]
@@ -11283,13 +11283,13 @@ export function GenerateLocalizationData(): LocalizationData
 			{
 				language: Language.SChinese,
 				name_override: "守卫之眼",
-				description_override: "<h1>主动：石化凝视</h1>前方锥形区域内的敌人将变成石头，并承受额外的物理伤害。\n",
+				description_override: "<h1>主动：石化凝视</h1>前方锥形区域内的敌人将变成石头，并承受额外的物理伤害。\\n",
 				lore_override: "看着你的敌人，亲见他们在你面前石化。",
 				ability_specials_override:
 				[
 					{
-							ability_special: "bonus_stats",
-							text: "全属性加成：",
+						ability_special: "bonus_stats",
+						text: "全属性加成：",
 					},
 
 				]
@@ -11301,7 +11301,7 @@ export function GenerateLocalizationData(): LocalizationData
 	Abilities.push({
 		ability_classname: "item_carapace_of_qaldin",
 		name: "Carapace of Qaldin",
-		description: "<h1>Passive: Acidic Regeneration</h1>All mana and health gained are doubled, and a percentage of all damage taken is reflected back upon the attacker.\n",
+		description: "<h1>Passive: Acidic Regeneration</h1>All mana and health gained are doubled, and a percentage of all damage taken is reflected back upon the attacker.\\n",
 		lore: "Let them attack you, for each blow comes at a blood price.",
 		ability_specials:
 		[
@@ -11333,29 +11333,29 @@ export function GenerateLocalizationData(): LocalizationData
 			{
 				language: Language.German,
 				name_override: "Qaldins Panzer",
-				description_override: "<h1>Passiv: Saure Regeneration</h1> Jegliche Mana- und Lebensregeneration wird verdoppelt und ein Prozentsatz des erlittenen Schadens wird auf den Angreifer reflektiert.\n",
+				description_override: "<h1>Passiv: Saure Regeneration</h1> Jegliche Mana- und Lebensregeneration wird verdoppelt und ein Prozentsatz des erlittenen Schadens wird auf den Angreifer reflektiert.\\n",
 				lore_override: "Lasst sie euch angreifen, da jeder Treffer mit einem Blutzoll bezahlt wird.",
 				ability_specials_override:
 				[
 					{
-							ability_special: "bonus_hp",
-							text: "BONUS-LP",
+						ability_special: "bonus_hp",
+						text: "BONUS-LP",
 					},
 
 					{
-							ability_special: "bonus_mana",
-							text: "BONUSMANA",
+						ability_special: "bonus_mana",
+						text: "BONUSMANA",
 					},
 
 					{
-							ability_special: "bonus_restore_pct",
-							text: "BONUSWIEDERHERSTELLUNG",
+						ability_special: "bonus_restore_pct",
+						text: "BONUSWIEDERHERSTELLUNG",
 							percentage: true,
 					},
 
 					{
-							ability_special: "damage_return_pct",
-							text: "ZURÜCKGEWORFENER SCHADEN",
+						ability_special: "damage_return_pct",
+						text: "ZURÜCKGEWORFENER SCHADEN",
 							percentage: true,
 					},
 
@@ -11365,29 +11365,29 @@ export function GenerateLocalizationData(): LocalizationData
 			{
 				language: Language.Russian,
 				name_override: "Carapace of Qaldin",
-				description_override: "<h1>Пассивная: Acidic Regeneration</h1>Восстановление здоровья и маны увеличено вдвое, а часть получаемого урона отражается в нападающего.\n",
+				description_override: "<h1>Пассивная: Acidic Regeneration</h1>Восстановление здоровья и маны увеличено вдвое, а часть получаемого урона отражается в нападающего.\\n",
 				lore_override: "Откройся их ударам, ибо за каждый из них они заплатят своей кровью.",
 				ability_specials_override:
 				[
 					{
-							ability_special: "bonus_hp",
-							text: "ДОП. ЗДОРОВЬЕ",
+						ability_special: "bonus_hp",
+						text: "ДОП. ЗДОРОВЬЕ",
 					},
 
 					{
-							ability_special: "bonus_mana",
-							text: "ДОП. МАНА",
+						ability_special: "bonus_mana",
+						text: "ДОП. МАНА",
 					},
 
 					{
-							ability_special: "bonus_restore_pct",
-							text: "ДОП. ВОССТАНОВЛЕНИЕ",
+						ability_special: "bonus_restore_pct",
+						text: "ДОП. ВОССТАНОВЛЕНИЕ",
 							percentage: true,
 					},
 
 					{
-							ability_special: "damage_return_pct",
-							text: "ОТРАЖЕНИЕ УРОНА",
+						ability_special: "damage_return_pct",
+						text: "ОТРАЖЕНИЕ УРОНА",
 							percentage: true,
 					},
 
@@ -11397,29 +11397,29 @@ export function GenerateLocalizationData(): LocalizationData
 			{
 				language: Language.SChinese,
 				name_override: "卡尔丁甲壳",
-				description_override: "<h1>被动：酸性恢复</h1>所有获得的魔法和生命恢复效果加倍，而且所有受到的伤害会有一部分反弹给攻击者。\n",
+				description_override: "<h1>被动：酸性恢复</h1>所有获得的魔法和生命恢复效果加倍，而且所有受到的伤害会有一部分反弹给攻击者。\\n",
 				lore_override: "让他们攻击，每次都会有鲜血的代价。",
 				ability_specials_override:
 				[
 					{
-							ability_special: "bonus_hp",
-							text: "生命加成：",
+						ability_special: "bonus_hp",
+						text: "生命加成：",
 					},
 
 					{
-							ability_special: "bonus_mana",
-							text: "额外魔法：",
+						ability_special: "bonus_mana",
+						text: "额外魔法：",
 					},
 
 					{
-							ability_special: "bonus_restore_pct",
-							text: "额外回复",
+						ability_special: "bonus_restore_pct",
+						text: "额外回复",
 							percentage: true,
 					},
 
 					{
-							ability_special: "damage_return_pct",
-							text: "反弹伤害",
+						ability_special: "damage_return_pct",
+						text: "反弹伤害",
 							percentage: true,
 					},
 
@@ -11432,7 +11432,7 @@ export function GenerateLocalizationData(): LocalizationData
 	Abilities.push({
 		ability_classname: "item_the_caustic_finale",
 		name: "The Caustic Finale",
-		description: "<h1>Passive: Caustic Finale</h1>Attacks reduce a percentage of the target's armor.  This effect stacks up to ${max_stack_count} times.  If the target dies under this effect, it explodes, dealing damage in an area of effect.\n",
+		description: "<h1>Passive: Caustic Finale</h1>Attacks reduce a percentage of the target's armor.  This effect stacks up to ${max_stack_count} times.  If the target dies under this effect, it explodes, dealing damage in an area of effect.\\n",
 		lore: "The caustic gift is always paid forward.",
 		ability_specials:
 		[
@@ -11473,39 +11473,39 @@ export function GenerateLocalizationData(): LocalizationData
 			{
 				language: Language.German,
 				name_override: "Ätzendes Finale",
-				description_override: "<h1>Passiv: Ätzendes Finale</h1>Angriffe reduzieren die Rüstung des Ziels prozentual. Dieser Effekt summiert sich bis zu ${max_stack_count}-mal auf. Wenn eine betroffene Einheit stirbt, explodiert sie und verursacht Flächenschaden.\n",
+				description_override: "<h1>Passiv: Ätzendes Finale</h1>Angriffe reduzieren die Rüstung des Ziels prozentual. Dieser Effekt summiert sich bis zu ${max_stack_count}-mal auf. Wenn eine betroffene Einheit stirbt, explodiert sie und verursacht Flächenschaden.\\n",
 				lore_override: "Das Geschenk der Kali wird immer im Voraus bezahlt.",
 				ability_specials_override:
 				[
 					{
-							ability_special: "bonus_damage",
-							text: "BONUSSCHADEN",
+						ability_special: "bonus_damage",
+						text: "BONUSSCHADEN",
 					},
 
 					{
-							ability_special: "bonus_attack_speed",
-							text: "BONUSANGRIFFSTEMPO",
+						ability_special: "bonus_attack_speed",
+						text: "BONUSANGRIFFSTEMPO",
 					},
 
 					{
-							ability_special: "caustic_armor_reduction_pct",
-							text: "RÜSTUNGSREDUZIERUNG PRO INSTANZ",
+						ability_special: "caustic_armor_reduction_pct",
+						text: "RÜSTUNGSREDUZIERUNG PRO INSTANZ",
 							percentage: true,
 					},
 
 					{
-							ability_special: "caustic_radius",
-							text: "CAUSTIC-RADIUS",
+						ability_special: "caustic_radius",
+						text: "CAUSTIC-RADIUS",
 					},
 
 					{
-							ability_special: "caustic_damage",
-							text: "CAUSTIC-SCHADEN",
+						ability_special: "caustic_damage",
+						text: "CAUSTIC-SCHADEN",
 					},
 
 					{
-							ability_special: "max_stack_count",
-							text: "MAX. ANZAHL",
+						ability_special: "max_stack_count",
+						text: "MAX. ANZAHL",
 					},
 
 				]
@@ -11514,39 +11514,39 @@ export function GenerateLocalizationData(): LocalizationData
 			{
 				language: Language.Russian,
 				name_override: "The Caustic Finale",
-				description_override: "<h1>Пассивная: Caustic Finale</h1>Атаки уменьшают броню цели; эффект от атак суммируется до ${max_stack_count} раз. Если цель умрёт под действием этой способности, в области вокруг неё нанесётся урон.\n",
+				description_override: "<h1>Пассивная: Caustic Finale</h1>Атаки уменьшают броню цели; эффект от атак суммируется до ${max_stack_count} раз. Если цель умрёт под действием этой способности, в области вокруг неё нанесётся урон.\\n",
 				lore_override: "Предсмертный дар отклонять не стоит.",
 				ability_specials_override:
 				[
 					{
-							ability_special: "bonus_damage",
-							text: "ДОПОЛНИТЕЛЬНЫЙ УРОН",
+						ability_special: "bonus_damage",
+						text: "ДОПОЛНИТЕЛЬНЫЙ УРОН",
 					},
 
 					{
-							ability_special: "bonus_attack_speed",
-							text: "ДОП. СКОРОСТЬ АТАКИ",
+						ability_special: "bonus_attack_speed",
+						text: "ДОП. СКОРОСТЬ АТАКИ",
 					},
 
 					{
-							ability_special: "caustic_armor_reduction_pct",
-							text: "УМЕНЬШЕНИЕ БРОНИ ЗА ЭФФЕКТ",
+						ability_special: "caustic_armor_reduction_pct",
+						text: "УМЕНЬШЕНИЕ БРОНИ ЗА ЭФФЕКТ",
 							percentage: true,
 					},
 
 					{
-							ability_special: "caustic_radius",
-							text: "РАДИУС УРОНА ПРИ СМЕРТИ ЦЕЛИ",
+						ability_special: "caustic_radius",
+						text: "РАДИУС УРОНА ПРИ СМЕРТИ ЦЕЛИ",
 					},
 
 					{
-							ability_special: "caustic_damage",
-							text: "УРОН ПРИ СМЕРТИ ЦЕЛИ",
+						ability_special: "caustic_damage",
+						text: "УРОН ПРИ СМЕРТИ ЦЕЛИ",
 					},
 
 					{
-							ability_special: "max_stack_count",
-							text: "МАКС. ЧИСЛО ЭФФЕКТОВ",
+						ability_special: "max_stack_count",
+						text: "МАКС. ЧИСЛО ЭФФЕКТОВ",
 					},
 
 				]
@@ -11555,39 +11555,39 @@ export function GenerateLocalizationData(): LocalizationData
 			{
 				language: Language.SChinese,
 				name_override: "腐蚀剧毒",
-				description_override: "<h1>被动：腐蚀毒素</h1>普通攻击会降低目标一定百分比的护甲。效果可以叠加至${max_stack_count}次。如果目标在这个效果下死亡将会爆炸，对范围内敌人造成伤害。\n",
+				description_override: "<h1>被动：腐蚀毒素</h1>普通攻击会降低目标一定百分比的护甲。效果可以叠加至${max_stack_count}次。如果目标在这个效果下死亡将会爆炸，对范围内敌人造成伤害。\\n",
 				lore_override: "腐蚀的天赋总是能被重用。",
 				ability_specials_override:
 				[
 					{
-							ability_special: "bonus_damage",
-							text: "攻击力加成：",
+						ability_special: "bonus_damage",
+						text: "攻击力加成：",
 					},
 
 					{
-							ability_special: "bonus_attack_speed",
-							text: "攻击速度提升：",
+						ability_special: "bonus_attack_speed",
+						text: "攻击速度提升：",
 					},
 
 					{
-							ability_special: "caustic_armor_reduction_pct",
-							text: "每次叠加削弱护甲",
+						ability_special: "caustic_armor_reduction_pct",
+						text: "每次叠加削弱护甲",
 							percentage: true,
 					},
 
 					{
-							ability_special: "caustic_radius",
-							text: "剧毒作用范围：",
+						ability_special: "caustic_radius",
+						text: "剧毒作用范围：",
 					},
 
 					{
-							ability_special: "caustic_damage",
-							text: "剧毒伤害：",
+						ability_special: "caustic_damage",
+						text: "剧毒伤害：",
 					},
 
 					{
-							ability_special: "max_stack_count",
-							text: "最大叠加次数：",
+						ability_special: "max_stack_count",
+						text: "最大叠加次数：",
 					},
 
 				]
@@ -11599,7 +11599,7 @@ export function GenerateLocalizationData(): LocalizationData
 	Abilities.push({
 		ability_classname: "item_winter_embrace",
 		name: "Winter's Embrace",
-		description: "<h1>Passive: Icy Shell</h1>Physical attackers have their attack speed and movement speed slowed for ${slow_duration} seconds.\n",
+		description: "<h1>Passive: Icy Shell</h1>Physical attackers have their attack speed and movement speed slowed for ${slow_duration} seconds.\\n",
 		lore: "Who's the number one now?",
 		ability_specials:
 		[
@@ -11619,18 +11619,18 @@ export function GenerateLocalizationData(): LocalizationData
 			{
 				language: Language.German,
 				name_override: "Umarmung des Winters",
-				description_override: "<h1>Passiv: Eisige Schale</h1>Physischer Schaden bewirkt beim Angreifer eine Verringerung des Angriffs- und Bewegungstempos für ${slow_duration} Sekunden.\n",
+				description_override: "<h1>Passiv: Eisige Schale</h1>Physischer Schaden bewirkt beim Angreifer eine Verringerung des Angriffs- und Bewegungstempos für ${slow_duration} Sekunden.\\n",
 				lore_override: "Wer ist jetzt die Nummer 1?",
 				ability_specials_override:
 				[
 					{
-							ability_special: "bonus_intelligence",
-							text: "BONUSINTELLIGENZ",
+						ability_special: "bonus_intelligence",
+						text: "BONUSINTELLIGENZ",
 					},
 
 					{
-							ability_special: "bonus_armor",
-							text: "BONUSRÜSTUNG",
+						ability_special: "bonus_armor",
+						text: "BONUSRÜSTUNG",
 					},
 
 				]
@@ -11639,18 +11639,18 @@ export function GenerateLocalizationData(): LocalizationData
 			{
 				language: Language.Russian,
 				name_override: "Winter's Embrace",
-				description_override: "<h1>Пассивная: Icy Shell</h1>Скорость атаки и передвижения атаковавших вас врагов уменьшается на ${slow_duration} сек.\n",
+				description_override: "<h1>Пассивная: Icy Shell</h1>Скорость атаки и передвижения атаковавших вас врагов уменьшается на ${slow_duration} сек.\\n",
 				lore_override: "Ну и кто вышел победителем?",
 				ability_specials_override:
 				[
 					{
-							ability_special: "bonus_intelligence",
-							text: "ДОП. ИНТЕЛЛЕКТ",
+						ability_special: "bonus_intelligence",
+						text: "ДОП. ИНТЕЛЛЕКТ",
 					},
 
 					{
-							ability_special: "bonus_armor",
-							text: "ДОП. БРОНЯ",
+						ability_special: "bonus_armor",
+						text: "ДОП. БРОНЯ",
 					},
 
 				]
@@ -11659,18 +11659,18 @@ export function GenerateLocalizationData(): LocalizationData
 			{
 				language: Language.SChinese,
 				name_override: "寒冬之拥",
-				description_override: "<h1>被动：寒冰外壳</h1>受到物理攻击时，攻击者的攻击和移动速度被降低，持续${slow_duration}秒。\n",
+				description_override: "<h1>被动：寒冰外壳</h1>受到物理攻击时，攻击者的攻击和移动速度被降低，持续${slow_duration}秒。\\n",
 				lore_override: "现在是谁麻了？",
 				ability_specials_override:
 				[
 					{
-							ability_special: "bonus_intelligence",
-							text: "智力加成：",
+						ability_special: "bonus_intelligence",
+						text: "智力加成：",
 					},
 
 					{
-							ability_special: "bonus_armor",
-							text: "护甲加成：",
+						ability_special: "bonus_armor",
+						text: "护甲加成：",
 					},
 
 				]
@@ -11682,7 +11682,7 @@ export function GenerateLocalizationData(): LocalizationData
 	Abilities.push({
 		ability_classname: "item_ice_dragon_maw",
 		name: "Ice Dragon Maw",
-		description: "<h1>Passive: Chilling Bite</h1>Your attacks have a ${chance_to_freeze}% chance to freeze the target for ${freeze_duration} seconds.\n",
+		description: "<h1>Passive: Chilling Bite</h1>Your attacks have a ${chance_to_freeze}% chance to freeze the target for ${freeze_duration} seconds.\\n",
 		lore: "Here's frost in your eye!",
 		ability_specials:
 		[
@@ -11702,18 +11702,18 @@ export function GenerateLocalizationData(): LocalizationData
 			{
 				language: Language.German,
 				name_override: "Eisdrachenkiefer",
-				description_override: "<h1>Passiv: Eisiger Biss</h1>Angriffe haben eine ${chance_to_freeze}%ige Chance, das Ziel für ${freeze_duration} Sekunden einzufrieren.\n",
+				description_override: "<h1>Passiv: Eisiger Biss</h1>Angriffe haben eine ${chance_to_freeze}%ige Chance, das Ziel für ${freeze_duration} Sekunden einzufrieren.\\n",
 				lore_override: "Da ist Frost in deinen Augen!",
 				ability_specials_override:
 				[
 					{
-							ability_special: "bonus_attack_range",
-							text: "BONUSANGRIFFSREICHWEITE (NUR FERNKAMPF)",
+						ability_special: "bonus_attack_range",
+						text: "BONUSANGRIFFSREICHWEITE (NUR FERNKAMPF)",
 					},
 
 					{
-							ability_special: "bonus_damage",
-							text: "BONUSSCHADEN",
+						ability_special: "bonus_damage",
+						text: "BONUSSCHADEN",
 					},
 
 				]
@@ -11722,18 +11722,18 @@ export function GenerateLocalizationData(): LocalizationData
 			{
 				language: Language.Russian,
 				name_override: "Ice Dragon Maw",
-				description_override: "<h1>Пассивная: Chilling Bite</h1>Ваши атаки с вероятностью в ${chance_to_freeze}% могут заморозить цель на ${freeze_duration} сек.\n",
+				description_override: "<h1>Пассивная: Chilling Bite</h1>Ваши атаки с вероятностью в ${chance_to_freeze}% могут заморозить цель на ${freeze_duration} сек.\\n",
 				lore_override: "Ледяным ветром тебе по морде!",
 				ability_specials_override:
 				[
 					{
-							ability_special: "bonus_attack_range",
-							text: "ДОП. ДАЛЬНОСТЬ АТАКИ (В ДАЛЬНЕМ БОЮ)",
+						ability_special: "bonus_attack_range",
+						text: "ДОП. ДАЛЬНОСТЬ АТАКИ (В ДАЛЬНЕМ БОЮ)",
 					},
 
 					{
-							ability_special: "bonus_damage",
-							text: "ДОПОЛНИТЕЛЬНЫЙ УРОН",
+						ability_special: "bonus_damage",
+						text: "ДОПОЛНИТЕЛЬНЫЙ УРОН",
 					},
 
 				]
@@ -11742,18 +11742,18 @@ export function GenerateLocalizationData(): LocalizationData
 			{
 				language: Language.SChinese,
 				name_override: "冰龙之喉",
-				description_override: "<h1>被动：极寒撕咬</h1>每次攻击有${chance_to_freeze}%几率冻结目标，持续${freeze_duration}秒。\n",
+				description_override: "<h1>被动：极寒撕咬</h1>每次攻击有${chance_to_freeze}%几率冻结目标，持续${freeze_duration}秒。\\n",
 				lore_override: "你的眼里满是冰霜！",
 				ability_specials_override:
 				[
 					{
-							ability_special: "bonus_attack_range",
-							text: "攻击距离加成（仅远程）：",
+						ability_special: "bonus_attack_range",
+						text: "攻击距离加成（仅远程）：",
 					},
 
 					{
-							ability_special: "bonus_damage",
-							text: "攻击力加成：",
+						ability_special: "bonus_damage",
+						text: "攻击力加成：",
 					},
 
 				]
@@ -11765,7 +11765,7 @@ export function GenerateLocalizationData(): LocalizationData
 	Abilities.push({
 		ability_classname: "item_precious_egg",
 		name: "Precious Egg",
-		description: "<h1>Passive: Last Chance</h1>If an attack would deal lethal damage, it has a ${chance_to_resist_death}% chance to leave the wearer at 1 health.\n",
+		description: "<h1>Passive: Last Chance</h1>If an attack would deal lethal damage, it has a ${chance_to_resist_death}% chance to leave the wearer at 1 health.\\n",
 		lore: "Ancient eldwurms, in their search to acquire knowledge, have learned techniques for staving off the loss of life's breath.",
 		ability_specials:
 		[
@@ -11780,13 +11780,13 @@ export function GenerateLocalizationData(): LocalizationData
 			{
 				language: Language.German,
 				name_override: "Kostbares Ei",
-				description_override: "<h1>Passiv: Letzte Chance</h1>Falls ein Angriff tödlichen Schaden verursachen würde, gibt es eine ${chance_to_resist_death}%ige Chance, dass der Träger mit 1 LP überlebt.\n",
+				description_override: "<h1>Passiv: Letzte Chance</h1>Falls ein Angriff tödlichen Schaden verursachen würde, gibt es eine ${chance_to_resist_death}%ige Chance, dass der Träger mit 1 LP überlebt.\\n",
 				lore_override: "Auf ihrer Suche nach neuem Wissen lernten die uralten Eldwürmer Techniken, die das eigene Ableben aufzuschieben vermochten.",
 				ability_specials_override:
 				[
 					{
-							ability_special: "bonus_all_stats",
-							text: "BONUS AUF ALLE ATTRIBUTE",
+						ability_special: "bonus_all_stats",
+						text: "BONUS AUF ALLE ATTRIBUTE",
 					},
 
 				]
@@ -11795,13 +11795,13 @@ export function GenerateLocalizationData(): LocalizationData
 			{
 				language: Language.Russian,
 				name_override: "Precious Egg",
-				description_override: "<h1>Пассивная: Last Chance</h1>Если владельцу нанесут смертельную атаку, он с вероятностью в ${chance_to_resist_death}% выживет с 1 здоровья.\n",
+				description_override: "<h1>Пассивная: Last Chance</h1>Если владельцу нанесут смертельную атаку, он с вероятностью в ${chance_to_resist_death}% выживет с 1 здоровья.\\n",
 				lore_override: "В поисках знаний древние драконы научились оттягивать последний вздох.",
 				ability_specials_override:
 				[
 					{
-							ability_special: "bonus_all_stats",
-							text: "УВЕЛИЧЕНИЕ ВСЕХ АТРИБУТОВ",
+						ability_special: "bonus_all_stats",
+						text: "УВЕЛИЧЕНИЕ ВСЕХ АТРИБУТОВ",
 					},
 
 				]
@@ -11810,13 +11810,13 @@ export function GenerateLocalizationData(): LocalizationData
 			{
 				language: Language.SChinese,
 				name_override: "珍稀龙蛋",
-				description_override: "<h1>被动：最后机会</h1>受到致死伤害时有${chance_to_resist_death}%几率使佩戴者以1点生命生还。\n",
+				description_override: "<h1>被动：最后机会</h1>受到致死伤害时有${chance_to_resist_death}%几率使佩戴者以1点生命生还。\\n",
 				lore_override: "在探索学识的研习之际，古龙掌握了延缓生命之息流失的诀窍。",
 				ability_specials_override:
 				[
 					{
-							ability_special: "bonus_all_stats",
-							text: "全属性加成：",
+						ability_special: "bonus_all_stats",
+						text: "全属性加成：",
 					},
 
 				]
@@ -11828,7 +11828,7 @@ export function GenerateLocalizationData(): LocalizationData
 	Abilities.push({
 		ability_classname: "item_stony_coat",
 		name: "Stony Coat",
-		description: "<h1>Passive: Barrage</h1>When the wearer takes damage, there is a ${boulder_chance}% to retaliate with a thrown boulder, which deals ${boulder_damage} and stuns for ${boulder_stun_duration} seconds.\n",
+		description: "<h1>Passive: Barrage</h1>When the wearer takes damage, there is a ${boulder_chance}% to retaliate with a thrown boulder, which deals ${boulder_damage} and stuns for ${boulder_stun_duration} seconds.\\n",
 		lore: "Just a stone's throw away.",
 		ability_specials:
 		[
@@ -11848,18 +11848,18 @@ export function GenerateLocalizationData(): LocalizationData
 			{
 				language: Language.German,
 				name_override: "Steinerner Mantel",
-				description_override: "<h1>Passiv: Sperrfeuer</h1>Wenn der Träger Schaden erleidet, hat dieser eine ${boulder_chance}%ige Chance, einen Felsbrocken zurückzuschleudern, welcher ${boulder_damage} Schaden verursacht und für ${boulder_stun_duration} Sekunden betäubt.\n",
+				description_override: "<h1>Passiv: Sperrfeuer</h1>Wenn der Träger Schaden erleidet, hat dieser eine ${boulder_chance}%ige Chance, einen Felsbrocken zurückzuschleudern, welcher ${boulder_damage} Schaden verursacht und für ${boulder_stun_duration} Sekunden betäubt.\\n",
 				lore_override: "Nur einen Steinwurf entfernt.",
 				ability_specials_override:
 				[
 					{
-							ability_special: "bonus_strength",
-							text: "BONUSSTÄRKE",
+						ability_special: "bonus_strength",
+						text: "BONUSSTÄRKE",
 					},
 
 					{
-							ability_special: "bonus_armor",
-							text: "BONUSRÜSTUNG",
+						ability_special: "bonus_armor",
+						text: "BONUSRÜSTUNG",
 					},
 
 				]
@@ -11868,18 +11868,18 @@ export function GenerateLocalizationData(): LocalizationData
 			{
 				language: Language.Russian,
 				name_override: "Stony Coat",
-				description_override: "<h1>Пассивная: Barrage</h1>Получив урон, владелец может с вероятностью в ${boulder_chance}% запустить в ответ камень, наносящий ${boulder_damage} урона и оглушающий на ${boulder_stun_duration} сек.\n",
+				description_override: "<h1>Пассивная: Barrage</h1>Получив урон, владелец может с вероятностью в ${boulder_chance}% запустить в ответ камень, наносящий ${boulder_damage} урона и оглушающий на ${boulder_stun_duration} сек.\\n",
 				lore_override: "Камня на камне не оставит.",
 				ability_specials_override:
 				[
 					{
-							ability_special: "bonus_strength",
-							text: "ДОП. СИЛА",
+						ability_special: "bonus_strength",
+						text: "ДОП. СИЛА",
 					},
 
 					{
-							ability_special: "bonus_armor",
-							text: "ДОП. БРОНЯ",
+						ability_special: "bonus_armor",
+						text: "ДОП. БРОНЯ",
 					},
 
 				]
@@ -11888,18 +11888,18 @@ export function GenerateLocalizationData(): LocalizationData
 			{
 				language: Language.SChinese,
 				name_override: "岩石外衣",
-				description_override: "<h1>被动：阻塞</h1>佩戴者受到伤害时有${boulder_chance}%几率反击，扔出一块巨石，造成${boulder_damage}点伤害，并眩晕${boulder_stun_duration}秒。\n",
+				description_override: "<h1>被动：阻塞</h1>佩戴者受到伤害时有${boulder_chance}%几率反击，扔出一块巨石，造成${boulder_damage}点伤害，并眩晕${boulder_stun_duration}秒。\\n",
 				lore_override: "只是一石之遥。",
 				ability_specials_override:
 				[
 					{
-							ability_special: "bonus_strength",
-							text: "力量加成：",
+						ability_special: "bonus_strength",
+						text: "力量加成：",
 					},
 
 					{
-							ability_special: "bonus_armor",
-							text: "护甲加成：",
+						ability_special: "bonus_armor",
+						text: "护甲加成：",
 					},
 
 				]
@@ -11911,7 +11911,7 @@ export function GenerateLocalizationData(): LocalizationData
 	Abilities.push({
 		ability_classname: "item_stonework_pendant",
 		name: "Stonework Pendant",
-		description: "<h1>Passive: Blood From a Stone</h1>Spells now cost hit points equal to ${hp_cost_multiplier} times their mana cost, and the wearer gains bonus hit points and health regen equal to the size of their mana pool and mana regen.\n",
+		description: "<h1>Passive: Blood From a Stone</h1>Spells now cost hit points equal to ${hp_cost_multiplier} times their mana cost, and the wearer gains bonus hit points and health regen equal to the size of their mana pool and mana regen.\\n",
 		lore: "You CAN get blood from a stone.",
 		ability_specials:
 		[
@@ -11927,13 +11927,13 @@ export function GenerateLocalizationData(): LocalizationData
 			{
 				language: Language.German,
 				name_override: "Steinzeugamulett",
-				description_override: "<h1>Passiv: Blutende Steine</h1>Zauber kosten jetzt Lebenspunkte in ${hp_cost_multiplier}-facher Höhe ihrer Manakosten. Der Träger erhält Bonuslebenspunkte und Lebensregeneration in Höhe seines Manavorrats und seiner Manaregeneration.\n",
+				description_override: "<h1>Passiv: Blutende Steine</h1>Zauber kosten jetzt Lebenspunkte in ${hp_cost_multiplier}-facher Höhe ihrer Manakosten. Der Träger erhält Bonuslebenspunkte und Lebensregeneration in Höhe seines Manavorrats und seiner Manaregeneration.\\n",
 				lore_override: "Auch Steine können bluten.",
 				ability_specials_override:
 				[
 					{
-							ability_special: "spell_lifesteal",
-							text: "ZAUBERLEBENSRAUB",
+						ability_special: "spell_lifesteal",
+						text: "ZAUBERLEBENSRAUB",
 							percentage: true,
 					},
 
@@ -11943,13 +11943,13 @@ export function GenerateLocalizationData(): LocalizationData
 			{
 				language: Language.Russian,
 				name_override: "Stonework Pendant",
-				description_override: "<h1>Пассивная: Blood From a Stone</h1>Вместо маны заклинания расходуют здоровье — в ${hp_cost_multiplier} раза больше, чем ману. Также увеличивает запас и восстановление здоровья в соответствии с запасом и восстановлением маны.\n",
+				description_override: "<h1>Пассивная: Blood From a Stone</h1>Вместо маны заклинания расходуют здоровье — в ${hp_cost_multiplier} раза больше, чем ману. Также увеличивает запас и восстановление здоровья в соответствии с запасом и восстановлением маны.\\n",
 				lore_override: "Камни тоже кровоточат.",
 				ability_specials_override:
 				[
 					{
-							ability_special: "spell_lifesteal",
-							text: "ВАМПИРИЗМ ЗАКЛИНАНИЯМИ",
+						ability_special: "spell_lifesteal",
+						text: "ВАМПИРИЗМ ЗАКЛИНАНИЯМИ",
 							percentage: true,
 					},
 
@@ -11959,13 +11959,13 @@ export function GenerateLocalizationData(): LocalizationData
 			{
 				language: Language.SChinese,
 				name_override: "石制坠饰",
-				description_override: "<h1>被动：石头里还是能榨出血的。</h1>现在施放技能时消耗生命，数值为所需魔法的${hp_cost_multiplier}倍，并且佩戴者获得额外的生命值和生命恢复，数值分别等于魔法值和魔法恢复。\n",
+				description_override: "<h1>被动：石头里还是能榨出血的。</h1>现在施放技能时消耗生命，数值为所需魔法的${hp_cost_multiplier}倍，并且佩戴者获得额外的生命值和生命恢复，数值分别等于魔法值和魔法恢复。\\n",
 				lore_override: "石头里还是能榨出血的。",
 				ability_specials_override:
 				[
 					{
-							ability_special: "spell_lifesteal",
-							text: "技能吸血",
+						ability_special: "spell_lifesteal",
+						text: "技能吸血",
 							percentage: true,
 					},
 
@@ -12011,23 +12011,23 @@ export function GenerateLocalizationData(): LocalizationData
 				ability_specials_override:
 				[
 					{
-							ability_special: "bonus_movement_speed",
-							text: "BONUSBEWEGUNGSTEMPO",
+						ability_special: "bonus_movement_speed",
+						text: "BONUSBEWEGUNGSTEMPO",
 					},
 
 					{
-							ability_special: "bonus_all_stats",
-							text: "BONUS AUF ALLE ATTRIBUTE",
+						ability_special: "bonus_all_stats",
+						text: "BONUS AUF ALLE ATTRIBUTE",
 					},
 
 					{
-							ability_special: "bonus_hp_regen",
-							text: "BONUSLEBENSREGENERATION",
+						ability_special: "bonus_hp_regen",
+						text: "BONUSLEBENSREGENERATION",
 					},
 
 					{
-							ability_special: "damage_block",
-							text: "SCHADENBLOCK",
+						ability_special: "damage_block",
+						text: "SCHADENBLOCK",
 					},
 
 				]
@@ -12040,23 +12040,23 @@ export function GenerateLocalizationData(): LocalizationData
 				ability_specials_override:
 				[
 					{
-							ability_special: "bonus_movement_speed",
-							text: "ДОП. СКОРОСТЬ ПЕРЕДВИЖЕНИЯ",
+						ability_special: "bonus_movement_speed",
+						text: "ДОП. СКОРОСТЬ ПЕРЕДВИЖЕНИЯ",
 					},
 
 					{
-							ability_special: "bonus_all_stats",
-							text: "УВЕЛИЧЕНИЕ ВСЕХ АТРИБУТОВ",
+						ability_special: "bonus_all_stats",
+						text: "УВЕЛИЧЕНИЕ ВСЕХ АТРИБУТОВ",
 					},
 
 					{
-							ability_special: "bonus_hp_regen",
-							text: "ДОП. ВОССТАНОВЛЕНИЕ ЗДОРОВЬЯ",
+						ability_special: "bonus_hp_regen",
+						text: "ДОП. ВОССТАНОВЛЕНИЕ ЗДОРОВЬЯ",
 					},
 
 					{
-							ability_special: "damage_block",
-							text: "БЛОК УРОНА",
+						ability_special: "damage_block",
+						text: "БЛОК УРОНА",
 					},
 
 				]
@@ -12069,23 +12069,23 @@ export function GenerateLocalizationData(): LocalizationData
 				ability_specials_override:
 				[
 					{
-							ability_special: "bonus_movement_speed",
-							text: "移动速度加成：",
+						ability_special: "bonus_movement_speed",
+						text: "移动速度加成：",
 					},
 
 					{
-							ability_special: "bonus_all_stats",
-							text: "全属性加成：",
+						ability_special: "bonus_all_stats",
+						text: "全属性加成：",
 					},
 
 					{
-							ability_special: "bonus_hp_regen",
-							text: "额外生命恢复：",
+						ability_special: "bonus_hp_regen",
+						text: "额外生命恢复：",
 					},
 
 					{
-							ability_special: "damage_block",
-							text: "伤害格挡：",
+						ability_special: "damage_block",
+						text: "伤害格挡：",
 					},
 
 				]
@@ -12125,14 +12125,14 @@ export function GenerateLocalizationData(): LocalizationData
 				ability_specials_override:
 				[
 					{
-							ability_special: "bonus_intelligence",
-							text: "+$int",
+						ability_special: "bonus_intelligence",
+						text: "+$int",
 							item_stat: true,
 					},
 
 					{
-							ability_special: "bonus_mana_regen_pct",
-							text: "+$mana_rege",
+						ability_special: "bonus_mana_regen_pct",
+						text: "+$mana_rege",
 							percentage: true,
 							item_stat: true,
 					},
@@ -12148,14 +12148,14 @@ export function GenerateLocalizationData(): LocalizationData
 				ability_specials_override:
 				[
 					{
-							ability_special: "bonus_intelligence",
-							text: "+$int",
+						ability_special: "bonus_intelligence",
+						text: "+$int",
 							item_stat: true,
 					},
 
 					{
-							ability_special: "bonus_mana_regen_pct",
-							text: "+$mana_rege",
+						ability_special: "bonus_mana_regen_pct",
+						text: "+$mana_rege",
 							percentage: true,
 							item_stat: true,
 					},
@@ -12171,14 +12171,14 @@ export function GenerateLocalizationData(): LocalizationData
 				ability_specials_override:
 				[
 					{
-							ability_special: "bonus_intelligence",
-							text: "+$int",
+						ability_special: "bonus_intelligence",
+						text: "+$int",
 							item_stat: true,
 					},
 
 					{
-							ability_special: "bonus_mana_regen_pct",
-							text: "+$mana_rege",
+						ability_special: "bonus_mana_regen_pct",
+						text: "+$mana_rege",
 							percentage: true,
 							item_stat: true,
 					},
@@ -12229,24 +12229,24 @@ export function GenerateLocalizationData(): LocalizationData
 				ability_specials_override:
 				[
 					{
-							ability_special: "bonus_movement_speed",
-							text: "BONUSBEWEGUNGSTEMPO",
+						ability_special: "bonus_movement_speed",
+						text: "BONUSBEWEGUNGSTEMPO",
 					},
 
 					{
-							ability_special: "bonus_atk_speed",
-							text: "BONUSANGRIFFSTEMPO",
+						ability_special: "bonus_atk_speed",
+						text: "BONUSANGRIFFSTEMPO",
 					},
 
 					{
-							ability_special: "bonus_strength",
-							text: "+$str",
+						ability_special: "bonus_strength",
+						text: "+$str",
 							item_stat: true,
 					},
 
 					{
-							ability_special: "bonus_agility",
-							text: "+$agi",
+						ability_special: "bonus_agility",
+						text: "+$agi",
 							item_stat: true,
 					},
 
@@ -12261,24 +12261,24 @@ export function GenerateLocalizationData(): LocalizationData
 				ability_specials_override:
 				[
 					{
-							ability_special: "bonus_movement_speed",
-							text: "ДОП. СКОРОСТЬ ПЕРЕДВИЖЕНИЯ",
+						ability_special: "bonus_movement_speed",
+						text: "ДОП. СКОРОСТЬ ПЕРЕДВИЖЕНИЯ",
 					},
 
 					{
-							ability_special: "bonus_atk_speed",
-							text: "ДОП. СКОРОСТЬ АТАКИ",
+						ability_special: "bonus_atk_speed",
+						text: "ДОП. СКОРОСТЬ АТАКИ",
 					},
 
 					{
-							ability_special: "bonus_strength",
-							text: "+$str",
+						ability_special: "bonus_strength",
+						text: "+$str",
 							item_stat: true,
 					},
 
 					{
-							ability_special: "bonus_agility",
-							text: "+$agi",
+						ability_special: "bonus_agility",
+						text: "+$agi",
 							item_stat: true,
 					},
 
@@ -12293,24 +12293,24 @@ export function GenerateLocalizationData(): LocalizationData
 				ability_specials_override:
 				[
 					{
-							ability_special: "bonus_movement_speed",
-							text: "移动速度加成：",
+						ability_special: "bonus_movement_speed",
+						text: "移动速度加成：",
 					},
 
 					{
-							ability_special: "bonus_atk_speed",
-							text: "攻击速度加成：",
+						ability_special: "bonus_atk_speed",
+						text: "攻击速度加成：",
 					},
 
 					{
-							ability_special: "bonus_strength",
-							text: "+$str",
+						ability_special: "bonus_strength",
+						text: "+$str",
 							item_stat: true,
 					},
 
 					{
-							ability_special: "bonus_agility",
-							text: "+$agi",
+						ability_special: "bonus_agility",
+						text: "+$agi",
 							item_stat: true,
 					},
 
@@ -12366,31 +12366,31 @@ export function GenerateLocalizationData(): LocalizationData
 				ability_specials_override:
 				[
 					{
-							ability_special: "bonus_strength",
-							text: "+$str",
+						ability_special: "bonus_strength",
+						text: "+$str",
 							item_stat: true,
 					},
 
 					{
-							ability_special: "bonus_agility",
-							text: "+$agi",
+						ability_special: "bonus_agility",
+						text: "+$agi",
 							item_stat: true,
 					},
 
 					{
-							ability_special: "bonus_intellect",
-							text: "+$int",
+						ability_special: "bonus_intellect",
+						text: "+$int",
 							item_stat: true,
 					},
 
 					{
-							ability_special: "bonus_armor",
-							text: "BONUSRÜSTUNG",
+						ability_special: "bonus_armor",
+						text: "BONUSRÜSTUNG",
 					},
 
 					{
-							ability_special: "bonus_health_regen",
-							text: "BONUSLEBENSREGENERATION",
+						ability_special: "bonus_health_regen",
+						text: "BONUSLEBENSREGENERATION",
 					},
 
 				]
@@ -12404,31 +12404,31 @@ export function GenerateLocalizationData(): LocalizationData
 				ability_specials_override:
 				[
 					{
-							ability_special: "bonus_strength",
-							text: "+$str",
+						ability_special: "bonus_strength",
+						text: "+$str",
 							item_stat: true,
 					},
 
 					{
-							ability_special: "bonus_agility",
-							text: "+$agi",
+						ability_special: "bonus_agility",
+						text: "+$agi",
 							item_stat: true,
 					},
 
 					{
-							ability_special: "bonus_intellect",
-							text: "+$int",
+						ability_special: "bonus_intellect",
+						text: "+$int",
 							item_stat: true,
 					},
 
 					{
-							ability_special: "bonus_armor",
-							text: "ДОП. БРОНЯ",
+						ability_special: "bonus_armor",
+						text: "ДОП. БРОНЯ",
 					},
 
 					{
-							ability_special: "bonus_health_regen",
-							text: "ДОП. ВОССТАНОВЛЕНИЕ ЗДОРОВЬЯ",
+						ability_special: "bonus_health_regen",
+						text: "ДОП. ВОССТАНОВЛЕНИЕ ЗДОРОВЬЯ",
 					},
 
 				]
@@ -12442,31 +12442,31 @@ export function GenerateLocalizationData(): LocalizationData
 				ability_specials_override:
 				[
 					{
-							ability_special: "bonus_strength",
-							text: "+$str",
+						ability_special: "bonus_strength",
+						text: "+$str",
 							item_stat: true,
 					},
 
 					{
-							ability_special: "bonus_agility",
-							text: "+$agi",
+						ability_special: "bonus_agility",
+						text: "+$agi",
 							item_stat: true,
 					},
 
 					{
-							ability_special: "bonus_intellect",
-							text: "+$int",
+						ability_special: "bonus_intellect",
+						text: "+$int",
 							item_stat: true,
 					},
 
 					{
-							ability_special: "bonus_armor",
-							text: "护甲加成：",
+						ability_special: "bonus_armor",
+						text: "护甲加成：",
 					},
 
 					{
-							ability_special: "bonus_health_regen",
-							text: "生命恢复加成：",
+						ability_special: "bonus_health_regen",
+						text: "生命恢复加成：",
 					},
 
 				]
@@ -12499,8 +12499,8 @@ export function GenerateLocalizationData(): LocalizationData
 				ability_specials_override:
 				[
 					{
-							ability_special: "bonus_damage",
-							text: "+$damage",
+						ability_special: "bonus_damage",
+						text: "+$damage",
 							item_stat: true,
 					},
 
@@ -12515,8 +12515,8 @@ export function GenerateLocalizationData(): LocalizationData
 				ability_specials_override:
 				[
 					{
-							ability_special: "bonus_damage",
-							text: "+$damage",
+						ability_special: "bonus_damage",
+						text: "+$damage",
 							item_stat: true,
 					},
 
@@ -12531,8 +12531,8 @@ export function GenerateLocalizationData(): LocalizationData
 				ability_specials_override:
 				[
 					{
-							ability_special: "bonus_damage",
-							text: "+$damage",
+						ability_special: "bonus_damage",
+						text: "+$damage",
 							item_stat: true,
 					},
 
@@ -12566,8 +12566,8 @@ export function GenerateLocalizationData(): LocalizationData
 				ability_specials_override:
 				[
 					{
-							ability_special: "bonus_intelligence",
-							text: "+$int",
+						ability_special: "bonus_intelligence",
+						text: "+$int",
 							item_stat: true,
 					},
 
@@ -12582,8 +12582,8 @@ export function GenerateLocalizationData(): LocalizationData
 				ability_specials_override:
 				[
 					{
-							ability_special: "bonus_intelligence",
-							text: "+$int",
+						ability_special: "bonus_intelligence",
+						text: "+$int",
 							item_stat: true,
 					},
 
@@ -12598,8 +12598,8 @@ export function GenerateLocalizationData(): LocalizationData
 				ability_specials_override:
 				[
 					{
-							ability_special: "bonus_intelligence",
-							text: "+$int",
+						ability_special: "bonus_intelligence",
+						text: "+$int",
 							item_stat: true,
 					},
 
@@ -12637,13 +12637,13 @@ export function GenerateLocalizationData(): LocalizationData
 				ability_specials_override:
 				[
 					{
-							ability_special: "bonus_strength",
-							text: "BONUSSTÄRKE",
+						ability_special: "bonus_strength",
+						text: "BONUSSTÄRKE",
 					},
 
 					{
-							ability_special: "bonus_hp",
-							text: "BONUS-LP",
+						ability_special: "bonus_hp",
+						text: "BONUS-LP",
 					},
 
 				]
@@ -12657,13 +12657,13 @@ export function GenerateLocalizationData(): LocalizationData
 				ability_specials_override:
 				[
 					{
-							ability_special: "bonus_strength",
-							text: "ДОП. СИЛА",
+						ability_special: "bonus_strength",
+						text: "ДОП. СИЛА",
 					},
 
 					{
-							ability_special: "bonus_hp",
-							text: "ДОП. ЗДОРОВЬЕ",
+						ability_special: "bonus_hp",
+						text: "ДОП. ЗДОРОВЬЕ",
 					},
 
 				]
@@ -12677,13 +12677,13 @@ export function GenerateLocalizationData(): LocalizationData
 				ability_specials_override:
 				[
 					{
-							ability_special: "bonus_strength",
-							text: "力量加成：",
+						ability_special: "bonus_strength",
+						text: "力量加成：",
 					},
 
 					{
-							ability_special: "bonus_hp",
-							text: "生命加成：",
+						ability_special: "bonus_hp",
+						text: "生命加成：",
 					},
 
 				]
@@ -12715,8 +12715,8 @@ export function GenerateLocalizationData(): LocalizationData
 				ability_specials_override:
 				[
 					{
-							ability_special: "bonus_magic_resist",
-							text: "BONUSMAGIERESISTENZ (SELBST)",
+						ability_special: "bonus_magic_resist",
+						text: "BONUSMAGIERESISTENZ (SELBST)",
 					},
 
 				]
@@ -12730,8 +12730,8 @@ export function GenerateLocalizationData(): LocalizationData
 				ability_specials_override:
 				[
 					{
-							ability_special: "bonus_magic_resist",
-							text: "СОПРОТИВЛЕНИЕ МАГИИ У ВЛАДЕЛЬЦА",
+						ability_special: "bonus_magic_resist",
+						text: "СОПРОТИВЛЕНИЕ МАГИИ У ВЛАДЕЛЬЦА",
 							percentage: true,
 					},
 
@@ -12746,8 +12746,8 @@ export function GenerateLocalizationData(): LocalizationData
 				ability_specials_override:
 				[
 					{
-							ability_special: "bonus_magic_resist",
-							text: "自身魔法抗性加成：",
+						ability_special: "bonus_magic_resist",
+						text: "自身魔法抗性加成：",
 					},
 
 				]
@@ -12779,8 +12779,8 @@ export function GenerateLocalizationData(): LocalizationData
 				ability_specials_override:
 				[
 					{
-							ability_special: "hp_regen",
-							text: "LP-REGENERATION",
+						ability_special: "hp_regen",
+						text: "LP-REGENERATION",
 					},
 
 				]
@@ -12794,8 +12794,8 @@ export function GenerateLocalizationData(): LocalizationData
 				ability_specials_override:
 				[
 					{
-							ability_special: "hp_regen",
-							text: "ВОССТАНОВЛЕНИЕ ЗДОРОВЬЯ",
+						ability_special: "hp_regen",
+						text: "ВОССТАНОВЛЕНИЕ ЗДОРОВЬЯ",
 					},
 
 				]
@@ -12809,8 +12809,8 @@ export function GenerateLocalizationData(): LocalizationData
 				ability_specials_override:
 				[
 					{
-							ability_special: "hp_regen",
-							text: "生命恢复：",
+						ability_special: "hp_regen",
+						text: "生命恢复：",
 					},
 
 				]
@@ -12843,8 +12843,8 @@ export function GenerateLocalizationData(): LocalizationData
 				ability_specials_override:
 				[
 					{
-							ability_special: "bonus_damage",
-							text: "+$damage",
+						ability_special: "bonus_damage",
+						text: "+$damage",
 							item_stat: true,
 					},
 
@@ -12859,8 +12859,8 @@ export function GenerateLocalizationData(): LocalizationData
 				ability_specials_override:
 				[
 					{
-							ability_special: "bonus_damage",
-							text: "+$damage",
+						ability_special: "bonus_damage",
+						text: "+$damage",
 							item_stat: true,
 					},
 
@@ -12875,8 +12875,8 @@ export function GenerateLocalizationData(): LocalizationData
 				ability_specials_override:
 				[
 					{
-							ability_special: "bonus_damage",
-							text: "+$damage",
+						ability_special: "bonus_damage",
+						text: "+$damage",
 							item_stat: true,
 					},
 
@@ -12919,18 +12919,18 @@ export function GenerateLocalizationData(): LocalizationData
 				ability_specials_override:
 				[
 					{
-							ability_special: "bonus_strength",
-							text: "BONUSSTÄRKE",
+						ability_special: "bonus_strength",
+						text: "BONUSSTÄRKE",
 					},
 
 					{
-							ability_special: "bonus_intelligence",
-							text: "BONUSINTELLIGENZ",
+						ability_special: "bonus_intelligence",
+						text: "BONUSINTELLIGENZ",
 					},
 
 					{
-							ability_special: "bonus_agility",
-							text: "BONUSAGILITÄT",
+						ability_special: "bonus_agility",
+						text: "BONUSAGILITÄT",
 					},
 
 				]
@@ -12944,18 +12944,18 @@ export function GenerateLocalizationData(): LocalizationData
 				ability_specials_override:
 				[
 					{
-							ability_special: "bonus_strength",
-							text: "ДОП. СИЛА",
+						ability_special: "bonus_strength",
+						text: "ДОП. СИЛА",
 					},
 
 					{
-							ability_special: "bonus_intelligence",
-							text: "ДОП. ИНТЕЛЛЕКТ",
+						ability_special: "bonus_intelligence",
+						text: "ДОП. ИНТЕЛЛЕКТ",
 					},
 
 					{
-							ability_special: "bonus_agility",
-							text: "ДОП. ЛОВКОСТЬ",
+						ability_special: "bonus_agility",
+						text: "ДОП. ЛОВКОСТЬ",
 					},
 
 				]
@@ -12969,18 +12969,18 @@ export function GenerateLocalizationData(): LocalizationData
 				ability_specials_override:
 				[
 					{
-							ability_special: "bonus_strength",
-							text: "力量加成：",
+						ability_special: "bonus_strength",
+						text: "力量加成：",
 					},
 
 					{
-							ability_special: "bonus_intelligence",
-							text: "智力加成：",
+						ability_special: "bonus_intelligence",
+						text: "智力加成：",
 					},
 
 					{
-							ability_special: "bonus_agility",
-							text: "敏捷加成：",
+						ability_special: "bonus_agility",
+						text: "敏捷加成：",
 					},
 
 				]
@@ -13011,8 +13011,8 @@ export function GenerateLocalizationData(): LocalizationData
 				ability_specials_override:
 				[
 					{
-							ability_special: "bonus_hp",
-							text: "BONUS-LP",
+						ability_special: "bonus_hp",
+						text: "BONUS-LP",
 							percentage: true,
 					},
 
@@ -13026,8 +13026,8 @@ export function GenerateLocalizationData(): LocalizationData
 				ability_specials_override:
 				[
 					{
-							ability_special: "bonus_hp",
-							text: "ДОП. ЗДОРОВЬЕ",
+						ability_special: "bonus_hp",
+						text: "ДОП. ЗДОРОВЬЕ",
 							percentage: true,
 					},
 
@@ -13041,8 +13041,8 @@ export function GenerateLocalizationData(): LocalizationData
 				ability_specials_override:
 				[
 					{
-							ability_special: "bonus_hp",
-							text: "生命加成",
+						ability_special: "bonus_hp",
+						text: "生命加成",
 							percentage: true,
 					},
 
@@ -13073,8 +13073,8 @@ export function GenerateLocalizationData(): LocalizationData
 				ability_specials_override:
 				[
 					{
-							ability_special: "bonus_armor",
-							text: "BONUSRÜSTUNG",
+						ability_special: "bonus_armor",
+						text: "BONUSRÜSTUNG",
 					},
 
 				]
@@ -13087,8 +13087,8 @@ export function GenerateLocalizationData(): LocalizationData
 				ability_specials_override:
 				[
 					{
-							ability_special: "bonus_armor",
-							text: "ДОП. БРОНЯ",
+						ability_special: "bonus_armor",
+						text: "ДОП. БРОНЯ",
 					},
 
 				]
@@ -13101,8 +13101,8 @@ export function GenerateLocalizationData(): LocalizationData
 				ability_specials_override:
 				[
 					{
-							ability_special: "bonus_armor",
-							text: "护甲加成：",
+						ability_special: "bonus_armor",
+						text: "护甲加成：",
 					},
 
 				]
@@ -13132,8 +13132,8 @@ export function GenerateLocalizationData(): LocalizationData
 				ability_specials_override:
 				[
 					{
-							ability_special: "bonus_magical_armor",
-							text: "MAGIERESISTENZ",
+						ability_special: "bonus_magical_armor",
+						text: "MAGIERESISTENZ",
 					},
 
 				]
@@ -13146,8 +13146,8 @@ export function GenerateLocalizationData(): LocalizationData
 				ability_specials_override:
 				[
 					{
-							ability_special: "bonus_magical_armor",
-							text: "СОПРОТИВЛЕНИЕ МАГИИ",
+						ability_special: "bonus_magical_armor",
+						text: "СОПРОТИВЛЕНИЕ МАГИИ",
 					},
 
 				]
@@ -13160,8 +13160,8 @@ export function GenerateLocalizationData(): LocalizationData
 				ability_specials_override:
 				[
 					{
-							ability_special: "bonus_magical_armor",
-							text: "魔法抗性：",
+						ability_special: "bonus_magical_armor",
+						text: "魔法抗性：",
 					},
 
 				]
@@ -13197,14 +13197,14 @@ export function GenerateLocalizationData(): LocalizationData
 				ability_specials_override:
 				[
 					{
-							ability_special: "crit_chance",
-							text: "KRITISCHE TREFFERCHANCE",
+						ability_special: "crit_chance",
+						text: "KRITISCHE TREFFERCHANCE",
 							percentage: true,
 					},
 
 					{
-							ability_special: "crit_multiplier",
-							text: "KRITISCHER SCHADEN",
+						ability_special: "crit_multiplier",
+						text: "KRITISCHER SCHADEN",
 					},
 
 				]
@@ -13217,14 +13217,14 @@ export function GenerateLocalizationData(): LocalizationData
 				ability_specials_override:
 				[
 					{
-							ability_special: "crit_chance",
-							text: "ШАНС КРИТИЧЕСКОЙ АТАКИ",
+						ability_special: "crit_chance",
+						text: "ШАНС КРИТИЧЕСКОЙ АТАКИ",
 							percentage: true,
 					},
 
 					{
-							ability_special: "crit_multiplier",
-							text: "КРИТИЧЕСКИЙ УРОН",
+						ability_special: "crit_multiplier",
+						text: "КРИТИЧЕСКИЙ УРОН",
 							percentage: true,
 					},
 
@@ -13238,14 +13238,14 @@ export function GenerateLocalizationData(): LocalizationData
 				ability_specials_override:
 				[
 					{
-							ability_special: "crit_chance",
-							text: "致命一击概率",
+						ability_special: "crit_chance",
+						text: "致命一击概率",
 							percentage: true,
 					},
 
 					{
-							ability_special: "crit_multiplier",
-							text: "致命一击伤害：",
+						ability_special: "crit_multiplier",
+						text: "致命一击伤害：",
 					},
 
 				]
@@ -16520,31 +16520,31 @@ export function GenerateLocalizationData(): LocalizationData
 	Modifiers.push({
 		modifier_classname: "modifier_aghsfort_firefly_burn",
 		name: "Pyromaniac",
-		description: `You are on fire.`,
+		description: `You are on fire."`,
 		language_overrides:
 		[
 			{
 				language: Language.Brazilian,
 				name_override: "Piromaníaco",
-				description_override: `Você está em chamas.`,
+				description_override: `Você está em chamas."`,
 			},
 
 			{
 				language: Language.German,
 				name_override: "Feuerteufel",
-				description_override: `Sie brennen.`,
+				description_override: `Sie brennen."`,
 			},
 
 			{
 				language: Language.Russian,
 				name_override: "Пироман",
-				description_override: `Вы горите.`,
+				description_override: `Вы горите."`,
 			},
 
 			{
 				language: Language.SChinese,
 				name_override: "纵火狂人",
-				description_override: `你着火了。`,
+				description_override: `你着火了。"`,
 			},
 
 		],
@@ -16553,25 +16553,25 @@ export function GenerateLocalizationData(): LocalizationData
 	Modifiers.push({
 		modifier_classname: "modifier_item_vladmir_aura",
 		name: "Vladmir's Aura",
-		description: `Gaining <font color='#F40000'>{${LocalizationModifierProperty.TOOLTIP}}%</font> lifesteal, as well as {f${LocalizationModifierProperty.MANA_REGEN_CONSTANT}} mana regen, and {${LocalizationModifierProperty.PHYSICAL_ARMOR_BONUS}} armor.`,
+		description: `Gaining <font color='#F40000'>{${LocalizationModifierProperty.TOOLTIP}}%</font> lifesteal, as well as {f${LocalizationModifierProperty.MANA_REGEN_CONSTANT}} mana regen, and {${LocalizationModifierProperty.PHYSICAL_ARMOR_BONUS}} armor."`,
 		language_overrides:
 		[
 			{
 				language: Language.German,
 				name_override: "Vladmirs Aura",
-				description_override: `Erhält <font color='#F40000'>{${LocalizationModifierProperty.TOOLTIP}} %%</font> Lebensraub, %dMODIFIER_PROPERTY_BASEDAMAGEOUTGOING_PERCENTAGE% %% Schaden und {f${LocalizationModifierProperty.MANA_REGEN_CONSTANT}} Manaregeneration.`,
+				description_override: `Erhält <font color='#F40000'>{${LocalizationModifierProperty.TOOLTIP}} %%</font> Lebensraub, %dMODIFIER_PROPERTY_BASEDAMAGEOUTGOING_PERCENTAGE% %% Schaden und {f${LocalizationModifierProperty.MANA_REGEN_CONSTANT}} Manaregeneration."`,
 			},
 
 			{
 				language: Language.Russian,
 				name_override: "Vladmir's Aura",
-				description_override: `Вампиризм увеличен на <font color='#F40000'>{${LocalizationModifierProperty.TOOLTIP}}%</font>. Восстановление маны увеличено на {f${LocalizationModifierProperty.MANA_REGEN_CONSTANT}}. Броня увеличена на {${LocalizationModifierProperty.PHYSICAL_ARMOR_BONUS}}.`,
+				description_override: `Вампиризм увеличен на <font color='#F40000'>{${LocalizationModifierProperty.TOOLTIP}}%</font>. Восстановление маны увеличено на {f${LocalizationModifierProperty.MANA_REGEN_CONSTANT}}. Броня увеличена на {${LocalizationModifierProperty.PHYSICAL_ARMOR_BONUS}}."`,
 			},
 
 			{
 				language: Language.SChinese,
 				name_override: "弗拉迪米尔光环",
-				description_override: `获得<font color='#F40000'>{${LocalizationModifierProperty.TOOLTIP}}%</font>吸血效果，还有{f${LocalizationModifierProperty.MANA_REGEN_CONSTANT}}点/秒魔法恢复和{${LocalizationModifierProperty.PHYSICAL_ARMOR_BONUS}}点护甲。`,
+				description_override: `获得<font color='#F40000'>{${LocalizationModifierProperty.TOOLTIP}}%</font>吸血效果，还有{f${LocalizationModifierProperty.MANA_REGEN_CONSTANT}}点/秒魔法恢复和{${LocalizationModifierProperty.PHYSICAL_ARMOR_BONUS}}点护甲。"`,
 			},
 
 		],
@@ -16580,25 +16580,25 @@ export function GenerateLocalizationData(): LocalizationData
 	Modifiers.push({
 		modifier_classname: "modifier_item_satanic_unholy",
 		name: "Unholy Rage",
-		description: `Lifesteal increased by <font color='#F40000'>{${LocalizationModifierProperty.TOOLTIP}}%</font>.`,
+		description: `Lifesteal increased by <font color='#F40000'>{${LocalizationModifierProperty.TOOLTIP}}%</font>."`,
 		language_overrides:
 		[
 			{
 				language: Language.German,
 				name_override: "Gottlose Wut",
-				description_override: `Lebensraub um <font color='#F40000'>{${LocalizationModifierProperty.TOOLTIP}} %%</font> erhöht.`,
+				description_override: `Lebensraub um <font color='#F40000'>{${LocalizationModifierProperty.TOOLTIP}} %%</font> erhöht."`,
 			},
 
 			{
 				language: Language.Russian,
 				name_override: "Unholy Rage",
-				description_override: `Вампиризм увеличен на <font color='#F40000'>{${LocalizationModifierProperty.TOOLTIP}}%</font>.`,
+				description_override: `Вампиризм увеличен на <font color='#F40000'>{${LocalizationModifierProperty.TOOLTIP}}%</font>."`,
 			},
 
 			{
 				language: Language.SChinese,
 				name_override: "不洁狂热",
-				description_override: `吸血效果提升<font color='#F40000'>{${LocalizationModifierProperty.TOOLTIP}}%</font>。`,
+				description_override: `吸血效果提升<font color='#F40000'>{${LocalizationModifierProperty.TOOLTIP}}%</font>。"`,
 			},
 
 		],
@@ -16607,25 +16607,25 @@ export function GenerateLocalizationData(): LocalizationData
 	Modifiers.push({
 		modifier_classname: "modifier_creature_pudge_miniboss_armor_corruption_debuff",
 		name: "Corruption",
-		description: `Losing {${LocalizationModifierProperty.PHYSICAL_ARMOR_BONUS}} armor.`,
+		description: `Losing {${LocalizationModifierProperty.PHYSICAL_ARMOR_BONUS}} armor."`,
 		language_overrides:
 		[
 			{
 				language: Language.German,
 				name_override: "Verderben",
-				description_override: `Verliert {${LocalizationModifierProperty.PHYSICAL_ARMOR_BONUS}} Rüstung.`,
+				description_override: `Verliert {${LocalizationModifierProperty.PHYSICAL_ARMOR_BONUS}} Rüstung."`,
 			},
 
 			{
 				language: Language.Russian,
 				name_override: "Corruption",
-				description_override: `Броня уменьшена на {${LocalizationModifierProperty.PHYSICAL_ARMOR_BONUS}}.`,
+				description_override: `Броня уменьшена на {${LocalizationModifierProperty.PHYSICAL_ARMOR_BONUS}}."`,
 			},
 
 			{
 				language: Language.SChinese,
 				name_override: "腐蚀",
-				description_override: `失去{${LocalizationModifierProperty.PHYSICAL_ARMOR_BONUS}}点护甲。`,
+				description_override: `失去{${LocalizationModifierProperty.PHYSICAL_ARMOR_BONUS}}点护甲。"`,
 			},
 
 		],
@@ -16634,25 +16634,25 @@ export function GenerateLocalizationData(): LocalizationData
 	Modifiers.push({
 		modifier_classname: "modifier_aghanim_spell_swap",
 		name: "Ability Locked",
-		description: `Aghanim has locked your ability - destroy the shard to get it back!`,
+		description: `Aghanim has locked your ability - destroy the shard to get it back!"`,
 		language_overrides:
 		[
 			{
 				language: Language.German,
 				name_override: "Fähigkeit gesperrt",
-				description_override: `Aghanim hat Ihre Fähigkeit gesperrt – zerstören Sie den Splitter, um sie zurückzuerhalten!`,
+				description_override: `Aghanim hat Ihre Fähigkeit gesperrt – zerstören Sie den Splitter, um sie zurückzuerhalten!"`,
 			},
 
 			{
 				language: Language.Russian,
 				name_override: "Способность заблокирована",
-				description_override: `Аганим заблокировал эту способность. Уничтожьте осколок, чтобы вернуть её!`,
+				description_override: `Аганим заблокировал эту способность. Уничтожьте осколок, чтобы вернуть её!"`,
 			},
 
 			{
 				language: Language.SChinese,
 				name_override: "技能被锁定",
-				description_override: `阿哈利姆锁定了你的技能 - 快摧毁碎片夺回来！`,
+				description_override: `阿哈利姆锁定了你的技能 - 快摧毁碎片夺回来！"`,
 			},
 
 		],
@@ -16661,25 +16661,25 @@ export function GenerateLocalizationData(): LocalizationData
 	Modifiers.push({
 		modifier_classname: "modifier_aghanim_crystal_attack_debuff",
 		name: "Crystal Chill",
-		description: `All healing, regeneration, and lifesteal reduced by {${LocalizationModifierProperty.HEAL_AMPLIFY_PERCENTAGE_TARGET}}%`,
+		description: `All healing, regeneration, and lifesteal reduced by {${LocalizationModifierProperty.HEAL_AMPLIFY_PERCENTAGE_TARGET}}%"`,
 		language_overrides:
 		[
 			{
 				language: Language.German,
 				name_override: "Kristallkühlung",
-				description_override: `Heilung, Regeneration und Lebensraub jeglicher Art sind um {${LocalizationModifierProperty.HEAL_AMPLIFY_PERCENTAGE_TARGET}} %% reduziert.`,
+				description_override: `Heilung, Regeneration und Lebensraub jeglicher Art sind um {${LocalizationModifierProperty.HEAL_AMPLIFY_PERCENTAGE_TARGET}} %% reduziert."`,
 			},
 
 			{
 				language: Language.Russian,
 				name_override: "Кристальный холод",
-				description_override: `Всё лечение, регенерация и вампиризм уменьшены на {${LocalizationModifierProperty.HEAL_AMPLIFY_PERCENTAGE_TARGET}}%`,
+				description_override: `Всё лечение, регенерация и вампиризм уменьшены на {${LocalizationModifierProperty.HEAL_AMPLIFY_PERCENTAGE_TARGET}}%"`,
 			},
 
 			{
 				language: Language.SChinese,
 				name_override: "晶莹寒气",
-				description_override: `所有治疗、恢复和吸血效果降低{${LocalizationModifierProperty.HEAL_AMPLIFY_PERCENTAGE_TARGET}}%`,
+				description_override: `所有治疗、恢复和吸血效果降低{${LocalizationModifierProperty.HEAL_AMPLIFY_PERCENTAGE_TARGET}}%"`,
 			},
 
 		],
@@ -16688,25 +16688,25 @@ export function GenerateLocalizationData(): LocalizationData
 	Modifiers.push({
 		modifier_classname: "modifier_item_greater_salve",
 		name: "Greater Salve",
-		description: `This unit is regenerating health.`,
+		description: `This unit is regenerating health."`,
 		language_overrides:
 		[
 			{
 				language: Language.German,
 				name_override: "Große Salve",
-				description_override: `Diese Einheit regeneriert Lebenspunkte.`,
+				description_override: `Diese Einheit regeneriert Lebenspunkte."`,
 			},
 
 			{
 				language: Language.Russian,
 				name_override: "Великий целебный бальзам",
-				description_override: `Восстанавливается здоровье.`,
+				description_override: `Восстанавливается здоровье."`,
 			},
 
 			{
 				language: Language.SChinese,
 				name_override: "高级治疗药膏",
-				description_override: `这个单位正在回复生命。`,
+				description_override: `这个单位正在回复生命。"`,
 			},
 
 		],
@@ -16715,25 +16715,25 @@ export function GenerateLocalizationData(): LocalizationData
 	Modifiers.push({
 		modifier_classname: "modifier_item_greater_clarity",
 		name: "Greater Clarity",
-		description: `This unit is regenerating mana.`,
+		description: `This unit is regenerating mana."`,
 		language_overrides:
 		[
 			{
 				language: Language.German,
 				name_override: "Große Klarheit",
-				description_override: `Diese Einheit regeneriert Mana.`,
+				description_override: `Diese Einheit regeneriert Mana."`,
 			},
 
 			{
 				language: Language.Russian,
 				name_override: "Великое зелье ясности",
-				description_override: `Восстанавливается мана.`,
+				description_override: `Восстанавливается мана."`,
 			},
 
 			{
 				language: Language.SChinese,
 				name_override: "高级净化药水",
-				description_override: `这个单位正在回复魔法。`,
+				description_override: `这个单位正在回复魔法。"`,
 			},
 
 		],
@@ -16742,25 +16742,25 @@ export function GenerateLocalizationData(): LocalizationData
 	Modifiers.push({
 		modifier_classname: "modifier_item_double_damage_potion",
 		name: "Double Damage Potion",
-		description: `This unit has double damage.`,
+		description: `This unit has double damage."`,
 		language_overrides:
 		[
 			{
 				language: Language.German,
 				name_override: "Trank des doppelten Schadens",
-				description_override: `Diese Einheit verursacht doppelten Schaden.`,
+				description_override: `Diese Einheit verursacht doppelten Schaden."`,
 			},
 
 			{
 				language: Language.Russian,
 				name_override: "Зелье двойного урона",
-				description_override: `Урон этого существа увеличен вдвое.`,
+				description_override: `Урон этого существа увеличен вдвое."`,
 			},
 
 			{
 				language: Language.SChinese,
 				name_override: "双倍伤害药水",
-				description_override: `这个单位拥有双倍伤害。`,
+				description_override: `这个单位拥有双倍伤害。"`,
 			},
 
 		],
@@ -16769,25 +16769,25 @@ export function GenerateLocalizationData(): LocalizationData
 	Modifiers.push({
 		modifier_classname: "modifier_item_spell_amp_potion",
 		name: "Spell Amp Potion",
-		description: `This unit has 100 bonus spell amp.`,
+		description: `This unit has 100 bonus spell amp."`,
 		language_overrides:
 		[
 			{
 				language: Language.German,
 				name_override: "Trank der Zauberverstärkung",
-				description_override: `Diese Einheit hat 100 % Bonuszauberverstärkung.`,
+				description_override: `Diese Einheit hat 100 % Bonuszauberverstärkung."`,
 			},
 
 			{
 				language: Language.Russian,
 				name_override: "Зелье магического урона",
-				description_override: `Урон от заклинаний этого существа увеличен вдвое.`,
+				description_override: `Урон от заклинаний этого существа увеличен вдвое."`,
 			},
 
 			{
 				language: Language.SChinese,
 				name_override: "技能增强药水",
-				description_override: `这个单位拥有100%技能增强。`,
+				description_override: `这个单位拥有100%技能增强。"`,
 			},
 
 		],
@@ -16796,25 +16796,25 @@ export function GenerateLocalizationData(): LocalizationData
 	Modifiers.push({
 		modifier_classname: "modifier_item_evasion_potion",
 		name: "Evasion Potion",
-		description: `This unit has 100 bonus evasion.`,
+		description: `This unit has 100 bonus evasion."`,
 		language_overrides:
 		[
 			{
 				language: Language.German,
 				name_override: "Trank des Ausweichens",
-				description_override: `Diese Einheit weicht allen Angriffen aus.`,
+				description_override: `Diese Einheit weicht allen Angriffen aus."`,
 			},
 
 			{
 				language: Language.Russian,
 				name_override: "Зелье уклонения",
-				description_override: `Уклонение этого существа увеличено на 100%%.`,
+				description_override: `Уклонение этого существа увеличено на 100%%."`,
 			},
 
 			{
 				language: Language.SChinese,
 				name_override: "闪避药水",
-				description_override: `这个单位拥有100%闪避加成。`,
+				description_override: `这个单位拥有100%闪避加成。"`,
 			},
 
 		],
@@ -16823,25 +16823,25 @@ export function GenerateLocalizationData(): LocalizationData
 	Modifiers.push({
 		modifier_classname: "modifier_aghsfort_arcanist_potion",
 		name: "Arcanist Potion",
-		description: `Reduces ability cooldowns and mana costs.`,
+		description: `Reduces ability cooldowns and mana costs."`,
 		language_overrides:
 		[
 			{
 				language: Language.German,
 				name_override: "Trank des Arkanisten",
-				description_override: `Abklingzeiten und Manakosten von Fähigkeiten reduziert.`,
+				description_override: `Abklingzeiten und Manakosten von Fähigkeiten reduziert."`,
 			},
 
 			{
 				language: Language.Russian,
 				name_override: "Зелье чародея",
-				description_override: `Уменьшает перезарядку и расход маны у способностей.`,
+				description_override: `Уменьшает перезарядку и расход маны у способностей."`,
 			},
 
 			{
 				language: Language.SChinese,
 				name_override: "秘士药水",
-				description_override: `降低技能冷却时间和魔法消耗。`,
+				description_override: `降低技能冷却时间和魔法消耗。"`,
 			},
 
 		],
@@ -16850,7 +16850,7 @@ export function GenerateLocalizationData(): LocalizationData
 	Modifiers.push({
 		modifier_classname: "modifier_item_torrent_effect_potion",
 		name: "Torrent Reflex",
-		description: `This unit has a chance to proc Torrent when attacked.`,
+		description: `This unit has a chance to proc Torrent when attacked."`,
 		language_overrides:
 		[
 			{
@@ -16861,19 +16861,19 @@ export function GenerateLocalizationData(): LocalizationData
 			{
 				language: Language.German,
 				name_override: "Sturzflutreflex",
-				description_override: `Diese Einheit hat eine Chance, bei erlittenen Angriffen eine Sturzflut auszulösen.`,
+				description_override: `Diese Einheit hat eine Chance, bei erlittenen Angriffen eine Sturzflut auszulösen."`,
 			},
 
 			{
 				language: Language.Russian,
 				name_override: "Ответный гейзер",
-				description_override: `Когда это существо атакуют, может сработать гейзер.`,
+				description_override: `Когда это существо атакуют, может сработать гейзер."`,
 			},
 
 			{
 				language: Language.SChinese,
 				name_override: "洪流反射",
-				description_override: `该单位被攻击时有几率触发洪流。`,
+				description_override: `该单位被攻击时有几率触发洪流。"`,
 			},
 
 		],
@@ -16882,25 +16882,25 @@ export function GenerateLocalizationData(): LocalizationData
 	Modifiers.push({
 		modifier_classname: "modifier_aghsfort_shadow_wave_effect_potion",
 		name: "Shadow Wave Reflex",
-		description: `This unit has a chance to proc Shadow Wave when attacked.`,
+		description: `This unit has a chance to proc Shadow Wave when attacked."`,
 		language_overrides:
 		[
 			{
 				language: Language.German,
 				name_override: "Schattenwellenreflex",
-				description_override: `Diese Einheit hat eine Chance, bei erlittenen Angriffen eine Schattenwelle auszulösen.`,
+				description_override: `Diese Einheit hat eine Chance, bei erlittenen Angriffen eine Schattenwelle auszulösen."`,
 			},
 
 			{
 				language: Language.Russian,
 				name_override: "Ответная волна теней",
-				description_override: `Когда это существо атакуют, может сработать волна теней.`,
+				description_override: `Когда это существо атакуют, может сработать волна теней."`,
 			},
 
 			{
 				language: Language.SChinese,
 				name_override: "暗影波反射",
-				description_override: `该单位被攻击时有几率触发暗影波。`,
+				description_override: `该单位被攻击时有几率触发暗影波。"`,
 			},
 
 		],
@@ -16909,25 +16909,25 @@ export function GenerateLocalizationData(): LocalizationData
 	Modifiers.push({
 		modifier_classname: "modifier_bonus_room_start",
 		name: "Bonus Room",
-		description: `Silenced and Muted.  Proceed to the bonus!`,
+		description: `Silenced and Muted.  Proceed to the bonus!"`,
 		language_overrides:
 		[
 			{
 				language: Language.German,
 				name_override: "Bonusraum",
-				description_override: `Verstummt und geknebelt. Weiter zum Bonus!`,
+				description_override: `Verstummt und geknebelt. Weiter zum Bonus!"`,
 			},
 
 			{
 				language: Language.Russian,
 				name_override: "Бонусная комната",
-				description_override: `Предметы или способности использовать нельзя — просто собирайте бонусы!`,
+				description_override: `Предметы или способности использовать нельзя — просто собирайте бонусы!"`,
 			},
 
 			{
 				language: Language.SChinese,
 				name_override: "额外房间",
-				description_override: `被沉默和锁闭。前往奖励！`,
+				description_override: `被沉默和锁闭。前往奖励！"`,
 			},
 
 		],
@@ -16936,25 +16936,25 @@ export function GenerateLocalizationData(): LocalizationData
 	Modifiers.push({
 		modifier_classname: "modifier_aghsfort_firefly",
 		name: "Pyromaniac",
-		description: `This unit's footsteps leave a fire trail.`,
+		description: `This unit's footsteps leave a fire trail."`,
 		language_overrides:
 		[
 			{
 				language: Language.German,
 				name_override: "Feuerteufel",
-				description_override: `Diese Einheit hinterlässt eine Feuerspur, wo immer sie wandelt.`,
+				description_override: `Diese Einheit hinterlässt eine Feuerspur, wo immer sie wandelt."`,
 			},
 
 			{
 				language: Language.Russian,
 				name_override: "Пироман",
-				description_override: `За этим существом остаётся пламенный след.`,
+				description_override: `За этим существом остаётся пламенный след."`,
 			},
 
 			{
 				language: Language.SChinese,
 				name_override: "纵火狂人",
-				description_override: `这个单位的足迹是火焰路径。`,
+				description_override: `这个单位的足迹是火焰路径。"`,
 			},
 
 		],
@@ -16963,25 +16963,25 @@ export function GenerateLocalizationData(): LocalizationData
 	Modifiers.push({
 		modifier_classname: "modifier_ascension_crit",
 		name: "Lucky Strike",
-		description: `{${LocalizationModifierProperty.TOOLTIP}}% chance to deal {${LocalizationModifierProperty.TOOLTIP2}}%% damage.`,
+		description: `{${LocalizationModifierProperty.TOOLTIP}}% chance to deal {${LocalizationModifierProperty.TOOLTIP2}}%% damage."`,
 		language_overrides:
 		[
 			{
 				language: Language.German,
 				name_override: "Glückstreffer",
-				description_override: `{${LocalizationModifierProperty.TOOLTIP}}%ige Chance, {${LocalizationModifierProperty.TOOLTIP2}} %% Schaden zu verursachen.`,
+				description_override: `{${LocalizationModifierProperty.TOOLTIP}}%ige Chance, {${LocalizationModifierProperty.TOOLTIP2}} %% Schaden zu verursachen."`,
 			},
 
 			{
 				language: Language.Russian,
 				name_override: "Удачный удар",
-				description_override: `Шанс в {${LocalizationModifierProperty.TOOLTIP}}% нанести {${LocalizationModifierProperty.TOOLTIP2}}%% урона.`,
+				description_override: `Шанс в {${LocalizationModifierProperty.TOOLTIP}}% нанести {${LocalizationModifierProperty.TOOLTIP2}}%% урона."`,
 			},
 
 			{
 				language: Language.SChinese,
 				name_override: "幸运一击",
-				description_override: `有{${LocalizationModifierProperty.TOOLTIP}}%几率造成{${LocalizationModifierProperty.TOOLTIP2}}%%伤害。`,
+				description_override: `有{${LocalizationModifierProperty.TOOLTIP}}%几率造成{${LocalizationModifierProperty.TOOLTIP2}}%%伤害。"`,
 			},
 
 		],
@@ -16990,25 +16990,25 @@ export function GenerateLocalizationData(): LocalizationData
 	Modifiers.push({
 		modifier_classname: "modifier_ascension_magic_resist",
 		name: "Magical Fortitude",
-		description: `This unit has {${LocalizationModifierProperty.MAGICAL_RESISTANCE_BONUS}}% additional magic resist.`,
+		description: `This unit has {${LocalizationModifierProperty.MAGICAL_RESISTANCE_BONUS}}% additional magic resist."`,
 		language_overrides:
 		[
 			{
 				language: Language.German,
 				name_override: "Magiepanzer",
-				description_override: `Diese Einheit hat {${LocalizationModifierProperty.MAGICAL_RESISTANCE_BONUS}}&nbsp;%% zusätzliche Magieresistenz.`,
+				description_override: `Diese Einheit hat {${LocalizationModifierProperty.MAGICAL_RESISTANCE_BONUS}}&nbsp;%% zusätzliche Magieresistenz."`,
 			},
 
 			{
 				language: Language.Russian,
 				name_override: "Магическая стойкость",
-				description_override: `Это существо имеет {${LocalizationModifierProperty.MAGICAL_RESISTANCE_BONUS}}% дополнительного сопротивления магии.`,
+				description_override: `Это существо имеет {${LocalizationModifierProperty.MAGICAL_RESISTANCE_BONUS}}% дополнительного сопротивления магии."`,
 			},
 
 			{
 				language: Language.SChinese,
 				name_override: "魔法刚毅",
-				description_override: `这个单位拥有{${LocalizationModifierProperty.MAGICAL_RESISTANCE_BONUS}}%额外魔法抗性。`,
+				description_override: `这个单位拥有{${LocalizationModifierProperty.MAGICAL_RESISTANCE_BONUS}}%额外魔法抗性。"`,
 			},
 
 		],
@@ -17017,25 +17017,25 @@ export function GenerateLocalizationData(): LocalizationData
 	Modifiers.push({
 		modifier_classname: "modifier_ascension_plasma_field_display",
 		name: "Galvanic Farewell",
-		description: `Unit casts plasma field on death.`,
+		description: `Unit casts plasma field on death."`,
 		language_overrides:
 		[
 			{
 				language: Language.German,
 				name_override: "Galvanischer Abschied",
-				description_override: `Einheit erzeugt ein Plasmafeld beim Tod.`,
+				description_override: `Einheit erzeugt ein Plasmafeld beim Tod."`,
 			},
 
 			{
 				language: Language.Russian,
 				name_override: "Плазменное прощание",
-				description_override: `При смерти это существо выпускает из себя плазаменное поле.`,
+				description_override: `При смерти это существо выпускает из себя плазаменное поле."`,
 			},
 
 			{
 				language: Language.SChinese,
 				name_override: "触电式告别",
-				description_override: `单位在死亡时会施放等离子场。`,
+				description_override: `单位在死亡时会施放等离子场。"`,
 			},
 
 		],
@@ -17044,25 +17044,25 @@ export function GenerateLocalizationData(): LocalizationData
 	Modifiers.push({
 		modifier_classname: "modifier_ascension_flicker_display",
 		name: "Flicker",
-		description: `Unit teleports randomly and purge debuffs from themselves.`,
+		description: `Unit teleports randomly and purge debuffs from themselves."`,
 		language_overrides:
 		[
 			{
 				language: Language.German,
 				name_override: "Blitzen",
-				description_override: `Einheit teleportiert sich zufällig und entfernt dabei ihre Schwächungseffekte.`,
+				description_override: `Einheit teleportiert sich zufällig und entfernt dabei ihre Schwächungseffekte."`,
 			},
 
 			{
 				language: Language.Russian,
 				name_override: "Трепет",
-				description_override: `Существо случайно телепортируется и развеивает с себя отрицательные эффекты.`,
+				description_override: `Существо случайно телепортируется и развеивает с себя отрицательные эффекты."`,
 			},
 
 			{
 				language: Language.SChinese,
 				name_override: "闪灵",
-				description_override: `单位随机传送，净化自身的负面状态。`,
+				description_override: `单位随机传送，净化自身的负面状态。"`,
 			},
 
 		],
@@ -17071,25 +17071,25 @@ export function GenerateLocalizationData(): LocalizationData
 	Modifiers.push({
 		modifier_classname: "modifier_ascension_armor_sapping_display",
 		name: "Death Curse",
-		description: `This unit debuffs the armor of its killer.`,
+		description: `This unit debuffs the armor of its killer."`,
 		language_overrides:
 		[
 			{
 				language: Language.German,
 				name_override: "Todesfluch",
-				description_override: `Diese Einheit reduziert beim Tod die Rüstung ihres Mörders.`,
+				description_override: `Diese Einheit reduziert beim Tod die Rüstung ihres Mörders."`,
 			},
 
 			{
 				language: Language.Russian,
 				name_override: "Проклятье смерти",
-				description_override: `Снижает броню того, кто убьёт это существо.`,
+				description_override: `Снижает броню того, кто убьёт это существо."`,
 			},
 
 			{
 				language: Language.SChinese,
 				name_override: "死亡诅咒",
-				description_override: `该单位削弱其击杀者的护甲`,
+				description_override: `该单位削弱其击杀者的护甲"`,
 			},
 
 		],
@@ -17098,25 +17098,25 @@ export function GenerateLocalizationData(): LocalizationData
 	Modifiers.push({
 		modifier_classname: "modifier_aghsfort_ascension_silence",
 		name: "Quiet, please!",
-		description: `Cannot cast spells.`,
+		description: `Cannot cast spells."`,
 		language_overrides:
 		[
 			{
 				language: Language.German,
 				name_override: "Ruhe bitte!",
-				description_override: `Kann keine Zauber einsetzen.`,
+				description_override: `Kann keine Zauber einsetzen."`,
 			},
 
 			{
 				language: Language.Russian,
 				name_override: "Прошу тишины!",
-				description_override: `Не может применять способности.`,
+				description_override: `Не может применять способности."`,
 			},
 
 			{
 				language: Language.SChinese,
 				name_override: "请安静！",
-				description_override: `无法施放技能`,
+				description_override: `无法施放技能"`,
 			},
 
 		],
@@ -17125,25 +17125,25 @@ export function GenerateLocalizationData(): LocalizationData
 	Modifiers.push({
 		modifier_classname: "modifier_aghsfort_ascension_silence_display",
 		name: "Quiet, please!",
-		description: `Unit occasionally silences nearby players.`,
+		description: `Unit occasionally silences nearby players."`,
 		language_overrides:
 		[
 			{
 				language: Language.German,
 				name_override: "Ruhe bitte!",
-				description_override: `Einheit lässt hin und wieder nahe Spieler verstummen.`,
+				description_override: `Einheit lässt hin und wieder nahe Spieler verstummen."`,
 			},
 
 			{
 				language: Language.Russian,
 				name_override: "Прошу тишины!",
-				description_override: `Иногда накладывает безмолвие на игроков рядом.`,
+				description_override: `Иногда накладывает безмолвие на игроков рядом."`,
 			},
 
 			{
 				language: Language.SChinese,
 				name_override: "请安静！",
-				description_override: `单位偶尔会沉默附近玩家。`,
+				description_override: `单位偶尔会沉默附近玩家。"`,
 			},
 
 		],
@@ -17152,25 +17152,25 @@ export function GenerateLocalizationData(): LocalizationData
 	Modifiers.push({
 		modifier_classname: "modifier_aghsfort_ascension_magnetic_field_evasion",
 		name: "Living In A Bubble",
-		description: `Evading physical attacks coming from outside the bubble.`,
+		description: `Evading physical attacks coming from outside the bubble."`,
 		language_overrides:
 		[
 			{
 				language: Language.German,
 				name_override: "Leben in einer Blase",
-				description_override: `Weicht allen physischen Angriffen von außerhalb der Blase aus.`,
+				description_override: `Weicht allen physischen Angriffen von außerhalb der Blase aus."`,
 			},
 
 			{
 				language: Language.Russian,
 				name_override: "Жизнь в пузыре",
-				description_override: `Уклоняется от физических атак извне пузыря.`,
+				description_override: `Уклоняется от физических атак извне пузыря."`,
 			},
 
 			{
 				language: Language.SChinese,
 				name_override: "泡泡中的生活",
-				description_override: `躲避来自泡泡之外的物理攻击。`,
+				description_override: `躲避来自泡泡之外的物理攻击。"`,
 			},
 
 		],
@@ -17179,25 +17179,25 @@ export function GenerateLocalizationData(): LocalizationData
 	Modifiers.push({
 		modifier_classname: "modifier_ascension_drunken_display",
 		name: "Drunken",
-		description: `Unit occasionally becomes drunk, gaining movement speed, evasion, and critical strike.`,
+		description: `Unit occasionally becomes drunk, gaining movement speed, evasion, and critical strike."`,
 		language_overrides:
 		[
 			{
 				language: Language.German,
 				name_override: "Betrunken",
-				description_override: `Einheit wird gelegentlich berauscht, was ihr Bonusbewegungstempo, eine Ausweichchance und eine Chance auf kritische Treffer verleiht.`,
+				description_override: `Einheit wird gelegentlich berauscht, was ihr Bonusbewegungstempo, eine Ausweichchance und eine Chance auf kritische Treffer verleiht."`,
 			},
 
 			{
 				language: Language.Russian,
 				name_override: "Опьянение",
-				description_override: `Иногда становится пьяным, получая скорость передвижения, а также шанс увернуться и совершить критическую атаку.`,
+				description_override: `Иногда становится пьяным, получая скорость передвижения, а также шанс увернуться и совершить критическую атаку."`,
 			},
 
 			{
 				language: Language.SChinese,
 				name_override: "醉酒",
-				description_override: `单位偶尔会进入醉酒状态，获得移动速度、闪避加成和致命一击。`,
+				description_override: `单位偶尔会进入醉酒状态，获得移动速度、闪避加成和致命一击。"`,
 			},
 
 		],
@@ -17206,25 +17206,25 @@ export function GenerateLocalizationData(): LocalizationData
 	Modifiers.push({
 		modifier_classname: "modifier_ascension_damage",
 		name: "Deadly",
-		description: `Unit deals {${LocalizationModifierProperty.TOTALDAMAGEOUTGOING_PERCENTAGE}}% more damage.`,
+		description: `Unit deals {${LocalizationModifierProperty.TOTALDAMAGEOUTGOING_PERCENTAGE}}% more damage."`,
 		language_overrides:
 		[
 			{
 				language: Language.German,
 				name_override: "Tödlich",
-				description_override: `Einheit verursacht {${LocalizationModifierProperty.TOTALDAMAGEOUTGOING_PERCENTAGE}} %% mehr Schaden.`,
+				description_override: `Einheit verursacht {${LocalizationModifierProperty.TOTALDAMAGEOUTGOING_PERCENTAGE}} %% mehr Schaden."`,
 			},
 
 			{
 				language: Language.Russian,
 				name_override: "Смертоносность",
-				description_override: `Наносит на {${LocalizationModifierProperty.TOTALDAMAGEOUTGOING_PERCENTAGE}}% больше урона.`,
+				description_override: `Наносит на {${LocalizationModifierProperty.TOTALDAMAGEOUTGOING_PERCENTAGE}}% больше урона."`,
 			},
 
 			{
 				language: Language.SChinese,
 				name_override: "极其致命",
-				description_override: `单位造成的伤害增加{${LocalizationModifierProperty.TOTALDAMAGEOUTGOING_PERCENTAGE}}%。`,
+				description_override: `单位造成的伤害增加{${LocalizationModifierProperty.TOTALDAMAGEOUTGOING_PERCENTAGE}}%。"`,
 			},
 
 		],
@@ -17233,25 +17233,25 @@ export function GenerateLocalizationData(): LocalizationData
 	Modifiers.push({
 		modifier_classname: "modifier_ascension_attack_speed",
 		name: "Last Stand",
-		description: `Attack speed increased by {${LocalizationModifierProperty.ATTACKSPEED_BONUS_CONSTANT}} while health is low.`,
+		description: `Attack speed increased by {${LocalizationModifierProperty.ATTACKSPEED_BONUS_CONSTANT}} while health is low."`,
 		language_overrides:
 		[
 			{
 				language: Language.German,
 				name_override: "Letztes Gefecht",
-				description_override: `Angriffstempo um {${LocalizationModifierProperty.ATTACKSPEED_BONUS_CONSTANT}} erhöht und Lebenspunkte reduziert.`,
+				description_override: `Angriffstempo um {${LocalizationModifierProperty.ATTACKSPEED_BONUS_CONSTANT}} erhöht und Lebenspunkte reduziert."`,
 			},
 
 			{
 				language: Language.Russian,
 				name_override: "До последнего",
-				description_override: `При низком здоровье скорость атаки увеличивается на {${LocalizationModifierProperty.ATTACKSPEED_BONUS_CONSTANT}}.`,
+				description_override: `При низком здоровье скорость атаки увеличивается на {${LocalizationModifierProperty.ATTACKSPEED_BONUS_CONSTANT}}."`,
 			},
 
 			{
 				language: Language.SChinese,
 				name_override: "屹立不倒",
-				description_override: `低血量时攻击速度提升{${LocalizationModifierProperty.ATTACKSPEED_BONUS_CONSTANT}}。`,
+				description_override: `低血量时攻击速度提升{${LocalizationModifierProperty.ATTACKSPEED_BONUS_CONSTANT}}。"`,
 			},
 
 		],
@@ -17260,25 +17260,25 @@ export function GenerateLocalizationData(): LocalizationData
 	Modifiers.push({
 		modifier_classname: "modifier_ascension_magic_immunity",
 		name: "Avatar",
-		description: `Briefly magic immune when taking magic damage.`,
+		description: `Briefly magic immune when taking magic damage."`,
 		language_overrides:
 		[
 			{
 				language: Language.German,
 				name_override: "Avatar",
-				description_override: `Kurzzeitig zauberimmun, nachdem magischer Schaden erlitten wurde.`,
+				description_override: `Kurzzeitig zauberimmun, nachdem magischer Schaden erlitten wurde."`,
 			},
 
 			{
 				language: Language.Russian,
 				name_override: "Аватар",
-				description_override: `При получении магического урона это существо ненадолго становится невосприимчивым к магии.`,
+				description_override: `При получении магического урона это существо ненадолго становится невосприимчивым к магии."`,
 			},
 
 			{
 				language: Language.SChinese,
 				name_override: "天神下凡",
-				description_override: `受到魔法伤害时短暂获得技能免疫状态。`,
+				description_override: `受到魔法伤害时短暂获得技能免疫状态。"`,
 			},
 
 		],
@@ -17287,25 +17287,25 @@ export function GenerateLocalizationData(): LocalizationData
 	Modifiers.push({
 		modifier_classname: "modifier_ascension_armor",
 		name: "Thick Skinned",
-		description: `Armor increased by {${LocalizationModifierProperty.PHYSICAL_ARMOR_BONUS}}`,
+		description: `Armor increased by {${LocalizationModifierProperty.PHYSICAL_ARMOR_BONUS}}"`,
 		language_overrides:
 		[
 			{
 				language: Language.German,
 				name_override: "Dickhäutig",
-				description_override: `Rüstung um {${LocalizationModifierProperty.PHYSICAL_ARMOR_BONUS}} erhöht.`,
+				description_override: `Rüstung um {${LocalizationModifierProperty.PHYSICAL_ARMOR_BONUS}} erhöht."`,
 			},
 
 			{
 				language: Language.Russian,
 				name_override: "Толстокожесть",
-				description_override: `Броня увеличена на {${LocalizationModifierProperty.PHYSICAL_ARMOR_BONUS}}`,
+				description_override: `Броня увеличена на {${LocalizationModifierProperty.PHYSICAL_ARMOR_BONUS}}"`,
 			},
 
 			{
 				language: Language.SChinese,
 				name_override: "皮糙肉厚",
-				description_override: `护甲提升{${LocalizationModifierProperty.PHYSICAL_ARMOR_BONUS}}点。`,
+				description_override: `护甲提升{${LocalizationModifierProperty.PHYSICAL_ARMOR_BONUS}}点。"`,
 			},
 
 		],
@@ -17314,25 +17314,25 @@ export function GenerateLocalizationData(): LocalizationData
 	Modifiers.push({
 		modifier_classname: "modifier_ascension_armor_sapping",
 		name: "Death Curse",
-		description: `Armor reduced by {${LocalizationModifierProperty.PHYSICAL_ARMOR_BONUS}} from killing enemy units.`,
+		description: `Armor reduced by {${LocalizationModifierProperty.PHYSICAL_ARMOR_BONUS}} from killing enemy units."`,
 		language_overrides:
 		[
 			{
 				language: Language.German,
 				name_override: "Todesfluch",
-				description_override: `Durch das Töten gegnerischer Einheiten wurde die Rüstung um {${LocalizationModifierProperty.PHYSICAL_ARMOR_BONUS}} reduziert.`,
+				description_override: `Durch das Töten gegnerischer Einheiten wurde die Rüstung um {${LocalizationModifierProperty.PHYSICAL_ARMOR_BONUS}} reduziert."`,
 			},
 
 			{
 				language: Language.Russian,
 				name_override: "Проклятье смерти",
-				description_override: `Из-за убийства врагов броня снижена на {${LocalizationModifierProperty.PHYSICAL_ARMOR_BONUS}}.`,
+				description_override: `Из-за убийства врагов броня снижена на {${LocalizationModifierProperty.PHYSICAL_ARMOR_BONUS}}."`,
 			},
 
 			{
 				language: Language.SChinese,
 				name_override: "死亡诅咒",
-				description_override: `由于击杀敌方单位，护甲降低{${LocalizationModifierProperty.PHYSICAL_ARMOR_BONUS}}点。`,
+				description_override: `由于击杀敌方单位，护甲降低{${LocalizationModifierProperty.PHYSICAL_ARMOR_BONUS}}点。"`,
 			},
 
 		],
@@ -17341,25 +17341,25 @@ export function GenerateLocalizationData(): LocalizationData
 	Modifiers.push({
 		modifier_classname: "modifier_ascension_embiggen",
 		name: "Glutton",
-		description: `Size increased, turn rate reduced, and attack speed slowed by {${LocalizationModifierProperty.ATTACKSPEED_BONUS_CONSTANT}} from killing enemy units.`,
+		description: `Size increased, turn rate reduced, and attack speed slowed by {${LocalizationModifierProperty.ATTACKSPEED_BONUS_CONSTANT}} from killing enemy units."`,
 		language_overrides:
 		[
 			{
 				language: Language.German,
 				name_override: "Vielfraß",
-				description_override: `Größer, Drehtempo reduziert und Angriffstempo um {${LocalizationModifierProperty.ATTACKSPEED_BONUS_CONSTANT}} reduziert.`,
+				description_override: `Größer, Drehtempo reduziert und Angriffstempo um {${LocalizationModifierProperty.ATTACKSPEED_BONUS_CONSTANT}} reduziert."`,
 			},
 
 			{
 				language: Language.Russian,
 				name_override: "Обжорство",
-				description_override: `Из-за убийств это существо выросло в размере, оно медленнее поворачивается, а его скорость атаки уменьшена на {${LocalizationModifierProperty.ATTACKSPEED_BONUS_CONSTANT}}.`,
+				description_override: `Из-за убийств это существо выросло в размере, оно медленнее поворачивается, а его скорость атаки уменьшена на {${LocalizationModifierProperty.ATTACKSPEED_BONUS_CONSTANT}}."`,
 			},
 
 			{
 				language: Language.SChinese,
 				name_override: "身材肿胀",
-				description_override: `由于击杀敌方单位导致身材变大，转身速率降低，攻击速度降低{${LocalizationModifierProperty.ATTACKSPEED_BONUS_CONSTANT}}。`,
+				description_override: `由于击杀敌方单位导致身材变大，转身速率降低，攻击速度降低{${LocalizationModifierProperty.ATTACKSPEED_BONUS_CONSTANT}}。"`,
 			},
 
 		],
@@ -17368,25 +17368,25 @@ export function GenerateLocalizationData(): LocalizationData
 	Modifiers.push({
 		modifier_classname: "modifier_ascension_heal_suppression_aura",
 		name: "Degen Field",
-		description: `Reducing healing of nearby units by {${LocalizationModifierProperty.TOOLTIP}}%.`,
+		description: `Reducing healing of nearby units by {${LocalizationModifierProperty.TOOLTIP}}%."`,
 		language_overrides:
 		[
 			{
 				language: Language.German,
 				name_override: "Degenerationsfeld",
-				description_override: `Reduziert die Heilung naher Einheiten um {${LocalizationModifierProperty.TOOLTIP}} %%.`,
+				description_override: `Reduziert die Heilung naher Einheiten um {${LocalizationModifierProperty.TOOLTIP}} %%."`,
 			},
 
 			{
 				language: Language.Russian,
 				name_override: "Поле слабости",
-				description_override: `Снижает лечение существ неподалёку на {${LocalizationModifierProperty.TOOLTIP}}%.`,
+				description_override: `Снижает лечение существ неподалёку на {${LocalizationModifierProperty.TOOLTIP}}%."`,
 			},
 
 			{
 				language: Language.SChinese,
 				name_override: "恶化力场",
-				description_override: `减少附近单位{${LocalizationModifierProperty.TOOLTIP}}%治疗效果。`,
+				description_override: `减少附近单位{${LocalizationModifierProperty.TOOLTIP}}%治疗效果。"`,
 			},
 
 		],
@@ -17395,25 +17395,25 @@ export function GenerateLocalizationData(): LocalizationData
 	Modifiers.push({
 		modifier_classname: "modifier_ascension_heal_suppression",
 		name: "Degen Field",
-		description: `Healing reduced by {${LocalizationModifierProperty.PHYSICAL_ARMOR_BONUS}}.`,
+		description: `Healing reduced by {${LocalizationModifierProperty.PHYSICAL_ARMOR_BONUS}}."`,
 		language_overrides:
 		[
 			{
 				language: Language.German,
 				name_override: "Degenerationsfeld",
-				description_override: `Heilung um {${LocalizationModifierProperty.PHYSICAL_ARMOR_BONUS}} reduziert.`,
+				description_override: `Heilung um {${LocalizationModifierProperty.PHYSICAL_ARMOR_BONUS}} reduziert."`,
 			},
 
 			{
 				language: Language.Russian,
 				name_override: "Поле слабости",
-				description_override: `Лечение уменьшено на {${LocalizationModifierProperty.PHYSICAL_ARMOR_BONUS}}.`,
+				description_override: `Лечение уменьшено на {${LocalizationModifierProperty.PHYSICAL_ARMOR_BONUS}}."`,
 			},
 
 			{
 				language: Language.SChinese,
 				name_override: "恶化力场",
-				description_override: `治疗效果降低{${LocalizationModifierProperty.PHYSICAL_ARMOR_BONUS}}。`,
+				description_override: `治疗效果降低{${LocalizationModifierProperty.PHYSICAL_ARMOR_BONUS}}。"`,
 			},
 
 		],
@@ -17422,25 +17422,25 @@ export function GenerateLocalizationData(): LocalizationData
 	Modifiers.push({
 		modifier_classname: "modifier_ascension_extra_fast",
 		name: "Surge",
-		description: `{${LocalizationModifierProperty.MOVESPEED_BONUS_PERCENTAGE}}% increased movement speed and cannot be slowed.`,
+		description: `{${LocalizationModifierProperty.MOVESPEED_BONUS_PERCENTAGE}}% increased movement speed and cannot be slowed."`,
 		language_overrides:
 		[
 			{
 				language: Language.German,
 				name_override: "Schub",
-				description_override: `{${LocalizationModifierProperty.MOVESPEED_BONUS_PERCENTAGE}} %% erhöhtes Bewegungstempo, das nicht verlangsamt werden kann.`,
+				description_override: `{${LocalizationModifierProperty.MOVESPEED_BONUS_PERCENTAGE}} %% erhöhtes Bewegungstempo, das nicht verlangsamt werden kann."`,
 			},
 
 			{
 				language: Language.Russian,
 				name_override: "Прилив энергии",
-				description_override: `Скорость передвижения увеличена на {${LocalizationModifierProperty.MOVESPEED_BONUS_PERCENTAGE}}%. Это существо нельзя замедлить.`,
+				description_override: `Скорость передвижения увеличена на {${LocalizationModifierProperty.MOVESPEED_BONUS_PERCENTAGE}}%. Это существо нельзя замедлить."`,
 			},
 
 			{
 				language: Language.SChinese,
 				name_override: "奔腾不息",
-				description_override: `移动速度提升{${LocalizationModifierProperty.MOVESPEED_BONUS_PERCENTAGE}}%，并且无法被减速。`,
+				description_override: `移动速度提升{${LocalizationModifierProperty.MOVESPEED_BONUS_PERCENTAGE}}%，并且无法被减速。"`,
 			},
 
 		],
@@ -17449,25 +17449,25 @@ export function GenerateLocalizationData(): LocalizationData
 	Modifiers.push({
 		modifier_classname: "modifier_ascension_vampiric",
 		name: "Vampiric",
-		description: `{${LocalizationModifierProperty.TOOLTIP}}% lifesteal.`,
+		description: `{${LocalizationModifierProperty.TOOLTIP}}% lifesteal."`,
 		language_overrides:
 		[
 			{
 				language: Language.German,
 				name_override: "Vampirisch",
-				description_override: `{${LocalizationModifierProperty.TOOLTIP}} %% Lebensraub.`,
+				description_override: `{${LocalizationModifierProperty.TOOLTIP}} %% Lebensraub."`,
 			},
 
 			{
 				language: Language.Russian,
 				name_override: "Вампиризм",
-				description_override: `{${LocalizationModifierProperty.TOOLTIP}}% вампиризма.`,
+				description_override: `{${LocalizationModifierProperty.TOOLTIP}}% вампиризма."`,
 			},
 
 			{
 				language: Language.SChinese,
 				name_override: "吸血鬼化",
-				description_override: `{${LocalizationModifierProperty.TOOLTIP}}%吸血。`,
+				description_override: `{${LocalizationModifierProperty.TOOLTIP}}%吸血。"`,
 			},
 
 		],
@@ -17476,7 +17476,7 @@ export function GenerateLocalizationData(): LocalizationData
 	Modifiers.push({
 		modifier_classname: "modifier_ascension_chilling_touch",
 		name: "Chilling Touch",
-		description: `Damage from this creature slows the target's move speed by {${LocalizationModifierProperty.TOOLTIP}}% for {f${LocalizationModifierProperty.TOOLTIP}} seconds.  Multiple debuffs stack.`,
+		description: `Damage from this creature slows the target's move speed by {${LocalizationModifierProperty.TOOLTIP}}% for {f${LocalizationModifierProperty.TOOLTIP}} seconds.  Multiple debuffs stack."`,
 		language_overrides:
 		[
 			{
@@ -17487,19 +17487,19 @@ export function GenerateLocalizationData(): LocalizationData
 			{
 				language: Language.German,
 				name_override: "Frostige Berührung",
-				description_override: `Von dieser Kreatur zugefügter Schaden verlangsamt das Bewegungstempo des Ziels für {f${LocalizationModifierProperty.TOOLTIP}} Sekunden um {${LocalizationModifierProperty.TOOLTIP}} %%. Effekt summiert sich auf.`,
+				description_override: `Von dieser Kreatur zugefügter Schaden verlangsamt das Bewegungstempo des Ziels für {f${LocalizationModifierProperty.TOOLTIP}} Sekunden um {${LocalizationModifierProperty.TOOLTIP}} %%. Effekt summiert sich auf."`,
 			},
 
 			{
 				language: Language.Russian,
 				name_override: "Касание мороза",
-				description_override: `Урон этого существа на {${LocalizationModifierProperty.TOOLTIP}}% замедляет передвижение цели на {f${LocalizationModifierProperty.TOOLTIP}} сек. Эффекты складываются.`,
+				description_override: `Урон этого существа на {${LocalizationModifierProperty.TOOLTIP}}% замедляет передвижение цели на {f${LocalizationModifierProperty.TOOLTIP}} сек. Эффекты складываются."`,
 			},
 
 			{
 				language: Language.SChinese,
 				name_override: "极寒之触",
-				description_override: `这个生物造成伤害时将减缓目标{${LocalizationModifierProperty.TOOLTIP}}%移动速度，持续{f${LocalizationModifierProperty.TOOLTIP}}秒。多个负面效果将会叠加。`,
+				description_override: `这个生物造成伤害时将减缓目标{${LocalizationModifierProperty.TOOLTIP}}%移动速度，持续{f${LocalizationModifierProperty.TOOLTIP}}秒。多个负面效果将会叠加。"`,
 			},
 
 		],
@@ -17508,25 +17508,25 @@ export function GenerateLocalizationData(): LocalizationData
 	Modifiers.push({
 		modifier_classname: "modifier_ogre_magi_channelled_bloodlust",
 		name: "Magi's Bloodlust",
-		description: `Moves and attacks faster.`,
+		description: `Moves and attacks faster."`,
 		language_overrides:
 		[
 			{
 				language: Language.German,
 				name_override: "Magis Blutrausch",
-				description_override: `Bewegt sich schneller und greift schneller an.`,
+				description_override: `Bewegt sich schneller und greift schneller an."`,
 			},
 
 			{
 				language: Language.Russian,
 				name_override: "Магическая жажда крови",
-				description_override: `Передвигается и атакует быстрее.`,
+				description_override: `Передвигается и атакует быстрее."`,
 			},
 
 			{
 				language: Language.SChinese,
 				name_override: "魔法师的嗜血术",
-				description_override: `移动和攻击速度更快。`,
+				description_override: `移动和攻击速度更快。"`,
 			},
 
 		],
@@ -17535,25 +17535,25 @@ export function GenerateLocalizationData(): LocalizationData
 	Modifiers.push({
 		modifier_classname: "modifier_battle_royale_damage",
 		name: "Aghanim's Disappointment",
-		description: `Engage with the current room or suffer his displeasure!`,
+		description: `Engage with the current room or suffer his displeasure!"`,
 		language_overrides:
 		[
 			{
 				language: Language.German,
 				name_override: "Aghanims Enttäuschung",
-				description_override: `Stellen Sie sich dem aktuellen Raum oder leiden Sie unter seinem Unmut!`,
+				description_override: `Stellen Sie sich dem aktuellen Raum oder leiden Sie unter seinem Unmut!"`,
 			},
 
 			{
 				language: Language.Russian,
 				name_override: "Разочарование Аганима",
-				description_override: `Приступайте к текущей комнате, иначе потерпите его немилость!`,
+				description_override: `Приступайте к текущей комнате, иначе потерпите его немилость!"`,
 			},
 
 			{
 				language: Language.SChinese,
 				name_override: "阿哈利姆的失望",
-				description_override: `进入当前房间的战斗，不然他不高兴了你就难受了！`,
+				description_override: `进入当前房间的战斗，不然他不高兴了你就难受了！"`,
 			},
 
 		],
@@ -17562,25 +17562,25 @@ export function GenerateLocalizationData(): LocalizationData
 	Modifiers.push({
 		modifier_classname: "modifier_sand_king_boss_caustic_finale",
 		name: "Caustic Finale",
-		description: `Each stack reduces armor by 10%%.`,
+		description: `Each stack reduces armor by 10%%."`,
 		language_overrides:
 		[
 			{
 				language: Language.German,
 				name_override: "Ätzendes Finale",
-				description_override: `Pro Instanz wird die Rüstung um 10 %% reduziert.`,
+				description_override: `Pro Instanz wird die Rüstung um 10 %% reduziert."`,
 			},
 
 			{
 				language: Language.Russian,
 				name_override: "Горькая погибель",
-				description_override: `Каждый эффект уменьшает броню на 10%%.`,
+				description_override: `Каждый эффект уменьшает броню на 10%%."`,
 			},
 
 			{
 				language: Language.SChinese,
 				name_override: "腐尸毒",
-				description_override: `每次叠加减少10%%护甲。`,
+				description_override: `每次叠加减少10%%护甲。"`,
 			},
 
 		],
@@ -17589,25 +17589,25 @@ export function GenerateLocalizationData(): LocalizationData
 	Modifiers.push({
 		modifier_classname: "modifier_lifestealer_damage_counter",
 		name: "Brewing Rage",
-		description: `Enrages when receiving heavy damage in a short period.`,
+		description: `Enrages when receiving heavy damage in a short period."`,
 		language_overrides:
 		[
 			{
 				language: Language.German,
 				name_override: "Aufkochender Zorn",
-				description_override: `Verfällt in Raserei, wenn in kurzer Zeit viel Schaden erlitten wird.`,
+				description_override: `Verfällt in Raserei, wenn in kurzer Zeit viel Schaden erlitten wird."`,
 			},
 
 			{
 				language: Language.Russian,
 				name_override: "Закипающее бешенство",
-				description_override: `Впадает в бешенство, если получит много урона за небольшое время.`,
+				description_override: `Впадает в бешенство, если получит много урона за небольшое время."`,
 			},
 
 			{
 				language: Language.SChinese,
 				name_override: "酝酿狂暴",
-				description_override: `短时间内受到大量伤害时将会进入狂暴状态。`,
+				description_override: `短时间内受到大量伤害时将会进入狂暴状态。"`,
 			},
 
 		],
@@ -17616,25 +17616,25 @@ export function GenerateLocalizationData(): LocalizationData
 	Modifiers.push({
 		modifier_classname: "modifier_lifestealer_enraged",
 		name: "Enraged",
-		description: `Has greatly increased movement speed and attack speed.`,
+		description: `Has greatly increased movement speed and attack speed."`,
 		language_overrides:
 		[
 			{
 				language: Language.German,
 				name_override: "Erzürnt",
-				description_override: `Hat stark erhöhtes Bewegungs- und Angriffstempo.`,
+				description_override: `Hat stark erhöhtes Bewegungs- und Angriffstempo."`,
 			},
 
 			{
 				language: Language.Russian,
 				name_override: "Бешенство",
-				description_override: `Скорость передвижения и атаки значительно увеличена.`,
+				description_override: `Скорость передвижения и атаки значительно увеличена."`,
 			},
 
 			{
 				language: Language.SChinese,
 				name_override: "狂暴",
-				description_override: `移动速度和攻击速度得到极大提升。`,
+				description_override: `移动速度和攻击速度得到极大提升。"`,
 			},
 
 		],
@@ -17643,25 +17643,25 @@ export function GenerateLocalizationData(): LocalizationData
 	Modifiers.push({
 		modifier_classname: "modifier_urn_upheaval",
 		name: "Urn's Grip",
-		description: `Movement speed is greatly reduced.`,
+		description: `Movement speed is greatly reduced."`,
 		language_overrides:
 		[
 			{
 				language: Language.German,
 				name_override: "Griff der Urne",
-				description_override: `Bewegungstempo stark reduziert.`,
+				description_override: `Bewegungstempo stark reduziert."`,
 			},
 
 			{
 				language: Language.Russian,
 				name_override: "Urn's Grip",
-				description_override: `Скорость передвижения существенно снижена.`,
+				description_override: `Скорость передвижения существенно снижена."`,
 			},
 
 			{
 				language: Language.SChinese,
 				name_override: "灵龛的掌控",
-				description_override: `移动速度大幅下降。`,
+				description_override: `移动速度大幅下降。"`,
 			},
 
 		],
@@ -17670,25 +17670,25 @@ export function GenerateLocalizationData(): LocalizationData
 	Modifiers.push({
 		modifier_classname: "modifier_aghsfort_player_transform",
 		name: "Transformed",
-		description: `Your inner self is revealed for all to see. Cannot heal, cast spells, or use items.`,
+		description: `Your inner self is revealed for all to see. Cannot heal, cast spells, or use items."`,
 		language_overrides:
 		[
 			{
 				language: Language.German,
 				name_override: "Transformiert",
-				description_override: `Ihr inneres Ich ist allen offenbart. Heilung, das Wirken von Zaubern und Gegenstandsnutzung nicht möglich.`,
+				description_override: `Ihr inneres Ich ist allen offenbart. Heilung, das Wirken von Zaubern und Gegenstandsnutzung nicht möglich."`,
 			},
 
 			{
 				language: Language.Russian,
 				name_override: "Трансформация",
-				description_override: `Все видят вашу внутреннюю сущность. Нельзя лечиться, применять способности и использовать предметы.`,
+				description_override: `Все видят вашу внутреннюю сущность. Нельзя лечиться, применять способности и использовать предметы."`,
 			},
 
 			{
 				language: Language.SChinese,
 				name_override: "已变身",
-				description_override: `你的内在自我已向所有人暴露。无法治疗、施法或使用物品。`,
+				description_override: `你的内在自我已向所有人暴露。无法治疗、施法或使用物品。"`,
 			},
 
 		],
@@ -17697,25 +17697,25 @@ export function GenerateLocalizationData(): LocalizationData
 	Modifiers.push({
 		modifier_classname: "modifier_bandit_archer_arrow_debuff",
 		name: "Sabaku Archer Arrow",
-		description: `This unit is affected by Break.`,
+		description: `This unit is affected by Break."`,
 		language_overrides:
 		[
 			{
 				language: Language.German,
 				name_override: "Pfeil des Sabaku-Bogenschützen",
-				description_override: `Diese Einheit ist unterbrochen.`,
+				description_override: `Diese Einheit ist unterbrochen."`,
 			},
 
 			{
 				language: Language.Russian,
 				name_override: "Стрела лучника Сабаку",
-				description_override: `На это существо наложено истощение.`,
+				description_override: `На это существо наложено истощение."`,
 			},
 
 			{
 				language: Language.SChinese,
 				name_override: "荒漠射手神箭",
-				description_override: `这个单位正处于破坏作用下。`,
+				description_override: `这个单位正处于破坏作用下。"`,
 			},
 
 		],
@@ -17724,25 +17724,25 @@ export function GenerateLocalizationData(): LocalizationData
 	Modifiers.push({
 		modifier_classname: "modifier_item_sign_of_the_arachnid_effect",
 		name: "Arachnid Aura",
-		description: `Gaining bonus movement and attack speed.`,
+		description: `Gaining bonus movement and attack speed."`,
 		language_overrides:
 		[
 			{
 				language: Language.German,
 				name_override: "Spinnenaura",
-				description_override: `Erhält Bewegungs- und Angriffstempo.`,
+				description_override: `Erhält Bewegungs- und Angriffstempo."`,
 			},
 
 			{
 				language: Language.Russian,
 				name_override: "Arachnid Aura",
-				description_override: `Скорость передвижения и атаки увеличена.`,
+				description_override: `Скорость передвижения и атаки увеличена."`,
 			},
 
 			{
 				language: Language.SChinese,
 				name_override: "蛛形光环",
-				description_override: `获得移动速度和攻击速度加成。`,
+				description_override: `获得移动速度和攻击速度加成。"`,
 			},
 
 		],
@@ -17751,25 +17751,25 @@ export function GenerateLocalizationData(): LocalizationData
 	Modifiers.push({
 		modifier_classname: "modifier_item_unhallowed_icon_effect",
 		name: "Bloodbond Aura",
-		description: `Gaining bonus HP regen. Physical attacks steal life and distribute it among others affected by Bloodbond Aura.`,
+		description: `Gaining bonus HP regen. Physical attacks steal life and distribute it among others affected by Bloodbond Aura."`,
 		language_overrides:
 		[
 			{
 				language: Language.German,
 				name_override: "Blutpaktaura",
-				description_override: `Gewährt Bonuslebensregeneration. Physische Angriffe rauben Lebenspunkte und verteilen diese auf alle Einheiten, die unter dem Einfluss der Blutpaktaura stehen.`,
+				description_override: `Gewährt Bonuslebensregeneration. Physische Angriffe rauben Lebenspunkte und verteilen diese auf alle Einheiten, die unter dem Einfluss der Blutpaktaura stehen."`,
 			},
 
 			{
 				language: Language.Russian,
 				name_override: "Bloodbond Aura",
-				description_override: `Увеличенное восстановление здоровья. Физические атаки крадут у жертв здоровье и распределяют его между всеми существами под эффектом этой ауры.`,
+				description_override: `Увеличенное восстановление здоровья. Физические атаки крадут у жертв здоровье и распределяют его между всеми существами под эффектом этой ауры."`,
 			},
 
 			{
 				language: Language.SChinese,
 				name_override: "血缘光环",
-				description_override: `获得额外的生命恢复速率。物理攻击可以吸血，并均摊给血缘光环作用下的所有单位。`,
+				description_override: `获得额外的生命恢复速率。物理攻击可以吸血，并均摊给血缘光环作用下的所有单位。"`,
 			},
 
 		],
@@ -17778,25 +17778,25 @@ export function GenerateLocalizationData(): LocalizationData
 	Modifiers.push({
 		modifier_classname: "modifier_item_preserved_skull_effect",
 		name: "Conjuration Aura",
-		description: `Gaining bonus mana regen and cooldown reduction.`,
+		description: `Gaining bonus mana regen and cooldown reduction."`,
 		language_overrides:
 		[
 			{
 				language: Language.German,
 				name_override: "Beschwöreraura",
-				description_override: `Erhält Bonusmanaregeneration und Abklingzeitreduzierung.`,
+				description_override: `Erhält Bonusmanaregeneration und Abklingzeitreduzierung."`,
 			},
 
 			{
 				language: Language.Russian,
 				name_override: "Conjuration Aura",
-				description_override: `Увеличенное восстановление маны и уменьшенная перезарядка способностей.`,
+				description_override: `Увеличенное восстановление маны и уменьшенная перезарядка способностей."`,
 			},
 
 			{
 				language: Language.SChinese,
 				name_override: "祈灵光环",
-				description_override: `获得魔法恢复和冷却时间减少加成。`,
+				description_override: `获得魔法恢复和冷却时间减少加成。"`,
 			},
 
 		],
@@ -17805,25 +17805,25 @@ export function GenerateLocalizationData(): LocalizationData
 	Modifiers.push({
 		modifier_classname: "modifier_book_of_strength",
 		name: "Book of Strength",
-		description: `Strength gained from consumed Books.`,
+		description: `Strength gained from consumed Books."`,
 		language_overrides:
 		[
 			{
 				language: Language.German,
 				name_override: "Buch der Stärke",
-				description_override: `Durch gelesene Bücher erhaltene Stärke.`,
+				description_override: `Durch gelesene Bücher erhaltene Stärke."`,
 			},
 
 			{
 				language: Language.Russian,
 				name_override: "Книга силы",
-				description_override: `Сила, полученная от книг.`,
+				description_override: `Сила, полученная от книг."`,
 			},
 
 			{
 				language: Language.SChinese,
 				name_override: "力量之书",
-				description_override: `消耗后获得了力量。`,
+				description_override: `消耗后获得了力量。"`,
 			},
 
 		],
@@ -17832,25 +17832,25 @@ export function GenerateLocalizationData(): LocalizationData
 	Modifiers.push({
 		modifier_classname: "modifier_book_of_agility",
 		name: "Book of Agility",
-		description: `Agility gained from consumed Books.`,
+		description: `Agility gained from consumed Books."`,
 		language_overrides:
 		[
 			{
 				language: Language.German,
 				name_override: "Buch der Agilität",
-				description_override: `Durch gelesene Bücher erhaltene Agilität.`,
+				description_override: `Durch gelesene Bücher erhaltene Agilität."`,
 			},
 
 			{
 				language: Language.Russian,
 				name_override: "Книга ловкости",
-				description_override: `Ловкость, полученная от книг.`,
+				description_override: `Ловкость, полученная от книг."`,
 			},
 
 			{
 				language: Language.SChinese,
 				name_override: "敏捷之书",
-				description_override: `消耗后获得了敏捷。`,
+				description_override: `消耗后获得了敏捷。"`,
 			},
 
 		],
@@ -17859,25 +17859,25 @@ export function GenerateLocalizationData(): LocalizationData
 	Modifiers.push({
 		modifier_classname: "modifier_book_of_intelligence",
 		name: "Book of Intelligence",
-		description: `Intelligence gained from consumed Books.`,
+		description: `Intelligence gained from consumed Books."`,
 		language_overrides:
 		[
 			{
 				language: Language.German,
 				name_override: "Buch der Intelligenz",
-				description_override: `Durch gelesene Bücher erhaltene Intelligenz.`,
+				description_override: `Durch gelesene Bücher erhaltene Intelligenz."`,
 			},
 
 			{
 				language: Language.Russian,
 				name_override: "Книга интеллекта",
-				description_override: `Интеллект, полученный от книг.`,
+				description_override: `Интеллект, полученный от книг."`,
 			},
 
 			{
 				language: Language.SChinese,
 				name_override: "智力之书",
-				description_override: `消耗后获得了智力。`,
+				description_override: `消耗后获得了智力。"`,
 			},
 
 		],
@@ -17886,25 +17886,25 @@ export function GenerateLocalizationData(): LocalizationData
 	Modifiers.push({
 		modifier_classname: "modifier_item_wand_of_the_brine_bubble",
 		name: "Brinefoam",
-		description: `This unit is protected by Brinefoam.  Healing 300 hp/sec.`,
+		description: `This unit is protected by Brinefoam.  Healing 300 hp/sec."`,
 		language_overrides:
 		[
 			{
 				language: Language.German,
 				name_override: "Salzschaum",
-				description_override: `Diese Einheit wird von Salzschaum beschützt. Heilt 300 LP/s.`,
+				description_override: `Diese Einheit wird von Salzschaum beschützt. Heilt 300 LP/s."`,
 			},
 
 			{
 				language: Language.Russian,
 				name_override: "Brinefoam",
-				description_override: `Под защитой Brinefoam существо восстанавливает 300 здоровья в секунду.`,
+				description_override: `Под защитой Brinefoam существо восстанавливает 300 здоровья в секунду."`,
 			},
 
 			{
 				language: Language.SChinese,
 				name_override: "苍洋泡沫",
-				description_override: `这个单位正受到苍洋泡沫的保护。每秒恢复300点生命。`,
+				description_override: `这个单位正受到苍洋泡沫的保护。每秒恢复300点生命。"`,
 			},
 
 		],
@@ -17913,25 +17913,25 @@ export function GenerateLocalizationData(): LocalizationData
 	Modifiers.push({
 		modifier_classname: "modifier_item_slippers_of_the_abyss_sprint",
 		name: "Aqueous Rush",
-		description: `This unit has greatly increased movement speed.`,
+		description: `This unit has greatly increased movement speed."`,
 		language_overrides:
 		[
 			{
 				language: Language.German,
 				name_override: "Wasserschritt",
-				description_override: `Diese Einheit hat stark erhöhtes Bewegungstempo.`,
+				description_override: `Diese Einheit hat stark erhöhtes Bewegungstempo."`,
 			},
 
 			{
 				language: Language.Russian,
 				name_override: "Aqueous Rush",
-				description_override: `Скорость передвижения значительно увеличена.`,
+				description_override: `Скорость передвижения значительно увеличена."`,
 			},
 
 			{
 				language: Language.SChinese,
 				name_override: "水性冲刺",
-				description_override: `这个单位的移动速度得到极大提升。`,
+				description_override: `这个单位的移动速度得到极大提升。"`,
 			},
 
 		],
@@ -17940,25 +17940,25 @@ export function GenerateLocalizationData(): LocalizationData
 	Modifiers.push({
 		modifier_classname: "modifier_item_glimmerdark_shield_prism",
 		name: "Gleam",
-		description: `This unit is immune to physical damage but receives greatly increased magic damage.`,
+		description: `This unit is immune to physical damage but receives greatly increased magic damage."`,
 		language_overrides:
 		[
 			{
 				language: Language.German,
 				name_override: "Schimmern",
-				description_override: `Diese Einheit ist immun gegen physischen Schaden, aber erleidet erheblich mehr Magieschaden.`,
+				description_override: `Diese Einheit ist immun gegen physischen Schaden, aber erleidet erheblich mehr Magieschaden."`,
 			},
 
 			{
 				language: Language.Russian,
 				name_override: "Gleam",
-				description_override: `Это существо невосприимчиво к физическому урону, но магия наносит ему намного больше урона.`,
+				description_override: `Это существо невосприимчиво к физическому урону, но магия наносит ему намного больше урона."`,
 			},
 
 			{
 				language: Language.SChinese,
 				name_override: "闪光",
-				description_override: `这个单位对物理伤害免疫，但是受到的魔法伤害大幅增加。`,
+				description_override: `这个单位对物理伤害免疫，但是受到的魔法伤害大幅增加。"`,
 			},
 
 		],
@@ -17967,25 +17967,25 @@ export function GenerateLocalizationData(): LocalizationData
 	Modifiers.push({
 		modifier_classname: "modifier_item_ambient_sorcery_effect",
 		name: "Ambient Sorcery",
-		description: `This unit is more vulnerable to magic damage.`,
+		description: `This unit is more vulnerable to magic damage."`,
 		language_overrides:
 		[
 			{
 				language: Language.German,
 				name_override: "Arkane Umgebung",
-				description_override: `Diese Einheit erleidet mehr Magieschaden.`,
+				description_override: `Diese Einheit erleidet mehr Magieschaden."`,
 			},
 
 			{
 				language: Language.Russian,
 				name_override: "Ambient Sorcery",
-				description_override: `Это существо получает больше магического урона.`,
+				description_override: `Это существо получает больше магического урона."`,
 			},
 
 			{
 				language: Language.SChinese,
 				name_override: "环域巫术",
-				description_override: `这个单位受到的魔法伤害增加。`,
+				description_override: `这个单位受到的魔法伤害增加。"`,
 			},
 
 		],
@@ -17994,25 +17994,25 @@ export function GenerateLocalizationData(): LocalizationData
 	Modifiers.push({
 		modifier_classname: "modifier_item_bear_cloak_effect",
 		name: "Rough Bearskin",
-		description: `This unit has bonus magic resistance.`,
+		description: `This unit has bonus magic resistance."`,
 		language_overrides:
 		[
 			{
 				language: Language.German,
 				name_override: "Dickes Bärenfell",
-				description_override: `Diese Einheit erhält Bonusmagieresistenz.`,
+				description_override: `Diese Einheit erhält Bonusmagieresistenz."`,
 			},
 
 			{
 				language: Language.Russian,
 				name_override: "Rough Bearskin",
-				description_override: `Сопротивление магии увеличено.`,
+				description_override: `Сопротивление магии увеличено."`,
 			},
 
 			{
 				language: Language.SChinese,
 				name_override: "毛糙熊皮",
-				description_override: `这个单位拥有额外魔法抗性。`,
+				description_override: `这个单位拥有额外魔法抗性。"`,
 			},
 
 		],
@@ -18021,25 +18021,25 @@ export function GenerateLocalizationData(): LocalizationData
 	Modifiers.push({
 		modifier_classname: "modifier_item_lifestone_pact",
 		name: "Health Pact",
-		description: `This unit is converting health into mana.`,
+		description: `This unit is converting health into mana."`,
 		language_overrides:
 		[
 			{
 				language: Language.German,
 				name_override: "Lebenspakt",
-				description_override: `Diese Einheit wandelt Leben in Mana um.`,
+				description_override: `Diese Einheit wandelt Leben in Mana um."`,
 			},
 
 			{
 				language: Language.Russian,
 				name_override: "Health Pact",
-				description_override: `Здоровье превращается в ману.`,
+				description_override: `Здоровье превращается в ману."`,
 			},
 
 			{
 				language: Language.SChinese,
 				name_override: "生命之契",
-				description_override: `这个单位正将生命转化为魔法。`,
+				description_override: `这个单位正将生命转化为魔法。"`,
 			},
 
 		],
@@ -18048,25 +18048,25 @@ export function GenerateLocalizationData(): LocalizationData
 	Modifiers.push({
 		modifier_classname: "modifier_item_corrupting_blade_buff",
 		name: "Devastation",
-		description: `Violet Blade attacks reduced this unit's armor by 14.`,
+		description: `Violet Blade attacks reduced this unit's armor by 14."`,
 		language_overrides:
 		[
 			{
 				language: Language.German,
 				name_override: "Verwüstung",
-				description_override: `Angriffe mit Violet Blade haben die Rüstung dieser Einheit um 14 reduziert.`,
+				description_override: `Angriffe mit Violet Blade haben die Rüstung dieser Einheit um 14 reduziert."`,
 			},
 
 			{
 				language: Language.Russian,
 				name_override: "Devastation",
-				description_override: `Атака с Violet Blade уменьшила броню этого существа на 14.`,
+				description_override: `Атака с Violet Blade уменьшила броню этого существа на 14."`,
 			},
 
 			{
 				language: Language.SChinese,
 				name_override: "黯寂",
-				description_override: `紫罗兰战刃的攻击降低该单位14点护甲。`,
+				description_override: `紫罗兰战刃的攻击降低该单位14点护甲。"`,
 			},
 
 		],
@@ -18075,25 +18075,25 @@ export function GenerateLocalizationData(): LocalizationData
 	Modifiers.push({
 		modifier_classname: "modifier_aghsfort_aura_reward_armor_bonus",
 		name: "Armadillo Aura",
-		description: `Providing additional {${LocalizationModifierProperty.PHYSICAL_ARMOR_BONUS}} armor.`,
+		description: `Providing additional {${LocalizationModifierProperty.PHYSICAL_ARMOR_BONUS}} armor."`,
 		language_overrides:
 		[
 			{
 				language: Language.German,
 				name_override: "Armadilloaura",
-				description_override: `Rüstung um {${LocalizationModifierProperty.PHYSICAL_ARMOR_BONUS}} erhöht.`,
+				description_override: `Rüstung um {${LocalizationModifierProperty.PHYSICAL_ARMOR_BONUS}} erhöht."`,
 			},
 
 			{
 				language: Language.Russian,
 				name_override: "Armadillo Aura",
-				description_override: `Броня увеличена на {${LocalizationModifierProperty.PHYSICAL_ARMOR_BONUS}}.`,
+				description_override: `Броня увеличена на {${LocalizationModifierProperty.PHYSICAL_ARMOR_BONUS}}."`,
 			},
 
 			{
 				language: Language.SChinese,
 				name_override: "穿山甲光环",
-				description_override: `提供{${LocalizationModifierProperty.PHYSICAL_ARMOR_BONUS}}点额外护甲。`,
+				description_override: `提供{${LocalizationModifierProperty.PHYSICAL_ARMOR_BONUS}}点额外护甲。"`,
 			},
 
 		],
@@ -18102,25 +18102,25 @@ export function GenerateLocalizationData(): LocalizationData
 	Modifiers.push({
 		modifier_classname: "modifier_aghsfort_aura_reward_magic_resist_bonus",
 		name: "Magical Cloak",
-		description: `Providing additional {${LocalizationModifierProperty.MAGICAL_RESISTANCE_BONUS}} Magic Resistance.`,
+		description: `Providing additional {${LocalizationModifierProperty.MAGICAL_RESISTANCE_BONUS}} Magic Resistance."`,
 		language_overrides:
 		[
 			{
 				language: Language.German,
 				name_override: "Magischer Umhang",
-				description_override: `Magieresistenz um {${LocalizationModifierProperty.MAGICAL_RESISTANCE_BONUS}} %% erhöht.`,
+				description_override: `Magieresistenz um {${LocalizationModifierProperty.MAGICAL_RESISTANCE_BONUS}} %% erhöht."`,
 			},
 
 			{
 				language: Language.Russian,
 				name_override: "Magical Cloak",
-				description_override: `Сопротивление магии увеличено на {${LocalizationModifierProperty.MAGICAL_RESISTANCE_BONUS}}.`,
+				description_override: `Сопротивление магии увеличено на {${LocalizationModifierProperty.MAGICAL_RESISTANCE_BONUS}}."`,
 			},
 
 			{
 				language: Language.SChinese,
 				name_override: "魔法斗篷",
-				description_override: `额外提供{${LocalizationModifierProperty.MAGICAL_RESISTANCE_BONUS}}魔法抗性。`,
+				description_override: `额外提供{${LocalizationModifierProperty.MAGICAL_RESISTANCE_BONUS}}魔法抗性。"`,
 			},
 
 		],
@@ -18129,25 +18129,25 @@ export function GenerateLocalizationData(): LocalizationData
 	Modifiers.push({
 		modifier_classname: "modifier_aghsfort_reward_crit_aura_bonus",
 		name: "Blademaster's Presence",
-		description: `Adds a chance that every attack deals a critical strike.`,
+		description: `Adds a chance that every attack deals a critical strike."`,
 		language_overrides:
 		[
 			{
 				language: Language.German,
 				name_override: "Präsenz des Klingenmeisters",
-				description_override: `Mit jedem Angriff gibt es die Chance, einen kritischen Treffer zu landen.`,
+				description_override: `Mit jedem Angriff gibt es die Chance, einen kritischen Treffer zu landen."`,
 			},
 
 			{
 				language: Language.Russian,
 				name_override: "Blademaster's Presence",
-				description_override: `Даёт шанс нанести критическую атаку.`,
+				description_override: `Даёт шанс нанести критическую атаку."`,
 			},
 
 			{
 				language: Language.SChinese,
 				name_override: "剑圣现世",
-				description_override: `拥有几率使每次攻击造成致命一击。`,
+				description_override: `拥有几率使每次攻击造成致命一击。"`,
 			},
 
 		],
@@ -18156,25 +18156,25 @@ export function GenerateLocalizationData(): LocalizationData
 	Modifiers.push({
 		modifier_classname: "modifier_aghsfort_tempbuff_corpse_explosion_aura",
 		name: "Corpse Explosion",
-		description: `Enemy units have a chance to explode in a gory heap, dealing Magic Damage equal to 25%% of their max HP to nearby units.`,
+		description: `Enemy units have a chance to explode in a gory heap, dealing Magic Damage equal to 25%% of their max HP to nearby units."`,
 		language_overrides:
 		[
 			{
 				language: Language.German,
 				name_override: "Leichenexplosion",
-				description_override: `Gegnerische Einheiten haben eine Chance, blutig zu explodieren und in ihrem Umkreis 25&nbsp;%% ihrer max. LP als magischen Schaden zu verursachen.`,
+				description_override: `Gegnerische Einheiten haben eine Chance, blutig zu explodieren und in ihrem Umkreis 25&nbsp;%% ihrer max. LP als magischen Schaden zu verursachen."`,
 			},
 
 			{
 				language: Language.Russian,
 				name_override: "Corpse Explosion",
-				description_override: `Враги могут взорваться после смерти, нанося магический урон, равный 25%% от их максимального здоровья.`,
+				description_override: `Враги могут взорваться после смерти, нанося магический урон, равный 25%% от их максимального здоровья."`,
 			},
 
 			{
 				language: Language.SChinese,
 				name_override: "尸爆",
-				description_override: `敌方单位有几率爆裂成一团血肉，对周围单位造成其25%%最大生命值的魔法伤害。`,
+				description_override: `敌方单位有几率爆裂成一团血肉，对周围单位造成其25%%最大生命值的魔法伤害。"`,
 			},
 
 		],
@@ -18183,25 +18183,25 @@ export function GenerateLocalizationData(): LocalizationData
 	Modifiers.push({
 		modifier_classname: "modifier_aghsfort_tempbuff_corpse_explosion_debuff",
 		name: "Bloated Sensation",
-		description: `When this unit dies, there is a chance it will explode dealing Magic Damage equal to 25%% of their max HP to nearby units.`,
+		description: `When this unit dies, there is a chance it will explode dealing Magic Damage equal to 25%% of their max HP to nearby units."`,
 		language_overrides:
 		[
 			{
 				language: Language.German,
 				name_override: "Völlegefühl",
-				description_override: `Gegnerische Einheiten haben eine Chance, blutig zu explodieren und in ihrem Umkreis 25&nbsp;%% ihrer max. LP als magischen Schaden zu verursachen.`,
+				description_override: `Gegnerische Einheiten haben eine Chance, blutig zu explodieren und in ihrem Umkreis 25&nbsp;%% ihrer max. LP als magischen Schaden zu verursachen."`,
 			},
 
 			{
 				language: Language.Russian,
 				name_override: "Bloated Sensation",
-				description_override: `Когда это существо умрёт, оно может взорваться, нанеся магический урон, равный 25%% от его максимального здоровья.`,
+				description_override: `Когда это существо умрёт, оно может взорваться, нанеся магический урон, равный 25%% от его максимального здоровья."`,
 			},
 
 			{
 				language: Language.SChinese,
 				name_override: "膨胀轰动",
-				description_override: `这个单位死亡时有几率爆炸，对周围单位造成其25%%最大生命值的魔法伤害。`,
+				description_override: `这个单位死亡时有几率爆炸，对周围单位造成其25%%最大生命值的魔法伤害。"`,
 			},
 
 		],
@@ -18210,25 +18210,25 @@ export function GenerateLocalizationData(): LocalizationData
 	Modifiers.push({
 		modifier_classname: "modifier_blessing_armor",
 		name: "Armor Blessing",
-		description: `Providing additional {${LocalizationModifierProperty.PHYSICAL_ARMOR_BONUS}} armor.`,
+		description: `Providing additional {${LocalizationModifierProperty.PHYSICAL_ARMOR_BONUS}} armor."`,
 		language_overrides:
 		[
 			{
 				language: Language.German,
 				name_override: "Segen der Rüstung",
-				description_override: `Rüstung um {${LocalizationModifierProperty.PHYSICAL_ARMOR_BONUS}} erhöht.`,
+				description_override: `Rüstung um {${LocalizationModifierProperty.PHYSICAL_ARMOR_BONUS}} erhöht."`,
 			},
 
 			{
 				language: Language.Russian,
 				name_override: "Дар брони",
-				description_override: `Броня увеличена на {${LocalizationModifierProperty.PHYSICAL_ARMOR_BONUS}}.`,
+				description_override: `Броня увеличена на {${LocalizationModifierProperty.PHYSICAL_ARMOR_BONUS}}."`,
 			},
 
 			{
 				language: Language.SChinese,
 				name_override: "护甲祝福",
-				description_override: `提供{${LocalizationModifierProperty.PHYSICAL_ARMOR_BONUS}}点额外护甲。`,
+				description_override: `提供{${LocalizationModifierProperty.PHYSICAL_ARMOR_BONUS}}点额外护甲。"`,
 			},
 
 		],
@@ -18237,25 +18237,25 @@ export function GenerateLocalizationData(): LocalizationData
 	Modifiers.push({
 		modifier_classname: "modifier_blessing_attack_speed",
 		name: "Attack Speed Blessing",
-		description: `Providing {${LocalizationModifierProperty.ATTACKSPEED_BONUS_CONSTANT}} attack speed.`,
+		description: `Providing {${LocalizationModifierProperty.ATTACKSPEED_BONUS_CONSTANT}} attack speed."`,
 		language_overrides:
 		[
 			{
 				language: Language.German,
 				name_override: "Segen des Angriffstempos",
-				description_override: `Angriffstempo um {${LocalizationModifierProperty.ATTACKSPEED_BONUS_CONSTANT}} erhöht.`,
+				description_override: `Angriffstempo um {${LocalizationModifierProperty.ATTACKSPEED_BONUS_CONSTANT}} erhöht."`,
 			},
 
 			{
 				language: Language.Russian,
 				name_override: "Дар скорости атаки",
-				description_override: `Скорость атаки увеличена на {${LocalizationModifierProperty.ATTACKSPEED_BONUS_CONSTANT}}.`,
+				description_override: `Скорость атаки увеличена на {${LocalizationModifierProperty.ATTACKSPEED_BONUS_CONSTANT}}."`,
 			},
 
 			{
 				language: Language.SChinese,
 				name_override: "攻击速度祝福",
-				description_override: `获得{${LocalizationModifierProperty.ATTACKSPEED_BONUS_CONSTANT}}攻击速度。`,
+				description_override: `获得{${LocalizationModifierProperty.ATTACKSPEED_BONUS_CONSTANT}}攻击速度。"`,
 			},
 
 		],
@@ -18264,25 +18264,25 @@ export function GenerateLocalizationData(): LocalizationData
 	Modifiers.push({
 		modifier_classname: "modifier_blessing_evasion",
 		name: "Evasion Blessing",
-		description: `Providing {${LocalizationModifierProperty.EVASION_CONSTANT}}% evasion.`,
+		description: `Providing {${LocalizationModifierProperty.EVASION_CONSTANT}}% evasion."`,
 		language_overrides:
 		[
 			{
 				language: Language.German,
 				name_override: "Segen des Ausweichens",
-				description_override: `{${LocalizationModifierProperty.EVASION_CONSTANT}}%ige Chance, Angriffen auszuweichen.`,
+				description_override: `{${LocalizationModifierProperty.EVASION_CONSTANT}}%ige Chance, Angriffen auszuweichen."`,
 			},
 
 			{
 				language: Language.Russian,
 				name_override: "Дар уклонения",
-				description_override: `Уклонение увеличено на {${LocalizationModifierProperty.EVASION_CONSTANT}}%.`,
+				description_override: `Уклонение увеличено на {${LocalizationModifierProperty.EVASION_CONSTANT}}%."`,
 			},
 
 			{
 				language: Language.SChinese,
 				name_override: "闪避祝福",
-				description_override: `获得{${LocalizationModifierProperty.EVASION_CONSTANT}}%闪避。`,
+				description_override: `获得{${LocalizationModifierProperty.EVASION_CONSTANT}}%闪避。"`,
 			},
 
 		],
@@ -18291,25 +18291,25 @@ export function GenerateLocalizationData(): LocalizationData
 	Modifiers.push({
 		modifier_classname: "modifier_blessing_mana_boost",
 		name: "Max Mana Blessing",
-		description: `Providing {${LocalizationModifierProperty.EXTRA_MANA_PERCENTAGE}}% max mana.`,
+		description: `Providing {${LocalizationModifierProperty.EXTRA_MANA_PERCENTAGE}}% max mana."`,
 		language_overrides:
 		[
 			{
 				language: Language.German,
 				name_override: "Segen des max. Manas",
-				description_override: `Maximaler Manavorrat um {${LocalizationModifierProperty.EXTRA_MANA_PERCENTAGE}} %% erhöht.`,
+				description_override: `Maximaler Manavorrat um {${LocalizationModifierProperty.EXTRA_MANA_PERCENTAGE}} %% erhöht."`,
 			},
 
 			{
 				language: Language.Russian,
 				name_override: "Дар максимальной маны",
-				description_override: `Максимальный запас маны увеличен на {${LocalizationModifierProperty.EXTRA_MANA_PERCENTAGE}}%.`,
+				description_override: `Максимальный запас маны увеличен на {${LocalizationModifierProperty.EXTRA_MANA_PERCENTAGE}}%."`,
 			},
 
 			{
 				language: Language.SChinese,
 				name_override: "最大魔法祝福",
-				description_override: `获得{${LocalizationModifierProperty.EXTRA_MANA_PERCENTAGE}}%最大魔法。`,
+				description_override: `获得{${LocalizationModifierProperty.EXTRA_MANA_PERCENTAGE}}%最大魔法。"`,
 			},
 
 		],
@@ -18318,25 +18318,25 @@ export function GenerateLocalizationData(): LocalizationData
 	Modifiers.push({
 		modifier_classname: "modifier_blessing_health_boost",
 		name: "Max Health Blessing",
-		description: `Providing {${LocalizationModifierProperty.EXTRA_HEALTH_PERCENTAGE}}% max health.`,
+		description: `Providing {${LocalizationModifierProperty.EXTRA_HEALTH_PERCENTAGE}}% max health."`,
 		language_overrides:
 		[
 			{
 				language: Language.German,
 				name_override: "Segen der max. LP",
-				description_override: `Maximale Lebenspunkte um {${LocalizationModifierProperty.EXTRA_HEALTH_PERCENTAGE}} %% erhöht.`,
+				description_override: `Maximale Lebenspunkte um {${LocalizationModifierProperty.EXTRA_HEALTH_PERCENTAGE}} %% erhöht."`,
 			},
 
 			{
 				language: Language.Russian,
 				name_override: "Дар максимального здоровья",
-				description_override: `Максимальное здоровье увеличено на {${LocalizationModifierProperty.EXTRA_HEALTH_PERCENTAGE}}%.`,
+				description_override: `Максимальное здоровье увеличено на {${LocalizationModifierProperty.EXTRA_HEALTH_PERCENTAGE}}%."`,
 			},
 
 			{
 				language: Language.SChinese,
 				name_override: "最大生命祝福",
-				description_override: `获得{${LocalizationModifierProperty.EXTRA_HEALTH_PERCENTAGE}}%点最大生命。`,
+				description_override: `获得{${LocalizationModifierProperty.EXTRA_HEALTH_PERCENTAGE}}%点最大生命。"`,
 			},
 
 		],
@@ -18345,25 +18345,25 @@ export function GenerateLocalizationData(): LocalizationData
 	Modifiers.push({
 		modifier_classname: "modifier_blessing_magic_resist",
 		name: "Magic Resist Blessing",
-		description: `Providing {${LocalizationModifierProperty.MAGICAL_RESISTANCE_BONUS}}% magic resistance.`,
+		description: `Providing {${LocalizationModifierProperty.MAGICAL_RESISTANCE_BONUS}}% magic resistance."`,
 		language_overrides:
 		[
 			{
 				language: Language.German,
 				name_override: "Segen der Magieresistenz",
-				description_override: `Magieresistenz um {${LocalizationModifierProperty.MAGICAL_RESISTANCE_BONUS}} %% erhöht.`,
+				description_override: `Magieresistenz um {${LocalizationModifierProperty.MAGICAL_RESISTANCE_BONUS}} %% erhöht."`,
 			},
 
 			{
 				language: Language.Russian,
 				name_override: "Дар сопротивления магии",
-				description_override: `Сопротивление магии увеличено на {${LocalizationModifierProperty.MAGICAL_RESISTANCE_BONUS}}%.`,
+				description_override: `Сопротивление магии увеличено на {${LocalizationModifierProperty.MAGICAL_RESISTANCE_BONUS}}%."`,
 			},
 
 			{
 				language: Language.SChinese,
 				name_override: "魔法抗性祝福",
-				description_override: `额外提供{${LocalizationModifierProperty.MAGICAL_RESISTANCE_BONUS}}%魔法抗性。`,
+				description_override: `额外提供{${LocalizationModifierProperty.MAGICAL_RESISTANCE_BONUS}}%魔法抗性。"`,
 			},
 
 		],
@@ -18372,30 +18372,30 @@ export function GenerateLocalizationData(): LocalizationData
 	Modifiers.push({
 		modifier_classname: "modifier_blessing_magic_damage_bonus",
 		name: "Spell Amplification Blessing",
-		description: `Providing {${LocalizationModifierProperty.SPELL_AMPLIFY_PERCENTAGE}}% spell amplification.`,
+		description: `Providing {${LocalizationModifierProperty.SPELL_AMPLIFY_PERCENTAGE}}% spell amplification."`,
 		language_overrides:
 		[
 			{
 				language: Language.Brazilian,
-				description_override: `Mais {${LocalizationModifierProperty.SPELL_AMPLIFY_PERCENTAGE}}% de amplificação mágica.`,
+				description_override: `Mais {${LocalizationModifierProperty.SPELL_AMPLIFY_PERCENTAGE}}% de amplificação mágica."`,
 			},
 
 			{
 				language: Language.German,
 				name_override: "Segen der Zauberverstärkung",
-				description_override: `Zauberverstärkung um {${LocalizationModifierProperty.SPELL_AMPLIFY_PERCENTAGE}} %% erhöht.`,
+				description_override: `Zauberverstärkung um {${LocalizationModifierProperty.SPELL_AMPLIFY_PERCENTAGE}} %% erhöht."`,
 			},
 
 			{
 				language: Language.Russian,
 				name_override: "Дар урона от заклинаний",
-				description_override: `Урон от заклинаний увеличен на {${LocalizationModifierProperty.SPELL_AMPLIFY_PERCENTAGE}}%.`,
+				description_override: `Урон от заклинаний увеличен на {${LocalizationModifierProperty.SPELL_AMPLIFY_PERCENTAGE}}%."`,
 			},
 
 			{
 				language: Language.SChinese,
 				name_override: "技能增强福佑",
-				description_override: `获得{${LocalizationModifierProperty.SPELL_AMPLIFY_PERCENTAGE}}%技能增强。`,
+				description_override: `获得{${LocalizationModifierProperty.SPELL_AMPLIFY_PERCENTAGE}}%技能增强。"`,
 			},
 
 		],
@@ -18404,31 +18404,31 @@ export function GenerateLocalizationData(): LocalizationData
 	Modifiers.push({
 		modifier_classname: "modifier_blessing_damage_bonus",
 		name: "Damage Bonus Blessing",
-		description: `Providing {${LocalizationModifierProperty.PREATTACK_BONUS_DAMAGE}} attack damage (+%dMODIFIER_PROPERTY_TOOLTIP% per level).`,
+		description: `Providing {${LocalizationModifierProperty.PREATTACK_BONUS_DAMAGE}} attack damage (+%dMODIFIER_PROPERTY_TOOLTIP% per level)."`,
 		language_overrides:
 		[
 			{
 				language: Language.Brazilian,
 				name_override: "Bênção do Dano Adicional",
-				description_override: `Mais {${LocalizationModifierProperty.PREATTACK_BONUS_DAMAGE}} de dano de ataque (+%dMODIFIER_PROPERTY_TOOLTIP% por nível).`,
+				description_override: `Mais {${LocalizationModifierProperty.PREATTACK_BONUS_DAMAGE}} de dano de ataque (+%dMODIFIER_PROPERTY_TOOLTIP% por nível)."`,
 			},
 
 			{
 				language: Language.German,
 				name_override: "Segen des Bonusschadens",
-				description_override: `Angriffsschaden um {${LocalizationModifierProperty.PREATTACK_BONUS_DAMAGE}} erhöht (+%dMODIFIER_PROPERTY_TOOLTIP% pro Level).`,
+				description_override: `Angriffsschaden um {${LocalizationModifierProperty.PREATTACK_BONUS_DAMAGE}} erhöht (+%dMODIFIER_PROPERTY_TOOLTIP% pro Level)."`,
 			},
 
 			{
 				language: Language.Russian,
 				name_override: "Дар урона",
-				description_override: `Урон увеличен на {${LocalizationModifierProperty.PREATTACK_BONUS_DAMAGE}} (+%dMODIFIER_PROPERTY_TOOLTIP% за уровень).`,
+				description_override: `Урон увеличен на {${LocalizationModifierProperty.PREATTACK_BONUS_DAMAGE}} (+%dMODIFIER_PROPERTY_TOOLTIP% за уровень)."`,
 			},
 
 			{
 				language: Language.SChinese,
 				name_override: "攻击力加成福佑",
-				description_override: `获得{${LocalizationModifierProperty.PREATTACK_BONUS_DAMAGE}}点攻击力（每级+%dMODIFIER_PROPERTY_TOOLTIP%点）`,
+				description_override: `获得{${LocalizationModifierProperty.PREATTACK_BONUS_DAMAGE}}点攻击力（每级+%dMODIFIER_PROPERTY_TOOLTIP%点）"`,
 			},
 
 		],
@@ -18437,31 +18437,31 @@ export function GenerateLocalizationData(): LocalizationData
 	Modifiers.push({
 		modifier_classname: "modifier_blessing_movement_speed",
 		name: "Movement Speed Blessing",
-		description: `Providing {${LocalizationModifierProperty.MOVESPEED_BONUS_PERCENTAGE}}% movement speed.`,
+		description: `Providing {${LocalizationModifierProperty.MOVESPEED_BONUS_PERCENTAGE}}% movement speed."`,
 		language_overrides:
 		[
 			{
 				language: Language.Brazilian,
 				name_override: "Bênção da Velocidade de Movimento",
-				description_override: `Mais {${LocalizationModifierProperty.MOVESPEED_BONUS_PERCENTAGE}}% de velocidade de movimento.`,
+				description_override: `Mais {${LocalizationModifierProperty.MOVESPEED_BONUS_PERCENTAGE}}% de velocidade de movimento."`,
 			},
 
 			{
 				language: Language.German,
 				name_override: "Segen des Bewegungstempos",
-				description_override: `Bewegungstempo um {${LocalizationModifierProperty.MOVESPEED_BONUS_PERCENTAGE}} %% erhöht.`,
+				description_override: `Bewegungstempo um {${LocalizationModifierProperty.MOVESPEED_BONUS_PERCENTAGE}} %% erhöht."`,
 			},
 
 			{
 				language: Language.Russian,
 				name_override: "Дар скорости передвижения",
-				description_override: `Скорость передвижения увеличена на {${LocalizationModifierProperty.MOVESPEED_BONUS_PERCENTAGE}}%.`,
+				description_override: `Скорость передвижения увеличена на {${LocalizationModifierProperty.MOVESPEED_BONUS_PERCENTAGE}}%."`,
 			},
 
 			{
 				language: Language.SChinese,
 				name_override: "移动速度福佑",
-				description_override: `获得{${LocalizationModifierProperty.MOVESPEED_BONUS_PERCENTAGE}}%移动速度加成。`,
+				description_override: `获得{${LocalizationModifierProperty.MOVESPEED_BONUS_PERCENTAGE}}%移动速度加成。"`,
 			},
 
 		],
@@ -18470,31 +18470,31 @@ export function GenerateLocalizationData(): LocalizationData
 	Modifiers.push({
 		modifier_classname: "modifier_blessing_damage_reflect",
 		name: "Damage Reflection",
-		description: `Reflecting {${LocalizationModifierProperty.TOOLTIP}}% of damage back on the attacker.`,
+		description: `Reflecting {${LocalizationModifierProperty.TOOLTIP}}% of damage back on the attacker."`,
 		language_overrides:
 		[
 			{
 				language: Language.Brazilian,
 				name_override: "Reflexão de Dano",
-				description_override: `Refletindo {${LocalizationModifierProperty.TOOLTIP}}% do dano de volta ao atacante.`,
+				description_override: `Refletindo {${LocalizationModifierProperty.TOOLTIP}}% do dano de volta ao atacante."`,
 			},
 
 			{
 				language: Language.German,
 				name_override: "Schadenreflexion",
-				description_override: `Reflektiert {${LocalizationModifierProperty.TOOLTIP}} %% des erlittenen Schadens zurück auf den Angreifer.`,
+				description_override: `Reflektiert {${LocalizationModifierProperty.TOOLTIP}} %% des erlittenen Schadens zurück auf den Angreifer."`,
 			},
 
 			{
 				language: Language.Russian,
 				name_override: "Отражение урона",
-				description_override: `Отражает {${LocalizationModifierProperty.TOOLTIP}}% урона в того, кто его нанёс.`,
+				description_override: `Отражает {${LocalizationModifierProperty.TOOLTIP}}% урона в того, кто его нанёс."`,
 			},
 
 			{
 				language: Language.SChinese,
 				name_override: "伤害反弹",
-				description_override: `{${LocalizationModifierProperty.TOOLTIP}}%伤害反弹给攻击者。`,
+				description_override: `{${LocalizationModifierProperty.TOOLTIP}}%伤害反弹给攻击者。"`,
 			},
 
 		],
@@ -18503,31 +18503,31 @@ export function GenerateLocalizationData(): LocalizationData
 	Modifiers.push({
 		modifier_classname: "modifier_blessing_spell_life_steal",
 		name: "Spell Life Steal Blessing",
-		description: `{${LocalizationModifierProperty.TOOLTIP}}% of spell damage dealt is returned as health.`,
+		description: `{${LocalizationModifierProperty.TOOLTIP}}% of spell damage dealt is returned as health."`,
 		language_overrides:
 		[
 			{
 				language: Language.Brazilian,
 				name_override: "Bênção do Roubo de Vida Mágico",
-				description_override: `{${LocalizationModifierProperty.TOOLTIP}}% do dano mágico causado é retornado como vida.`,
+				description_override: `{${LocalizationModifierProperty.TOOLTIP}}% do dano mágico causado é retornado como vida."`,
 			},
 
 			{
 				language: Language.German,
 				name_override: "Segen des Zauberlebensraubs",
-				description_override: `{${LocalizationModifierProperty.TOOLTIP}} %% des Zauberschadens wird in Heilung umgewandelt.`,
+				description_override: `{${LocalizationModifierProperty.TOOLTIP}} %% des Zauberschadens wird in Heilung umgewandelt."`,
 			},
 
 			{
 				language: Language.Russian,
 				name_override: "Дар вампиризма заклинаниями",
-				description_override: `Вампиризм заклинаниями увеличен на {${LocalizationModifierProperty.TOOLTIP}}%.`,
+				description_override: `Вампиризм заклинаниями увеличен на {${LocalizationModifierProperty.TOOLTIP}}%."`,
 			},
 
 			{
 				language: Language.SChinese,
 				name_override: "法术吸血福佑",
-				description_override: `{${LocalizationModifierProperty.TOOLTIP}}%法术伤害将以生命形式返还。`,
+				description_override: `{${LocalizationModifierProperty.TOOLTIP}}%法术伤害将以生命形式返还。"`,
 			},
 
 		],
@@ -18536,31 +18536,31 @@ export function GenerateLocalizationData(): LocalizationData
 	Modifiers.push({
 		modifier_classname: "modifier_blessing_life_steal",
 		name: "Life Steal Blessing",
-		description: `{${LocalizationModifierProperty.TOOLTIP}}% of attack damage dealt is returned as health.`,
+		description: `{${LocalizationModifierProperty.TOOLTIP}}% of attack damage dealt is returned as health."`,
 		language_overrides:
 		[
 			{
 				language: Language.Brazilian,
 				name_override: "Bênção do Roubo de Vida",
-				description_override: `{${LocalizationModifierProperty.TOOLTIP}}% do dano de ataque causado é retornado como vida.`,
+				description_override: `{${LocalizationModifierProperty.TOOLTIP}}% do dano de ataque causado é retornado como vida."`,
 			},
 
 			{
 				language: Language.German,
 				name_override: "Segen des Lebensraubs",
-				description_override: `{${LocalizationModifierProperty.TOOLTIP}} %% des Angriffsschadens wird in Heilung umgewandelt.`,
+				description_override: `{${LocalizationModifierProperty.TOOLTIP}} %% des Angriffsschadens wird in Heilung umgewandelt."`,
 			},
 
 			{
 				language: Language.Russian,
 				name_override: "Дар вампиризма",
-				description_override: `Вампиризм увеличен на {${LocalizationModifierProperty.TOOLTIP}}%.`,
+				description_override: `Вампиризм увеличен на {${LocalizationModifierProperty.TOOLTIP}}%."`,
 			},
 
 			{
 				language: Language.SChinese,
 				name_override: "吸血福佑",
-				description_override: `{${LocalizationModifierProperty.TOOLTIP}}%攻击伤害将以生命形式返还。`,
+				description_override: `{${LocalizationModifierProperty.TOOLTIP}}%攻击伤害将以生命形式返还。"`,
 			},
 
 		],
@@ -18569,31 +18569,31 @@ export function GenerateLocalizationData(): LocalizationData
 	Modifiers.push({
 		modifier_classname: "modifier_blessing_potion_dragon",
 		name: "Dragon Potion Blessing",
-		description: `Dragon Potions now transform you into a Black Dragon, increasing attack damage by an additional {${LocalizationModifierProperty.TOOLTIP2}} and splash damage by an additional {${LocalizationModifierProperty.TOOLTIP}}%.`,
+		description: `Dragon Potions now transform you into a Black Dragon, increasing attack damage by an additional {${LocalizationModifierProperty.TOOLTIP2}} and splash damage by an additional {${LocalizationModifierProperty.TOOLTIP}}%."`,
 		language_overrides:
 		[
 			{
 				language: Language.Brazilian,
 				name_override: "Bênção da Poção Draconiana",
-				description_override: `Agora, a Poção Draconiana transforma você em um Dragão Negro, aumentando o dano de ataque em {${LocalizationModifierProperty.TOOLTIP2}} e o dano em área em {${LocalizationModifierProperty.TOOLTIP}}%.`,
+				description_override: `Agora, a Poção Draconiana transforma você em um Dragão Negro, aumentando o dano de ataque em {${LocalizationModifierProperty.TOOLTIP2}} e o dano em área em {${LocalizationModifierProperty.TOOLTIP}}%."`,
 			},
 
 			{
 				language: Language.German,
 				name_override: "Segen des Drachentranks",
-				description_override: `Trank des Drachen verwandelt Sie nun in einen Schwarzdrachen, was den Angriffsschaden um weitere {${LocalizationModifierProperty.TOOLTIP2}} und den Flächenschaden um weitere %dMODIFIER_PROPERTY_TOOLTIP% %% erhöht.`,
+				description_override: `Trank des Drachen verwandelt Sie nun in einen Schwarzdrachen, was den Angriffsschaden um weitere {${LocalizationModifierProperty.TOOLTIP2}} und den Flächenschaden um weitere %dMODIFIER_PROPERTY_TOOLTIP% %% erhöht."`,
 			},
 
 			{
 				language: Language.Russian,
 				name_override: "Дар усиленных зелий дракона",
-				description_override: `Зелья дракона превращают это существо в чёрного дракона, отчего урон от его атак увеличивается на {${LocalizationModifierProperty.TOOLTIP2}}, а урон по области — на {${LocalizationModifierProperty.TOOLTIP}}%.`,
+				description_override: `Зелья дракона превращают это существо в чёрного дракона, отчего урон от его атак увеличивается на {${LocalizationModifierProperty.TOOLTIP2}}, а урон по области — на {${LocalizationModifierProperty.TOOLTIP}}%."`,
 			},
 
 			{
 				language: Language.SChinese,
 				name_override: "古龙药水福佑",
-				description_override: `古龙药水现在把你变成一头黑龙，攻击力额外提升{${LocalizationModifierProperty.TOOLTIP2}}点，溅射伤害额外提升{${LocalizationModifierProperty.TOOLTIP}}%。`,
+				description_override: `古龙药水现在把你变成一头黑龙，攻击力额外提升{${LocalizationModifierProperty.TOOLTIP2}}点，溅射伤害额外提升{${LocalizationModifierProperty.TOOLTIP}}%。"`,
 			},
 
 		],
@@ -18602,31 +18602,31 @@ export function GenerateLocalizationData(): LocalizationData
 	Modifiers.push({
 		modifier_classname: "modifier_blessing_potion_echo_slam",
 		name: "Echo Slam Potion Blessing",
-		description: `Echo Slam Potions deal an additional {${LocalizationModifierProperty.TOOLTIP}} echo damage.`,
+		description: `Echo Slam Potions deal an additional {${LocalizationModifierProperty.TOOLTIP}} echo damage."`,
 		language_overrides:
 		[
 			{
 				language: Language.Brazilian,
 				name_override: "Bênção da Poção Ecoante",
-				description_override: `Poções Ecoantes causam mais {${LocalizationModifierProperty.TOOLTIP}} de dano ecoante.`,
+				description_override: `Poções Ecoantes causam mais {${LocalizationModifierProperty.TOOLTIP}} de dano ecoante."`,
 			},
 
 			{
 				language: Language.German,
 				name_override: "Segen des Donnerechotranks",
-				description_override: `Donnerechotränke verursachen {${LocalizationModifierProperty.TOOLTIP}} mehr Echoschaden.`,
+				description_override: `Donnerechotränke verursachen {${LocalizationModifierProperty.TOOLTIP}} mehr Echoschaden."`,
 			},
 
 			{
 				language: Language.Russian,
 				name_override: "Дар усиленных зелий дрожи земли",
-				description_override: `Зелья дрожи земли наносят на {${LocalizationModifierProperty.TOOLTIP}} больше урона от эха.`,
+				description_override: `Зелья дрожи земли наносят на {${LocalizationModifierProperty.TOOLTIP}} больше урона от эха."`,
 			},
 
 			{
 				language: Language.SChinese,
 				name_override: "回音击药水福佑",
-				description_override: `回音击药水额外造成{${LocalizationModifierProperty.TOOLTIP}}点回音伤害。`,
+				description_override: `回音击药水额外造成{${LocalizationModifierProperty.TOOLTIP}}点回音伤害。"`,
 			},
 
 		],
@@ -18635,31 +18635,31 @@ export function GenerateLocalizationData(): LocalizationData
 	Modifiers.push({
 		modifier_classname: "modifier_blessing_potion_torrent",
 		name: "Torrent Potion Blessing",
-		description: `Torrent Potions have an additional {${LocalizationModifierProperty.TOOLTIP}}% chance to produce a torrent when damaged.`,
+		description: `Torrent Potions have an additional {${LocalizationModifierProperty.TOOLTIP}}% chance to produce a torrent when damaged."`,
 		language_overrides:
 		[
 			{
 				language: Language.Brazilian,
 				name_override: "Bênção da Poção da Torrente",
-				description_override: `Poções da Torrente concedem uma chance adicional de {${LocalizationModifierProperty.TOOLTIP}}% de produzir uma torrente ao sofrer dano.`,
+				description_override: `Poções da Torrente concedem uma chance adicional de {${LocalizationModifierProperty.TOOLTIP}}% de produzir uma torrente ao sofrer dano."`,
 			},
 
 			{
 				language: Language.German,
 				name_override: "Segen des Sturzfluttranks",
-				description_override: `Sturzfluttränke haben eine {${LocalizationModifierProperty.TOOLTIP}} %% höhere Chance, bei erlittenen Angriffen eine Sturzflut zu erzeugen.`,
+				description_override: `Sturzfluttränke haben eine {${LocalizationModifierProperty.TOOLTIP}} %% höhere Chance, bei erlittenen Angriffen eine Sturzflut zu erzeugen."`,
 			},
 
 			{
 				language: Language.Russian,
 				name_override: "Дар усиленных зелий гейзера",
-				description_override: `Шанс создать ответный гейзер увеличен на {${LocalizationModifierProperty.TOOLTIP}}%.`,
+				description_override: `Шанс создать ответный гейзер увеличен на {${LocalizationModifierProperty.TOOLTIP}}%."`,
 			},
 
 			{
 				language: Language.SChinese,
 				name_override: "洪流药水福佑",
-				description_override: `洪流药水额外拥有{${LocalizationModifierProperty.TOOLTIP}}%几率在受到攻击时产生洪流。`,
+				description_override: `洪流药水额外拥有{${LocalizationModifierProperty.TOOLTIP}}%几率在受到攻击时产生洪流。"`,
 			},
 
 		],
@@ -18668,31 +18668,31 @@ export function GenerateLocalizationData(): LocalizationData
 	Modifiers.push({
 		modifier_classname: "modifier_blessing_potion_ravage",
 		name: "Ravage Potion Blessing",
-		description: `Ravage Potions hit enemies in an additional {${LocalizationModifierProperty.TOOLTIP}} radius.`,
+		description: `Ravage Potions hit enemies in an additional {${LocalizationModifierProperty.TOOLTIP}} radius."`,
 		language_overrides:
 		[
 			{
 				language: Language.Brazilian,
 				name_override: "Bênção da Poção Devastadora",
-				description_override: `Poções Devastadoras atingem inimigos em um raio adicional de {${LocalizationModifierProperty.TOOLTIP}} unidades.`,
+				description_override: `Poções Devastadoras atingem inimigos em um raio adicional de {${LocalizationModifierProperty.TOOLTIP}} unidades."`,
 			},
 
 			{
 				language: Language.German,
 				name_override: "Segen des Verwüstungstranks",
-				description_override: `Radius von Verwüstungstränken ist {${LocalizationModifierProperty.TOOLTIP}} größer.`,
+				description_override: `Radius von Verwüstungstränken ist {${LocalizationModifierProperty.TOOLTIP}} größer."`,
 			},
 
 			{
 				language: Language.Russian,
 				name_override: "Дар усиленных зелий сокрушения",
-				description_override: `Радиус эффекта от зелий сокрушения увеличен на {${LocalizationModifierProperty.TOOLTIP}}.`,
+				description_override: `Радиус эффекта от зелий сокрушения увеличен на {${LocalizationModifierProperty.TOOLTIP}}."`,
 			},
 
 			{
 				language: Language.SChinese,
 				name_override: "毁灭药水福佑",
-				description_override: `毁灭药水击中敌人的范围额外增加{${LocalizationModifierProperty.TOOLTIP}}。`,
+				description_override: `毁灭药水击中敌人的范围额外增加{${LocalizationModifierProperty.TOOLTIP}}。"`,
 			},
 
 		],
@@ -18701,31 +18701,31 @@ export function GenerateLocalizationData(): LocalizationData
 	Modifiers.push({
 		modifier_classname: "modifier_blessing_potion_shadow_wave",
 		name: "Shadow Wave Potion Blessing",
-		description: `Shadow Wave Potions heal allies and damage enemies for an additional {${LocalizationModifierProperty.TOOLTIP}}.`,
+		description: `Shadow Wave Potions heal allies and damage enemies for an additional {${LocalizationModifierProperty.TOOLTIP}}."`,
 		language_overrides:
 		[
 			{
 				language: Language.Brazilian,
 				name_override: "Bênção da Poção da Onda Sombria",
-				description_override: `Poções da Onda Sombria curam aliados e causam dano a inimigos em um adicional de {${LocalizationModifierProperty.TOOLTIP}}.`,
+				description_override: `Poções da Onda Sombria curam aliados e causam dano a inimigos em um adicional de {${LocalizationModifierProperty.TOOLTIP}}."`,
 			},
 
 			{
 				language: Language.German,
 				name_override: "Segen des Schattenwellentranks",
-				description_override: `Schattenwellentränke sorgen für {${LocalizationModifierProperty.TOOLTIP}} zusätzliche Heilung bei Verbündeten und zusätzlichen Schaden bei Gegnern.`,
+				description_override: `Schattenwellentränke sorgen für {${LocalizationModifierProperty.TOOLTIP}} zusätzliche Heilung bei Verbündeten und zusätzlichen Schaden bei Gegnern."`,
 			},
 
 			{
 				language: Language.Russian,
 				name_override: "Дар усиленных зелий теней",
-				description_override: `Лечение и урон ответной волны теней увеличены на {${LocalizationModifierProperty.TOOLTIP}}.`,
+				description_override: `Лечение и урон ответной волны теней увеличены на {${LocalizationModifierProperty.TOOLTIP}}."`,
 			},
 
 			{
 				language: Language.SChinese,
 				name_override: "暗影波药水福佑",
-				description_override: `暗影波药水额外治疗友军和伤害敌人{${LocalizationModifierProperty.TOOLTIP}}点。`,
+				description_override: `暗影波药水额外治疗友军和伤害敌人{${LocalizationModifierProperty.TOOLTIP}}点。"`,
 			},
 
 		],
@@ -18734,31 +18734,31 @@ export function GenerateLocalizationData(): LocalizationData
 	Modifiers.push({
 		modifier_classname: "modifier_blessing_potion_purification",
 		name: "Purification Potion Blessing",
-		description: `Purification Potions damage enemies in an additional {${LocalizationModifierProperty.TOOLTIP}} radius.`,
+		description: `Purification Potions damage enemies in an additional {${LocalizationModifierProperty.TOOLTIP}} radius."`,
 		language_overrides:
 		[
 			{
 				language: Language.Brazilian,
 				name_override: "Bênção da Poção Purificante",
-				description_override: `Poções Purificantes causam dano a inimigos em um raio adicional de {${LocalizationModifierProperty.TOOLTIP}} unidades.`,
+				description_override: `Poções Purificantes causam dano a inimigos em um raio adicional de {${LocalizationModifierProperty.TOOLTIP}} unidades."`,
 			},
 
 			{
 				language: Language.German,
 				name_override: "Segen des Reinigungstranks",
-				description_override: `Schadensradius von Tränken der Reinigung um {${LocalizationModifierProperty.TOOLTIP}} erhöht.`,
+				description_override: `Schadensradius von Tränken der Reinigung um {${LocalizationModifierProperty.TOOLTIP}} erhöht."`,
 			},
 
 			{
 				language: Language.Russian,
 				name_override: "Дар усиленных зелий покаяния",
-				description_override: `Радиус эффекта от зелий покаяния увеличен на {${LocalizationModifierProperty.TOOLTIP}}.`,
+				description_override: `Радиус эффекта от зелий покаяния увеличен на {${LocalizationModifierProperty.TOOLTIP}}."`,
 			},
 
 			{
 				language: Language.SChinese,
 				name_override: "洗礼药水福佑",
-				description_override: `洗礼药水额外伤害{${LocalizationModifierProperty.TOOLTIP}}范围内敌人。`,
+				description_override: `洗礼药水额外伤害{${LocalizationModifierProperty.TOOLTIP}}范围内敌人。"`,
 			},
 
 		],
@@ -18767,31 +18767,31 @@ export function GenerateLocalizationData(): LocalizationData
 	Modifiers.push({
 		modifier_classname: "modifier_blessing_respawn_time_reduction",
 		name: "Respawn Time Reduction Blessing",
-		description: `Reducing respawn time by {${LocalizationModifierProperty.TOOLTIP}}%.`,
+		description: `Reducing respawn time by {${LocalizationModifierProperty.TOOLTIP}}%."`,
 		language_overrides:
 		[
 			{
 				language: Language.Brazilian,
 				name_override: "Bênção do Renascimento Rápido",
-				description_override: `Tempo para renascer {${LocalizationModifierProperty.TOOLTIP}}% menor.`,
+				description_override: `Tempo para renascer {${LocalizationModifierProperty.TOOLTIP}}% menor."`,
 			},
 
 			{
 				language: Language.German,
 				name_override: "Segen des schnellen Wiedereinstiegs",
-				description_override: `Wiedereinstiegszeit um {${LocalizationModifierProperty.TOOLTIP}} %% reduziert.`,
+				description_override: `Wiedereinstiegszeit um {${LocalizationModifierProperty.TOOLTIP}} %% reduziert."`,
 			},
 
 			{
 				language: Language.Russian,
 				name_override: "Дар времени возрождения",
-				description_override: `Возрождается на {${LocalizationModifierProperty.TOOLTIP}}% быстрее.`,
+				description_override: `Возрождается на {${LocalizationModifierProperty.TOOLTIP}}% быстрее."`,
 			},
 
 			{
 				language: Language.SChinese,
 				name_override: "复活时间减少福佑",
-				description_override: `复活时间减少{${LocalizationModifierProperty.TOOLTIP}}%。`,
+				description_override: `复活时间减少{${LocalizationModifierProperty.TOOLTIP}}%。"`,
 			},
 
 		],
@@ -18800,25 +18800,25 @@ export function GenerateLocalizationData(): LocalizationData
 	Modifiers.push({
 		modifier_classname: "modifier_blessing_death_detonation",
 		name: "Death Detonation",
-		description: `Create an explosion on death, dealing {${LocalizationModifierProperty.TOOLTIP}} damage per level in %dMODIFIER_PROPERTY_TOOLTIP2% radius.`,
+		description: `Create an explosion on death, dealing {${LocalizationModifierProperty.TOOLTIP}} damage per level in %dMODIFIER_PROPERTY_TOOLTIP2% radius."`,
 		language_overrides:
 		[
 			{
 				language: Language.German,
 				name_override: "Todesexplosion",
-				description_override: `Explodiert beim Tod, was im Umkreis von {${LocalizationModifierProperty.TOOLTIP2}} Einheiten %dMODIFIER_PROPERTY_TOOLTIP% Schaden pro Level verursacht.`,
+				description_override: `Explodiert beim Tod, was im Umkreis von {${LocalizationModifierProperty.TOOLTIP2}} Einheiten %dMODIFIER_PROPERTY_TOOLTIP% Schaden pro Level verursacht."`,
 			},
 
 			{
 				language: Language.Russian,
 				name_override: "Взрывная смерть",
-				description_override: `Взрывается при смерти, нанося {${LocalizationModifierProperty.TOOLTIP}} урона за каждый свой уровень всем врагам в радиусе %dMODIFIER_PROPERTY_TOOLTIP2%.`,
+				description_override: `Взрывается при смерти, нанося {${LocalizationModifierProperty.TOOLTIP}} урона за каждый свой уровень всем врагам в радиусе %dMODIFIER_PROPERTY_TOOLTIP2%."`,
 			},
 
 			{
 				language: Language.SChinese,
 				name_override: "死亡引爆",
-				description_override: `死亡时产生爆炸，对{${LocalizationModifierProperty.TOOLTIP2}}范围内造成每级%dMODIFIER_PROPERTY_TOOLTIP%点伤害。`,
+				description_override: `死亡时产生爆炸，对{${LocalizationModifierProperty.TOOLTIP2}}范围内造成每级%dMODIFIER_PROPERTY_TOOLTIP%点伤害。"`,
 			},
 
 		],
@@ -18827,7 +18827,7 @@ export function GenerateLocalizationData(): LocalizationData
 	Modifiers.push({
 		modifier_classname: "modifier_blessing_strength",
 		name: "Strength Bonus",
-		description: `Providing additional {${LocalizationModifierProperty.STATS_STRENGTH_BONUS}} strength.`,
+		description: `Providing additional {${LocalizationModifierProperty.STATS_STRENGTH_BONUS}} strength."`,
 		language_overrides:
 		[
 			{
@@ -18838,19 +18838,19 @@ export function GenerateLocalizationData(): LocalizationData
 			{
 				language: Language.German,
 				name_override: "Stärkebonus",
-				description_override: `Erhöht die Stärke um {${LocalizationModifierProperty.STATS_STRENGTH_BONUS}}.`,
+				description_override: `Erhöht die Stärke um {${LocalizationModifierProperty.STATS_STRENGTH_BONUS}}."`,
 			},
 
 			{
 				language: Language.Russian,
 				name_override: "Бонус к силе",
-				description_override: `Сила увеличена на {${LocalizationModifierProperty.STATS_STRENGTH_BONUS}}.`,
+				description_override: `Сила увеличена на {${LocalizationModifierProperty.STATS_STRENGTH_BONUS}}."`,
 			},
 
 			{
 				language: Language.SChinese,
 				name_override: "力量加成",
-				description_override: `提供{${LocalizationModifierProperty.STATS_STRENGTH_BONUS}}点额外力量。`,
+				description_override: `提供{${LocalizationModifierProperty.STATS_STRENGTH_BONUS}}点额外力量。"`,
 			},
 
 		],
@@ -18859,25 +18859,25 @@ export function GenerateLocalizationData(): LocalizationData
 	Modifiers.push({
 		modifier_classname: "modifier_blessing_agility",
 		name: "Agility Bonus",
-		description: `Providing additional {${LocalizationModifierProperty.STATS_AGILITY_BONUS}} agility.`,
+		description: `Providing additional {${LocalizationModifierProperty.STATS_AGILITY_BONUS}} agility."`,
 		language_overrides:
 		[
 			{
 				language: Language.German,
 				name_override: "Agilitätsbonus",
-				description_override: `Erhöht die Agilität um {${LocalizationModifierProperty.STATS_AGILITY_BONUS}}.`,
+				description_override: `Erhöht die Agilität um {${LocalizationModifierProperty.STATS_AGILITY_BONUS}}."`,
 			},
 
 			{
 				language: Language.Russian,
 				name_override: "Бонус к ловкости",
-				description_override: `Ловкость увеличена на {${LocalizationModifierProperty.STATS_AGILITY_BONUS}}.`,
+				description_override: `Ловкость увеличена на {${LocalizationModifierProperty.STATS_AGILITY_BONUS}}."`,
 			},
 
 			{
 				language: Language.SChinese,
 				name_override: "敏捷加成",
-				description_override: `提供{${LocalizationModifierProperty.STATS_AGILITY_BONUS}}点额外敏捷。`,
+				description_override: `提供{${LocalizationModifierProperty.STATS_AGILITY_BONUS}}点额外敏捷。"`,
 			},
 
 		],
@@ -18886,25 +18886,25 @@ export function GenerateLocalizationData(): LocalizationData
 	Modifiers.push({
 		modifier_classname: "modifier_blessing_intelligence",
 		name: "Intellect Bonus",
-		description: `Providing additional {${LocalizationModifierProperty.STATS_INTELLECT_BONUS}} intellect.`,
+		description: `Providing additional {${LocalizationModifierProperty.STATS_INTELLECT_BONUS}} intellect."`,
 		language_overrides:
 		[
 			{
 				language: Language.German,
 				name_override: "Intellektbonus",
-				description_override: `Erhöht den Intellekt um {${LocalizationModifierProperty.STATS_INTELLECT_BONUS}}.`,
+				description_override: `Erhöht den Intellekt um {${LocalizationModifierProperty.STATS_INTELLECT_BONUS}}."`,
 			},
 
 			{
 				language: Language.Russian,
 				name_override: "Бонус к интеллекту",
-				description_override: `Интеллект увеличен на {${LocalizationModifierProperty.STATS_INTELLECT_BONUS}}.`,
+				description_override: `Интеллект увеличен на {${LocalizationModifierProperty.STATS_INTELLECT_BONUS}}."`,
 			},
 
 			{
 				language: Language.SChinese,
 				name_override: "智力奖赏",
-				description_override: `获得{${LocalizationModifierProperty.STATS_INTELLECT_BONUS}}点额外敏捷`,
+				description_override: `获得{${LocalizationModifierProperty.STATS_INTELLECT_BONUS}}点额外敏捷"`,
 			},
 
 		],
@@ -18913,25 +18913,25 @@ export function GenerateLocalizationData(): LocalizationData
 	Modifiers.push({
 		modifier_classname: "modifier_blessing_potion_health",
 		name: "Health Potion Pickup Blessing",
-		description: `Health potions heal you for an additional {${LocalizationModifierProperty.TOOLTIP}}% of your max health.`,
+		description: `Health potions heal you for an additional {${LocalizationModifierProperty.TOOLTIP}}% of your max health."`,
 		language_overrides:
 		[
 			{
 				language: Language.German,
 				name_override: "Segen des Heiltranks",
-				description_override: `Heiltränke stellen zusätzlich {${LocalizationModifierProperty.TOOLTIP}}&nbsp;%% der max. Lebenspunkte wieder her.`,
+				description_override: `Heiltränke stellen zusätzlich {${LocalizationModifierProperty.TOOLTIP}}&nbsp;%% der max. Lebenspunkte wieder her."`,
 			},
 
 			{
 				language: Language.Russian,
 				name_override: "Дар усиленных зелий лечения",
-				description_override: `Зелья лечения дополнительно восстанавливают {${LocalizationModifierProperty.TOOLTIP}}% от максимального запаса здоровья.`,
+				description_override: `Зелья лечения дополнительно восстанавливают {${LocalizationModifierProperty.TOOLTIP}}% от максимального запаса здоровья."`,
 			},
 
 			{
 				language: Language.SChinese,
 				name_override: "生命药水拾取福佑",
-				description_override: `生命药水治疗你时额外回复{${LocalizationModifierProperty.TOOLTIP}}%最大生命值。`,
+				description_override: `生命药水治疗你时额外回复{${LocalizationModifierProperty.TOOLTIP}}%最大生命值。"`,
 			},
 
 		],
@@ -18940,25 +18940,25 @@ export function GenerateLocalizationData(): LocalizationData
 	Modifiers.push({
 		modifier_classname: "modifier_blessing_potion_mana",
 		name: "Mana Potion Pickup Blessing",
-		description: `Mana potions restore an additional {${LocalizationModifierProperty.TOOLTIP}}% of your max mana.`,
+		description: `Mana potions restore an additional {${LocalizationModifierProperty.TOOLTIP}}% of your max mana."`,
 		language_overrides:
 		[
 			{
 				language: Language.German,
 				name_override: "Segen des Manatranks",
-				description_override: `Manatränke stellen zusätzlich {${LocalizationModifierProperty.TOOLTIP}}&nbsp;%% des maximalen Manas wieder her.`,
+				description_override: `Manatränke stellen zusätzlich {${LocalizationModifierProperty.TOOLTIP}}&nbsp;%% des maximalen Manas wieder her."`,
 			},
 
 			{
 				language: Language.Russian,
 				name_override: "Дар усиленных зелий маны",
-				description_override: `Зелья маны дополнительно восстанавливают {${LocalizationModifierProperty.TOOLTIP}}% от максимального запаса маны.`,
+				description_override: `Зелья маны дополнительно восстанавливают {${LocalizationModifierProperty.TOOLTIP}}% от максимального запаса маны."`,
 			},
 
 			{
 				language: Language.SChinese,
 				name_override: "魔法药水拾取福佑",
-				description_override: `生命药水治疗你时额外回复{${LocalizationModifierProperty.TOOLTIP}}%最大魔法值。`,
+				description_override: `生命药水治疗你时额外回复{${LocalizationModifierProperty.TOOLTIP}}%最大魔法值。"`,
 			},
 
 		],
@@ -18967,25 +18967,25 @@ export function GenerateLocalizationData(): LocalizationData
 	Modifiers.push({
 		modifier_classname: "modifier_blessing_restore_mana",
 		name: "Mana on Kill Blessing",
-		description: `Restore {${LocalizationModifierProperty.TOOLTIP}} mana each time you kill an enemy.`,
+		description: `Restore {${LocalizationModifierProperty.TOOLTIP}} mana each time you kill an enemy."`,
 		language_overrides:
 		[
 			{
 				language: Language.German,
 				name_override: "Segen der Manabeute",
-				description_override: `Das Töten eines Gegners stellt {${LocalizationModifierProperty.TOOLTIP}} Mana wieder her.`,
+				description_override: `Das Töten eines Gegners stellt {${LocalizationModifierProperty.TOOLTIP}} Mana wieder her."`,
 			},
 
 			{
 				language: Language.Russian,
 				name_override: "Дар маны при убийствах",
-				description_override: `Восстанавливает {${LocalizationModifierProperty.TOOLTIP}} маны при каждом убийстве врага.`,
+				description_override: `Восстанавливает {${LocalizationModifierProperty.TOOLTIP}} маны при каждом убийстве врага."`,
 			},
 
 			{
 				language: Language.SChinese,
 				name_override: "击杀魔法福佑",
-				description_override: `每次击杀一名敌人都将回复{${LocalizationModifierProperty.TOOLTIP}}点魔法。`,
+				description_override: `每次击杀一名敌人都将回复{${LocalizationModifierProperty.TOOLTIP}}点魔法。"`,
 			},
 
 		],
@@ -18994,25 +18994,25 @@ export function GenerateLocalizationData(): LocalizationData
 	Modifiers.push({
 		modifier_classname: "modifier_blessing_respawn_invulnerability",
 		name: "Respawn Invulnerability Time Bonus",
-		description: `Invulnerability time after respawning is increased by {${LocalizationModifierProperty.TOOLTIP}} seconds.`,
+		description: `Invulnerability time after respawning is increased by {${LocalizationModifierProperty.TOOLTIP}} seconds."`,
 		language_overrides:
 		[
 			{
 				language: Language.German,
 				name_override: "Bonus auf Unverwundbarkeit nach Wiedereinstieg",
-				description_override: `Unverwundbarkeitsphase nach dem Wiedereinstieg um {${LocalizationModifierProperty.TOOLTIP}} Sekunden verlängert.`,
+				description_override: `Unverwundbarkeitsphase nach dem Wiedereinstieg um {${LocalizationModifierProperty.TOOLTIP}} Sekunden verlängert."`,
 			},
 
 			{
 				language: Language.Russian,
 				name_override: "Дар бессмертия после воскрешения",
-				description_override: `Время бессмертия после воскрешения увеличено на {${LocalizationModifierProperty.TOOLTIP}} сек.`,
+				description_override: `Время бессмертия после воскрешения увеличено на {${LocalizationModifierProperty.TOOLTIP}} сек."`,
 			},
 
 			{
 				language: Language.SChinese,
 				name_override: "复活后一段时间内暂时无敌。",
-				description_override: `复活后的武器时间延长{${LocalizationModifierProperty.TOOLTIP}}秒。`,
+				description_override: `复活后的武器时间延长{${LocalizationModifierProperty.TOOLTIP}}秒。"`,
 			},
 
 		],
@@ -19021,25 +19021,25 @@ export function GenerateLocalizationData(): LocalizationData
 	Modifiers.push({
 		modifier_classname: "modifier_blessing_book_strength",
 		name: "Strength Book Blessing",
-		description: `Books of Strength provide {${LocalizationModifierProperty.TOOLTIP}} additional strength when used.`,
+		description: `Books of Strength provide {${LocalizationModifierProperty.TOOLTIP}} additional strength when used."`,
 		language_overrides:
 		[
 			{
 				language: Language.German,
 				name_override: "Segen des Stärkebuchs",
-				description_override: `Buch der Stärke erhöht beim Benutzen den Stärkewert um {${LocalizationModifierProperty.TOOLTIP}}.`,
+				description_override: `Buch der Stärke erhöht beim Benutzen den Stärkewert um {${LocalizationModifierProperty.TOOLTIP}}."`,
 			},
 
 			{
 				language: Language.Russian,
 				name_override: "Дар усиленных книг силы",
-				description_override: `Книги силы дают на {${LocalizationModifierProperty.TOOLTIP}} больше силы.`,
+				description_override: `Книги силы дают на {${LocalizationModifierProperty.TOOLTIP}} больше силы."`,
 			},
 
 			{
 				language: Language.SChinese,
 				name_override: "力量之书福佑",
-				description_override: `使用力量之书时额外获得{${LocalizationModifierProperty.TOOLTIP}}点力量。`,
+				description_override: `使用力量之书时额外获得{${LocalizationModifierProperty.TOOLTIP}}点力量。"`,
 			},
 
 		],
@@ -19048,25 +19048,25 @@ export function GenerateLocalizationData(): LocalizationData
 	Modifiers.push({
 		modifier_classname: "modifier_blessing_book_agility",
 		name: "Agility Book Blessing",
-		description: `Books of Agility provide {${LocalizationModifierProperty.TOOLTIP}} additional agility when used.`,
+		description: `Books of Agility provide {${LocalizationModifierProperty.TOOLTIP}} additional agility when used."`,
 		language_overrides:
 		[
 			{
 				language: Language.German,
 				name_override: "Segen des Agilitätsbuchs",
-				description_override: `Buch der Agilität erhöht beim Benutzen den Agilitätswert um {${LocalizationModifierProperty.TOOLTIP}}.`,
+				description_override: `Buch der Agilität erhöht beim Benutzen den Agilitätswert um {${LocalizationModifierProperty.TOOLTIP}}."`,
 			},
 
 			{
 				language: Language.Russian,
 				name_override: "Дар усиленных книг ловкости",
-				description_override: `Книги ловкости дают на {${LocalizationModifierProperty.TOOLTIP}} больше ловкости.`,
+				description_override: `Книги ловкости дают на {${LocalizationModifierProperty.TOOLTIP}} больше ловкости."`,
 			},
 
 			{
 				language: Language.SChinese,
 				name_override: "敏捷之书福佑",
-				description_override: `使用敏捷之书时额外获得{${LocalizationModifierProperty.TOOLTIP}}点敏捷。`,
+				description_override: `使用敏捷之书时额外获得{${LocalizationModifierProperty.TOOLTIP}}点敏捷。"`,
 			},
 
 		],
@@ -19075,25 +19075,25 @@ export function GenerateLocalizationData(): LocalizationData
 	Modifiers.push({
 		modifier_classname: "modifier_blessing_book_intelligence",
 		name: "Intelligence Book Blessing",
-		description: `Books of Intelligence provide {${LocalizationModifierProperty.TOOLTIP}} additional intelligence when used.`,
+		description: `Books of Intelligence provide {${LocalizationModifierProperty.TOOLTIP}} additional intelligence when used."`,
 		language_overrides:
 		[
 			{
 				language: Language.German,
 				name_override: "Segen des Intelligenzbuchs",
-				description_override: `Buch der Intelligenz erhöht beim Benutzen den Intelligenzwert um {${LocalizationModifierProperty.TOOLTIP}}.`,
+				description_override: `Buch der Intelligenz erhöht beim Benutzen den Intelligenzwert um {${LocalizationModifierProperty.TOOLTIP}}."`,
 			},
 
 			{
 				language: Language.Russian,
 				name_override: "Дар усиленных книг интеллекта",
-				description_override: `Книги интеллекта дают на {${LocalizationModifierProperty.TOOLTIP}} больше интеллекта.`,
+				description_override: `Книги интеллекта дают на {${LocalizationModifierProperty.TOOLTIP}} больше интеллекта."`,
 			},
 
 			{
 				language: Language.SChinese,
 				name_override: "智力之书福佑",
-				description_override: `使用智力之书时额外获得{${LocalizationModifierProperty.TOOLTIP}}点智力。`,
+				description_override: `使用智力之书时额外获得{${LocalizationModifierProperty.TOOLTIP}}点智力。"`,
 			},
 
 		],

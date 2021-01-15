@@ -9,7 +9,7 @@ enum Language
     German = "german",
     Russian = "russian",
     SChinese = "schinese",
-    None = 0
+    None = 'none'
 }
 
 interface AbilityLocalization
@@ -207,7 +207,7 @@ function ParseLine(line: string, main: boolean, language: string)
 
     // Ignore lines with `[english]` at the start of it
     regex = /^"(?:\[english\])/;
-    if (regex.test(line)) return;
+    if (regex.test(line)) return;    
 
     // Check if the line is an ability. If it is, stop checking    
     if (ParseAbility(line, main, language)) return;   
@@ -410,12 +410,12 @@ function AddStandardTooltips()
         code += `\tStandardTooltips.push({\n`;
         if (standard_tooltip_object.classname)
         {
-            code += `\t\tclassname: "${standard_tooltip_object.classname}",\n`            
+            code += `\t\tclassname: ${JSON.stringify(standard_tooltip_object.classname)},\n`            
         }
 
         if (standard_tooltip_object.name)
         {
-            code += `\t\tname: "${standard_tooltip_object.name}",\n`
+            code += `\t\tname: ${JSON.stringify(standard_tooltip_object.name)},\n`
         }            
 
         if (standard_tooltip_object.language_overrides)
@@ -427,7 +427,7 @@ function AddStandardTooltips()
             {
                 code += `\t\t\t{\n`;
                 code += `\t\t\t\tlanguage: Language.${GetLanguageEnumKeyFromString(language_override.language.toString())},\n`
-                code += `\t\t\t\tname_override: "${language_override.name_override}"\n`
+                code += `\t\t\t\tname_override: ${JSON.stringify(language_override.name_override)}\n`
                 code += `\t\t\t},\n\n`;    
             }
 
@@ -449,22 +449,22 @@ function AddAbilities()
 
         if (ability_tooltip_object.ability_classname)
         {
-            code += `\t\tability_classname: "${ability_tooltip_object.ability_classname}",\n`;
+            code += `\t\tability_classname: ${JSON.stringify(ability_tooltip_object.ability_classname)},\n`;
         }
 
         if (ability_tooltip_object.name)
         {
-            code += `\t\tname: "${ability_tooltip_object.name}",\n`
+            code += `\t\tname: ${JSON.stringify(ability_tooltip_object.name)},\n`
         }
 
         if (ability_tooltip_object.description)
         {
-            code += `\t\tdescription: "${ability_tooltip_object.description}",\n`
+            code += `\t\tdescription: ${JSON.stringify(ability_tooltip_object.description)},\n`
         }
 
         if (ability_tooltip_object.lore)
         {
-            code += `\t\tlore: "${ability_tooltip_object.lore}",\n`
+            code += `\t\tlore: ${JSON.stringify(ability_tooltip_object.lore)},\n`
         }
 
         if (ability_tooltip_object.notes && ability_tooltip_object.notes.length > 0)
@@ -474,7 +474,7 @@ function AddAbilities()
             
             for (const note of ability_tooltip_object.notes) 
             {
-                code += `\t\t\t"${note}",\n`;
+                code += `\t\t\t${JSON.stringify(note)},\n`;
             }
 
             code += `\t\t],\n`;
@@ -488,8 +488,8 @@ function AddAbilities()
             for (const ability_special of ability_tooltip_object.ability_specials) 
             {
                 code += `\t\t\t{\n`
-                code += `\t\t\t\tability_special: "${ability_special.ability_special}",\n`
-                code += `\t\t\t\ttext: "${ability_special.text}",\n`
+                code += `\t\t\t\tability_special: ${JSON.stringify(ability_special.ability_special)},\n`
+                code += `\t\t\t\ttext: ${JSON.stringify(ability_special.text)},\n`
 
                 if (ability_special.percentage)
                 {
@@ -519,17 +519,17 @@ function AddAbilities()
 
                 if (language_override.name_override)
                 {
-                    code += `\t\t\t\tname_override: "${language_override.name_override}",\n`;                    
+                    code += `\t\t\t\tname_override: ${JSON.stringify(language_override.name_override)},\n`;                    
                 }
 
                 if (language_override.description_override)
                 {
-                    code += `\t\t\t\tdescription_override: "${language_override.description_override}",\n`
+                    code += `\t\t\t\tdescription_override: ${JSON.stringify(language_override.description_override)},\n`
                 }
 
                 if (language_override.lore_override)
                 {
-                    code += `\t\t\t\tlore_override: "${language_override.lore_override}",\n`
+                    code += `\t\t\t\tlore_override: ${JSON.stringify(language_override.lore_override)},\n`
                 }
 
                 if (language_override.notes_override && language_override.notes_override.length > 0)
@@ -539,7 +539,7 @@ function AddAbilities()
                     
                     for (const note of language_override.notes_override) 
                     {
-                        code += `\t\t\t\t\t"${note}",\n`;
+                        code += `\t\t\t\t\t${JSON.stringify(note)},\n`;
                     }
 
                     code += `\t\t\t\t],\n`;
@@ -547,12 +547,12 @@ function AddAbilities()
 
                 if (language_override.scepter_description_override)
                 {
-                    code += `\t\t\t\tscepter_description_override: "${language_override.scepter_description_override}",\n`
+                    code += `\t\t\t\tscepter_description_override: ${JSON.stringify(language_override.scepter_description_override)},\n`
                 }
 
                 if (language_override.shard_description_override)
                 {
-                    code += `\t\t\t\tshard_description_override: "${language_override.shard_description_override}",\n`
+                    code += `\t\t\t\tshard_description_override: ${JSON.stringify(language_override.shard_description_override)},\n`
                 }
 
                 if (language_override.ability_specials_override && language_override.ability_specials_override.length > 0)
@@ -563,8 +563,8 @@ function AddAbilities()
                     for (const ability_special of language_override.ability_specials_override) 
                     {
                         code += `\t\t\t\t\t{\n`
-                        code += `\t\t\t\t\t\t\tability_special: "${ability_special.ability_special}",\n`
-                        code += `\t\t\t\t\t\t\ttext: "${ability_special.text}",\n`
+                        code += `\t\t\t\t\t\tability_special: ${JSON.stringify(ability_special.ability_special)},\n`
+                        code += `\t\t\t\t\t\ttext: ${JSON.stringify(ability_special.text)},\n`
 
                         if (ability_special.percentage)
                         {
@@ -602,12 +602,12 @@ function AddModifiers()
         code += `\tModifiers.push({\n`;
         if (modifier_tooltip_object.modifier_classname)
         {
-            code += `\t\tmodifier_classname: "${modifier_tooltip_object.modifier_classname}",\n`;
+            code += `\t\tmodifier_classname: ${JSON.stringify(modifier_tooltip_object.modifier_classname)},\n`;
         }
 
         if (modifier_tooltip_object.name)
         {
-            code += `\t\tname: "${modifier_tooltip_object.name}",\n`;
+            code += `\t\tname: ${JSON.stringify(modifier_tooltip_object.name)},\n`;
         }
 
         if (modifier_tooltip_object.description)
@@ -627,7 +627,7 @@ function AddModifiers()
 
                 if (language_override.name_override)
                 {
-                    code += `\t\t\t\tname_override: "${language_override.name_override}",\n`;
+                    code += `\t\t\t\tname_override: ${JSON.stringify(language_override.name_override)},\n`;
                 }
 
                 if (language_override.description_override)
@@ -972,11 +972,13 @@ function TransformAbilityPercentageValues(text: string): string
 }
 
 function TransoformModifierProperties(text: string): string
-{
+{    
     text = text.replace(/%dMODIFIER_PROPERTY_(\w+)%%%/, "{${LocalizationModifierProperty.$1}}%");
     text = text.replace(/%dMODIFIER_PROPERTY_(\w+)%/, "{${LocalizationModifierProperty.$1}}");
     text = text.replace(/%fMODIFIER_PROPERTY_(\w+)%%%/, "{f${LocalizationModifierProperty.$1}}%");
     text = text.replace(/%fMODIFIER_PROPERTY_(\w+)%/, "{f${LocalizationModifierProperty.$1}}");  
+    text = JSON.stringify(text);
+    text = text.substr(1, text.length - 1);
 
     return text;
 }
