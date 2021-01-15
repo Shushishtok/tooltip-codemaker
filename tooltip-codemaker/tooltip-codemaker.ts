@@ -4,12 +4,12 @@ import * as readline from 'readline';
 
 enum Language
 {
+    None = 'none',
     English = 'english',
     Brazilian = 'brazilian',
     German = "german",
     Russian = "russian",
     SChinese = "schinese",
-    None = 'none'
 }
 
 interface AbilityLocalization
@@ -73,7 +73,8 @@ interface AbilitySpecialLocalization
     item_stat?: boolean // false by default if omitted
 }
 
-const outputFilePath: string = "./tooltipCode.ts";
+const filename: string = "outputCode.ts";
+const outputFilePath: string = "./" + filename;
 const signaturePath: string = "./signature.txt";
 const endingPath: string = "./ending.txt";
 const AbilityMapper: Map<string, string> = new Map();
@@ -145,6 +146,7 @@ rl.question("Please provide the main lanaguage, e.g. 'english'. Default to engli
     // });
 
     FinishFile();
+    console.log(`Operation completed successfully! Please check the result in the file ${filename} located in the same folder as the codemaker.`)
 
     rl.close();
 });
@@ -712,14 +714,8 @@ function ReuniteRemainingAbilities()
 
         if (!found_map)
         {
-            DiscardedAbilityStrings.push(ability);
+            Abilities.set(ability, {name: value});
         }
-    }
-
-    // Print all discarded ability strings
-    for (const discarded_string of DiscardedAbilityStrings)
-    {
-        console.log(`Ability string: ${discarded_string} has been discarded since it found no matching slots.`);
     }
 }
 
@@ -976,9 +972,9 @@ function TransoformModifierProperties(text: string): string
     text = text.replace(/%dMODIFIER_PROPERTY_(\w+)%%%/, "{${LocalizationModifierProperty.$1}}%");
     text = text.replace(/%dMODIFIER_PROPERTY_(\w+)%/, "{${LocalizationModifierProperty.$1}}");
     text = text.replace(/%fMODIFIER_PROPERTY_(\w+)%%%/, "{f${LocalizationModifierProperty.$1}}%");
-    text = text.replace(/%fMODIFIER_PROPERTY_(\w+)%/, "{f${LocalizationModifierProperty.$1}}");  
+    text = text.replace(/%fMODIFIER_PROPERTY_(\w+)%/, "{f${LocalizationModifierProperty.$1}}");      
     text = JSON.stringify(text);
-    text = text.substr(1, text.length - 1);
+    text = text.substr(1, text.length -2);    
 
     return text;
 }

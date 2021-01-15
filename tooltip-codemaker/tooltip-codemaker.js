@@ -5,14 +5,15 @@ var path = require("path");
 var readline = require("readline");
 var Language;
 (function (Language) {
+    Language["None"] = "none";
     Language["English"] = "english";
     Language["Brazilian"] = "brazilian";
     Language["German"] = "german";
     Language["Russian"] = "russian";
     Language["SChinese"] = "schinese";
-    Language["None"] = "none";
 })(Language || (Language = {}));
-var outputFilePath = "./tooltipCode.ts";
+var filename = "outputCode.ts";
+var outputFilePath = "./" + filename;
 var signaturePath = "./signature.txt";
 var endingPath = "./ending.txt";
 var AbilityMapper = new Map();
@@ -67,6 +68,7 @@ rl.question("Please provide the main lanaguage, e.g. 'english'. Default to engli
     //     }
     // });
     FinishFile();
+    console.log("Operation completed successfully! Please check the result in the file " + filename + " located in the same folder as the codemaker.");
     rl.close();
 });
 function PrepareFile() {
@@ -470,13 +472,8 @@ function ReuniteRemainingAbilities() {
         var value = entry[1];
         var found_map = IterateAbilitiesMap(ability, value);
         if (!found_map) {
-            DiscardedAbilityStrings.push(ability);
+            Abilities.set(ability, { name: value });
         }
-    }
-    // Print all discarded ability strings
-    for (var _b = 0, DiscardedAbilityStrings_1 = DiscardedAbilityStrings; _b < DiscardedAbilityStrings_1.length; _b++) {
-        var discarded_string = DiscardedAbilityStrings_1[_b];
-        console.log("Ability string: " + discarded_string + " has been discarded since it found no matching slots.");
     }
 }
 function IterateAbilitiesMap(ability, value) {
@@ -660,7 +657,8 @@ function TransoformModifierProperties(text) {
     text = text.replace(/%fMODIFIER_PROPERTY_(\w+)%%%/, "{f${LocalizationModifierProperty.$1}}%");
     text = text.replace(/%fMODIFIER_PROPERTY_(\w+)%/, "{f${LocalizationModifierProperty.$1}}");
     text = JSON.stringify(text);
-    text = text.substr(1, text.length - 1);
+    text = text.substr(1, text.length - 2);
+    console.log(text);
     return text;
 }
 function GetLanguageFromString(name) {
