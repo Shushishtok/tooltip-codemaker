@@ -1,0 +1,3 @@
+    // Return data to compiler
+    return localization_info;
+}
