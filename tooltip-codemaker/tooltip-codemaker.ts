@@ -5,11 +5,32 @@ import * as readline from 'readline';
 enum Language
 {
     None = 'none',
+    Brazilian = 'brazilian',    
+    Bulgarian = 'bulgarian',
+    Czech = 'czech',
+    Danish = 'danish',    
     English = 'english',
-    Brazilian = 'brazilian',
-    German = "german",
-    Russian = "russian",
-    SChinese = "schinese",
+    Finnish = 'finnish',    
+    French = `french`,
+    German = `german`,
+    Greek = 'greek',
+    Hungarian = 'hungarian',
+    Italian = 'italian',
+    Japanese = 'japanese',
+    Koreana = 'koreana',
+    Latam = 'latam',
+    Norwegian = `norwegian`,
+    Polish = 'polish',    
+    Portuguese = `portuguese`,
+    Russian = `russian`,    
+    Schinese = `schinese`,
+    Spanish = `spanish`,
+    Swedish = `swedish`,
+    TChinese = `tchinese`,
+    Thai = 'thai',
+    Turkish = 'turkish',
+    Ukrainian = 'ukrainian',
+    Vietnamese = `vietnamese`
 }
 
 interface AbilityLocalization
@@ -81,7 +102,6 @@ const AbilityMapper: Map<string, string> = new Map();
 const Abilities: Map<string, AbilityLocalization> = new Map();
 const Modifiers: Map<string, ModifierLocalization> = new Map();
 const StandardTooltips: Map<string, StandardLocalization> = new Map();
-const DiscardedAbilityStrings: Array<string> = new Array();
 
 let code: string = "";
 
@@ -106,7 +126,7 @@ rl.question("Please provide the main lanaguage, e.g. 'english'. Default to engli
 
     if (!fs.existsSync(filepath))
     {        
-        console.log(`The file ${answer} doesn't seem to exist. Verify the files are in the localization folder and make sure to only type their name.`);
+        console.log(`The addon file for language ${answer} doesn't seem to exist. Verify the files are in the localization folder and make sure to only type their language.`);
         rl.close();    
         return;
     }
@@ -120,30 +140,10 @@ rl.question("Please provide the main lanaguage, e.g. 'english'. Default to engli
     // Every non-main language
     ParseLocalizationDirectory(directory, filepath);
 
-    // Actually writing to output
+    // Actually writing to output    
     AddStandardTooltips();
     AddAbilities();
-    AddModifiers();
-
-    // Modifiers.forEach((value, key) =>
-    // {
-    //     console.log(`Modifier key: ${key}`);
-    //     console.log(`Modifier object:`);
-    //     console.log(`classname: ${value.modifier_classname}`)
-    //     console.log(`name: ${value.name}`)
-    //     console.log(`description: ${value.description}`);
-
-    //     if (value.language_overrides)
-    //     {
-    //         for (const language_override of value.language_overrides) 
-    //         {
-    //             console.log(`language: ${language_override.language}`);
-    //             console.log(`name: ${language_override.name_override}`);
-    //             console.log(`description: ${language_override.description_override}`);
-    //         }
-    //     }
-
-    // });
+    AddModifiers();    
 
     FinishFile();
     console.log(`Operation completed successfully! Please check the result in the file ${filename} located in the same folder as the codemaker.`)
@@ -186,7 +186,7 @@ function ParseLocalizationFile(filepath: string, main: boolean)
 {   
     const language_regex = /addon_(\w+)/;             
     const language = language_regex.exec(filepath)[1];    
-    const lines = fs.readFileSync(filepath).toString().replace(/\r\n/g,'\n').split("\n");
+    const lines = fs.readFileSync(filepath).toString().replace(/\r\n/gm,'\n').split("\n");
 
     for (const line of lines)
     {
@@ -205,20 +205,24 @@ function ParseLine(line: string, main: boolean, language: string)
 
     // Only apply on valid lines. If this isn't any "something" "something" line, just throw it away
     regex = /".*?\"\s*".*?"/;
-    if (!regex.test(line)) return;
+    if (!regex.test(line))
+    {        
+        console.log("Discarding line: ", line);
+        return;    
+    } 
 
     // Ignore lines with `[english]` at the start of it
     regex = /^"(?:\[english\])/;
     if (regex.test(line)) return;    
-
+    
     // Check if the line is an ability. If it is, stop checking    
     if (ParseAbility(line, main, language)) return;   
-
+    
     // Check if the line is a modifier. If it is, stop checking
     if (ParseModifier(line, main, language)) return;
-
+    
     // Everything that isn't an ability or a modifier is considered a standard tooltip
-    ParseStandardTooltip(line, main, language);
+    ParseStandardTooltip(line, main, language);    
 }
 
 function ParseAbility(line: string, main: boolean, language: string): boolean

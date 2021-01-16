@@ -6,11 +6,32 @@ var readline = require("readline");
 var Language;
 (function (Language) {
     Language["None"] = "none";
-    Language["English"] = "english";
     Language["Brazilian"] = "brazilian";
+    Language["Bulgarian"] = "bulgarian";
+    Language["Czech"] = "czech";
+    Language["Danish"] = "danish";
+    Language["English"] = "english";
+    Language["Finnish"] = "finnish";
+    Language["French"] = "french";
     Language["German"] = "german";
+    Language["Greek"] = "greek";
+    Language["Hungarian"] = "hungarian";
+    Language["Italian"] = "italian";
+    Language["Japanese"] = "japanese";
+    Language["Koreana"] = "koreana";
+    Language["Latam"] = "latam";
+    Language["Norwegian"] = "norwegian";
+    Language["Polish"] = "polish";
+    Language["Portuguese"] = "portuguese";
     Language["Russian"] = "russian";
-    Language["SChinese"] = "schinese";
+    Language["Schinese"] = "schinese";
+    Language["Spanish"] = "spanish";
+    Language["Swedish"] = "swedish";
+    Language["TChinese"] = "tchinese";
+    Language["Thai"] = "thai";
+    Language["Turkish"] = "turkish";
+    Language["Ukrainian"] = "ukrainian";
+    Language["Vietnamese"] = "vietnamese";
 })(Language || (Language = {}));
 var filename = "outputCode.ts";
 var outputFilePath = "./" + filename;
@@ -20,7 +41,6 @@ var AbilityMapper = new Map();
 var Abilities = new Map();
 var Modifiers = new Map();
 var StandardTooltips = new Map();
-var DiscardedAbilityStrings = new Array();
 var code = "";
 var rl = readline.createInterface({
     input: process.stdin,
@@ -35,7 +55,7 @@ rl.question("Please provide the main lanaguage, e.g. 'english'. Default to engli
     var directory = "./localization/";
     var filepath = directory + addon_name;
     if (!fs.existsSync(filepath)) {
-        console.log("The file " + answer + " doesn't seem to exist. Verify the files are in the localization folder and make sure to only type their name.");
+        console.log("The addon file for language " + answer + " doesn't seem to exist. Verify the files are in the localization folder and make sure to only type their language.");
         rl.close();
         return;
     }
@@ -46,27 +66,10 @@ rl.question("Please provide the main lanaguage, e.g. 'english'. Default to engli
     ReuniteRemainingAbilities();
     // Every non-main language
     ParseLocalizationDirectory(directory, filepath);
-    // Actually writing to output
+    // Actually writing to output    
     AddStandardTooltips();
     AddAbilities();
     AddModifiers();
-    // Modifiers.forEach((value, key) =>
-    // {
-    //     console.log(`Modifier key: ${key}`);
-    //     console.log(`Modifier object:`);
-    //     console.log(`classname: ${value.modifier_classname}`)
-    //     console.log(`name: ${value.name}`)
-    //     console.log(`description: ${value.description}`);
-    //     if (value.language_overrides)
-    //     {
-    //         for (const language_override of value.language_overrides) 
-    //         {
-    //             console.log(`language: ${language_override.language}`);
-    //             console.log(`name: ${language_override.name_override}`);
-    //             console.log(`description: ${language_override.description_override}`);
-    //         }
-    //     }
-    // });
     FinishFile();
     console.log("Operation completed successfully! Please check the result in the file " + filename + " located in the same folder as the codemaker.");
     rl.close();
@@ -96,7 +99,7 @@ function ParseLocalizationDirectory(directory, main_file_path) {
 function ParseLocalizationFile(filepath, main) {
     var language_regex = /addon_(\w+)/;
     var language = language_regex.exec(filepath)[1];
-    var lines = fs.readFileSync(filepath).toString().replace(/\r\n/g, '\n').split("\n");
+    var lines = fs.readFileSync(filepath).toString().replace(/\r\n/gm, '\n').split("\n");
     for (var _i = 0, lines_1 = lines; _i < lines_1.length; _i++) {
         var line = lines_1[_i];
         ParseLine(line, main, language);
@@ -112,8 +115,10 @@ function ParseLine(line, main, language) {
         return;
     // Only apply on valid lines. If this isn't any "something" "something" line, just throw it away
     regex = /".*?\"\s*".*?"/;
-    if (!regex.test(line))
+    if (!regex.test(line)) {
+        console.log("Discarding line: ", line);
         return;
+    }
     // Ignore lines with `[english]` at the start of it
     regex = /^"(?:\[english\])/;
     if (regex.test(line))
@@ -658,7 +663,6 @@ function TransoformModifierProperties(text) {
     text = text.replace(/%fMODIFIER_PROPERTY_(\w+)%/, "{f${LocalizationModifierProperty.$1}}");
     text = JSON.stringify(text);
     text = text.substr(1, text.length - 2);
-    console.log(text);
     return text;
 }
 function GetLanguageFromString(name) {
