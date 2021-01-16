@@ -41,12 +41,14 @@ var AbilityMapper = new Map();
 var Abilities = new Map();
 var Modifiers = new Map();
 var StandardTooltips = new Map();
+var indent = 0;
 var code = "";
 var rl = readline.createInterface({
     input: process.stdin,
     output: process.stdout
 });
-rl.question("Please provide the main lanaguage, e.g. 'english'. Default to english. ", function (answer) {
+rl.question("Please provide the main lanaguage, e.g. 'english'. Default to english. ", function (answer) { return ProcessLocalization(answer); });
+function ProcessLocalization(answer) {
     // Default to english
     if (answer == "") {
         answer = "english";
@@ -70,19 +72,21 @@ rl.question("Please provide the main lanaguage, e.g. 'english'. Default to engli
     AddStandardTooltips();
     AddAbilities();
     AddModifiers();
+    // Finalize the file
     FinishFile();
+    console.log("The process signed " + Abilities.size + " abilities, " + Modifiers.size + " modifiers and " + StandardTooltips.size + " standard tooltips in total.");
     console.log("Operation completed successfully! Please check the result in the file " + filename + " located in the same folder as the codemaker.");
     rl.close();
-});
+}
 function PrepareFile() {
     // Create or clean the output file
     var fd = fs.openSync(outputFilePath, 'w');
     fs.closeSync(fd);
     // Add the necessary signature    
-    code += fs.readFileSync(signaturePath) + "\n";
+    AddOutputLine(indent++, fs.readFileSync(signaturePath).toString());
 }
 function FinishFile() {
-    code += fs.readFileSync(endingPath);
+    AddOutputLine(--indent, fs.readFileSync(endingPath).toString(), 0);
     fs.writeFile(outputFilePath, code, function () { });
 }
 function ParseLocalizationDirectory(directory, main_file_path) {
@@ -98,8 +102,13 @@ function ParseLocalizationDirectory(directory, main_file_path) {
 }
 function ParseLocalizationFile(filepath, main) {
     var language_regex = /addon_(\w+)/;
+    if (!language_regex.test(filepath)) {
+        console.log("The file does not match the `addon_<language>` format!");
+        return;
+    }
     var language = language_regex.exec(filepath)[1];
-    var lines = fs.readFileSync(filepath).toString().replace(/\r\n/gm, '\n').split("\n");
+    var lines = fs.readFileSync(filepath).toString().replace("\r\n", "\n").split("\n");
+    var regex = /".*?\"\s*".*?"/g;
     for (var _i = 0, lines_1 = lines; _i < lines_1.length; _i++) {
         var line = lines_1[_i];
         ParseLine(line, main, language);
@@ -270,26 +279,26 @@ function AddStandardTooltips() {
         var entry = _a[_i];
         var value = entry[1];
         var standard_tooltip_object = value;
-        code += "\tStandardTooltips.push({\n";
+        AddOutputLine(indent++, "StandardTooltips.push({");
         if (standard_tooltip_object.classname) {
-            code += "\t\tclassname: " + JSON.stringify(standard_tooltip_object.classname) + ",\n";
+            AddOutputLine(indent, "classname: " + JSON.stringify(standard_tooltip_object.classname) + ",");
         }
         if (standard_tooltip_object.name) {
-            code += "\t\tname: " + JSON.stringify(standard_tooltip_object.name) + ",\n";
+            AddOutputLine(indent, "name: " + JSON.stringify(standard_tooltip_object.name) + ",");
         }
         if (standard_tooltip_object.language_overrides) {
-            code += "\t\tlanguage_overrides:\n";
-            code += "\t\t[\n";
+            AddOutputLine(indent, "language_overrides:");
+            AddOutputLine(indent++, "[");
             for (var _b = 0, _c = standard_tooltip_object.language_overrides; _b < _c.length; _b++) {
                 var language_override = _c[_b];
-                code += "\t\t\t{\n";
-                code += "\t\t\t\tlanguage: Language." + GetLanguageEnumKeyFromString(language_override.language.toString()) + ",\n";
-                code += "\t\t\t\tname_override: " + JSON.stringify(language_override.name_override) + "\n";
-                code += "\t\t\t},\n\n";
+                AddOutputLine(indent++, "{");
+                AddOutputLine(indent, "language: Language." + GetLanguageEnumKeyFromString(language_override.language.toString()) + ",");
+                AddOutputLine(indent, "name_override: " + JSON.stringify(language_override.name_override));
+                AddOutputLine(--indent, "},", 2);
             }
-            code += "\t\t]\n";
+            AddOutputLine(--indent, "]");
         }
-        code += '\t});\n\n';
+        AddOutputLine(--indent, "});", 2);
     }
     ;
 }
@@ -298,100 +307,101 @@ function AddAbilities() {
         var entry = _a[_i];
         var value = entry[1];
         var ability_tooltip_object = value;
-        code += "\tAbilities.push({\n";
+        AddOutputLine(indent++, "Abilities.push({");
         if (ability_tooltip_object.ability_classname) {
-            code += "\t\tability_classname: " + JSON.stringify(ability_tooltip_object.ability_classname) + ",\n";
+            AddOutputLine(indent, "ability_classname: " + JSON.stringify(ability_tooltip_object.ability_classname) + ",");
         }
         if (ability_tooltip_object.name) {
-            code += "\t\tname: " + JSON.stringify(ability_tooltip_object.name) + ",\n";
+            AddOutputLine(indent, "name: " + JSON.stringify(ability_tooltip_object.name) + ",");
         }
         if (ability_tooltip_object.description) {
-            code += "\t\tdescription: " + JSON.stringify(ability_tooltip_object.description) + ",\n";
+            AddOutputLine(indent, "description: " + JSON.stringify(ability_tooltip_object.description) + ",");
         }
         if (ability_tooltip_object.lore) {
-            code += "\t\tlore: " + JSON.stringify(ability_tooltip_object.lore) + ",\n";
+            AddOutputLine(indent, "lore: " + JSON.stringify(ability_tooltip_object.lore) + ",");
         }
         if (ability_tooltip_object.notes && ability_tooltip_object.notes.length > 0) {
-            code += "\t\tnotes:\n";
-            code += "\t\t[\n";
+            AddOutputLine(indent, "notes:");
+            AddOutputLine(indent++, "[");
             for (var _b = 0, _c = ability_tooltip_object.notes; _b < _c.length; _b++) {
                 var note = _c[_b];
-                code += "\t\t\t" + JSON.stringify(note) + ",\n";
+                AddOutputLine(indent, JSON.stringify(note) + ",");
             }
-            code += "\t\t],\n";
+            AddOutputLine(--indent, "],");
         }
         if (ability_tooltip_object.ability_specials && ability_tooltip_object.ability_specials.length > 0) {
-            code += "\t\tability_specials:\n";
-            code += "\t\t[\n";
+            AddOutputLine(indent, "ability_specials:");
+            AddOutputLine(indent++, "[");
             for (var _d = 0, _e = ability_tooltip_object.ability_specials; _d < _e.length; _d++) {
                 var ability_special = _e[_d];
-                code += "\t\t\t{\n";
-                code += "\t\t\t\tability_special: " + JSON.stringify(ability_special.ability_special) + ",\n";
-                code += "\t\t\t\ttext: " + JSON.stringify(ability_special.text) + ",\n";
+                AddOutputLine(indent++, "{");
+                AddOutputLine(indent, "ability_special: " + JSON.stringify(ability_special.ability_special) + ",");
+                AddOutputLine(indent, "text: " + JSON.stringify(ability_special.text) + ",");
                 if (ability_special.percentage) {
-                    code += "\t\t\t\tpercentage: true,\n";
+                    AddOutputLine(indent, "percentage: true,");
                 }
                 if (ability_special.item_stat) {
-                    code += "\t\t\t\titem_stat: true,\n";
+                    AddOutputLine(indent, "item_stat: true,");
                 }
-                code += "\t\t\t},\n\n";
+                AddOutputLine(--indent, "},", 2);
             }
-            code += "\t\t],\n";
+            AddOutputLine(--indent, "],");
         }
         if (ability_tooltip_object.language_overrides && ability_tooltip_object.language_overrides.length > 0) {
-            code += "\t\tlanguage_overrides:\n";
-            code += "\t\t[\n";
+            AddOutputLine(indent, "language_overrides:");
+            AddOutputLine(indent++, "[");
             for (var _f = 0, _g = ability_tooltip_object.language_overrides; _f < _g.length; _f++) {
                 var language_override = _g[_f];
-                code += "\t\t\t{\n";
-                code += "\t\t\t\tlanguage: Language." + GetLanguageEnumKeyFromString(language_override.language.toString()) + ",\n";
+                AddOutputLine(indent++, "{");
+                // We'll always have a language field
+                AddOutputLine(indent, "language: Language." + GetLanguageEnumKeyFromString(language_override.language.toString()) + ",");
                 if (language_override.name_override) {
-                    code += "\t\t\t\tname_override: " + JSON.stringify(language_override.name_override) + ",\n";
+                    AddOutputLine(indent, "name_override: " + JSON.stringify(language_override.name_override) + ",");
                 }
                 if (language_override.description_override) {
-                    code += "\t\t\t\tdescription_override: " + JSON.stringify(language_override.description_override) + ",\n";
+                    AddOutputLine(indent, "description_override: " + JSON.stringify(language_override.description_override) + ",");
                 }
                 if (language_override.lore_override) {
-                    code += "\t\t\t\tlore_override: " + JSON.stringify(language_override.lore_override) + ",\n";
+                    AddOutputLine(indent, "lore_override: " + JSON.stringify(language_override.lore_override) + ",");
                 }
                 if (language_override.notes_override && language_override.notes_override.length > 0) {
-                    code += "\t\t\t\tnotes_override:\n";
-                    code += "\t\t\t\t[\n";
+                    AddOutputLine(indent, "notes_override:");
+                    AddOutputLine(indent++, "[");
                     for (var _h = 0, _j = language_override.notes_override; _h < _j.length; _h++) {
                         var note = _j[_h];
-                        code += "\t\t\t\t\t" + JSON.stringify(note) + ",\n";
+                        AddOutputLine(indent, JSON.stringify(note) + ",");
                     }
-                    code += "\t\t\t\t],\n";
+                    AddOutputLine(--indent, "],");
                 }
                 if (language_override.scepter_description_override) {
-                    code += "\t\t\t\tscepter_description_override: " + JSON.stringify(language_override.scepter_description_override) + ",\n";
+                    AddOutputLine(indent, "scepter_description_override: " + JSON.stringify(language_override.scepter_description_override) + ",");
                 }
                 if (language_override.shard_description_override) {
-                    code += "\t\t\t\tshard_description_override: " + JSON.stringify(language_override.shard_description_override) + ",\n";
+                    AddOutputLine(indent, "shard_description_override: " + JSON.stringify(language_override.shard_description_override) + ",");
                 }
                 if (language_override.ability_specials_override && language_override.ability_specials_override.length > 0) {
-                    code += "\t\t\t\tability_specials_override:\n";
-                    code += "\t\t\t\t[\n";
+                    AddOutputLine(indent, "ability_specials_override:");
+                    AddOutputLine(indent++, "[");
                     for (var _k = 0, _l = language_override.ability_specials_override; _k < _l.length; _k++) {
                         var ability_special = _l[_k];
-                        code += "\t\t\t\t\t{\n";
-                        code += "\t\t\t\t\t\tability_special: " + JSON.stringify(ability_special.ability_special) + ",\n";
-                        code += "\t\t\t\t\t\ttext: " + JSON.stringify(ability_special.text) + ",\n";
+                        AddOutputLine(indent++, "{");
+                        AddOutputLine(indent, "ability_special: " + JSON.stringify(ability_special.ability_special) + ",");
+                        AddOutputLine(indent, "text: " + JSON.stringify(ability_special.text) + ",");
                         if (ability_special.percentage) {
-                            code += "\t\t\t\t\t\t\tpercentage: true,\n";
+                            AddOutputLine(indent, "percentage: true,");
                         }
                         if (ability_special.item_stat) {
-                            code += "\t\t\t\t\t\t\titem_stat: true,\n";
+                            AddOutputLine(indent, "item_stat: true,");
                         }
-                        code += "\t\t\t\t\t},\n\n";
+                        AddOutputLine(--indent, "},", 2);
                     }
-                    code += "\t\t\t\t]\n";
+                    AddOutputLine(--indent, "]");
                 }
-                code += "\t\t\t},\n\n";
+                AddOutputLine(--indent, "},", 2);
             }
-            code += "\t\t]\n";
+            AddOutputLine(--indent, "]");
         }
-        code += "\t});\n\n";
+        AddOutputLine(--indent, "});");
     }
 }
 function AddModifiers() {
@@ -399,34 +409,34 @@ function AddModifiers() {
         var entry = _a[_i];
         var value = entry[1];
         var modifier_tooltip_object = value;
-        code += "\tModifiers.push({\n";
+        AddOutputLine(indent++, "Modifiers.push({");
         if (modifier_tooltip_object.modifier_classname) {
-            code += "\t\tmodifier_classname: " + JSON.stringify(modifier_tooltip_object.modifier_classname) + ",\n";
+            AddOutputLine(indent, "modifier_classname: " + JSON.stringify(modifier_tooltip_object.modifier_classname) + ",");
         }
         if (modifier_tooltip_object.name) {
-            code += "\t\tname: " + JSON.stringify(modifier_tooltip_object.name) + ",\n";
+            AddOutputLine(indent, "name: " + JSON.stringify(modifier_tooltip_object.name) + ",");
         }
         if (modifier_tooltip_object.description) {
-            code += "\t\tdescription: `" + TransoformModifierProperties(modifier_tooltip_object.description) + "`,\n";
+            AddOutputLine(indent, "description: `" + TransoformModifierProperties(modifier_tooltip_object.description) + "`,");
         }
         if (modifier_tooltip_object.language_overrides && modifier_tooltip_object.language_overrides.length > 0) {
-            code += "\t\tlanguage_overrides:\n";
-            code += "\t\t[\n";
+            AddOutputLine(indent, "language_overrides:");
+            AddOutputLine(indent++, "[");
             for (var _b = 0, _c = modifier_tooltip_object.language_overrides; _b < _c.length; _b++) {
                 var language_override = _c[_b];
-                code += "\t\t\t{\n";
-                code += "\t\t\t\tlanguage: Language." + GetLanguageEnumKeyFromString(language_override.language.toString()) + ",\n";
+                AddOutputLine(indent++, "{");
+                AddOutputLine(indent, "language: Language." + GetLanguageEnumKeyFromString(language_override.language.toString()) + ",");
                 if (language_override.name_override) {
-                    code += "\t\t\t\tname_override: " + JSON.stringify(language_override.name_override) + ",\n";
+                    AddOutputLine(indent, "name_override: " + JSON.stringify(language_override.name_override) + ",");
                 }
                 if (language_override.description_override) {
-                    code += "\t\t\t\tdescription_override: `" + TransoformModifierProperties(language_override.description_override) + "`,\n";
+                    AddOutputLine(indent, "description_override: `" + TransoformModifierProperties(language_override.description_override) + "`,");
                 }
-                code += "\t\t\t},\n\n";
+                AddOutputLine(--indent, "},", 2);
             }
-            code += "\t\t],\n";
+            AddOutputLine(--indent, "],");
         }
-        code += "\t});\n\n";
+        AddOutputLine(--indent, "});", 2);
     }
 }
 function GroupAbilities() {
@@ -650,6 +660,18 @@ function IterateAbilitiesMapForLanguage(ability, value, language) {
         }
     });
     return found_map;
+}
+function AddOutputLine(indent, text, newlines) {
+    for (var index = 0; index < indent; index++) {
+        code += "\t";
+    }
+    code += text;
+    // Default to one new line, if not otherwise stated
+    if (!newlines)
+        newlines = 1;
+    for (var index = 0; index < newlines; index++) {
+        code += "\n";
+    }
 }
 function TransformAbilityPercentageValues(text) {
     text = text.replace(/%(\w+)%%%/g, "${$1}%");

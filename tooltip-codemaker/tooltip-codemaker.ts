@@ -112,8 +112,10 @@ let rl = readline.createInterface(
     }
 );
 
-rl.question("Please provide the main lanaguage, e.g. 'english'. Default to english. ", (answer) =>
-{    
+rl.question("Please provide the main lanaguage, e.g. 'english'. Default to english. ", answer => ProcessLocalization(answer))
+
+function ProcessLocalization(answer: string)
+{
     // Default to english
     if (answer == "")
     {        
@@ -130,7 +132,7 @@ rl.question("Please provide the main lanaguage, e.g. 'english'. Default to engli
         rl.close();    
         return;
     }
-    
+
     // Main language, and preparation
     PrepareFile();    
     ParseLocalizationFile(filepath, true);
@@ -145,11 +147,13 @@ rl.question("Please provide the main lanaguage, e.g. 'english'. Default to engli
     AddAbilities();
     AddModifiers();    
 
+    // Finalize the file
     FinishFile();
-    console.log(`Operation completed successfully! Please check the result in the file ${filename} located in the same folder as the codemaker.`)
+    console.log(`The process signed ${Abilities.size} abilities, ${Modifiers.size} modifiers and ${StandardTooltips.size} standard tooltips in total.`);
+    console.log(`Operation completed successfully! Please check the result in the file ${filename} located in the same folder as the codemaker.`);
 
     rl.close();
-});
+}
 
 function PrepareFile()
 {
@@ -211,13 +215,13 @@ function ParseLine(line: string, main: boolean, language: string)
     // Ignore the Language token
     if (line.indexOf('"Language"') != -1) return;
 
-    // // Only apply on valid lines. If this isn't any "something" "something" line, just throw it away
-    // regex = /".*?\"\s*".*?"/;
-    // if (!regex.test(line))
-    // {        
-    //     console.log("Discarding line: ", line);
-    //     return;    
-    // }
+    // Only apply on valid lines. If this isn't any "something" "something" line, just throw it away
+    regex = /".*?\"\s*".*?"/;
+    if (!regex.test(line))
+    {        
+        console.log("Discarding line: ", line);
+        return;    
+    }
 
     // Ignore lines with `[english]` at the start of it
     regex = /^"(?:\[english\])/;

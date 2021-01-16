@@ -1,2 +1,3 @@
 node_modules
 tooltip-codemaker/localization
+tooltip-codemaker/outputCode.ts
