@@ -3,6 +3,7 @@ exports.__esModule = true;
 var fs = require("fs");
 var path = require("path");
 var readline = require("readline");
+var valve_kv_1 = require("valve-kv");
 var Language;
 (function (Language) {
     Language["None"] = "none";
@@ -103,75 +104,58 @@ function ParseLocalizationDirectory(directory, main_file_path) {
 function ParseLocalizationFile(filepath, main) {
     var language_regex = /addon_(\w+)/;
     if (!language_regex.test(filepath)) {
-        console.log("The file does not match the `addon_<language>` format!");
+        console.log("The file does not match the `addon_<language>` format. Terminating");
         return;
     }
     var language = language_regex.exec(filepath)[1];
-    var lines = fs.readFileSync(filepath).toString().replace("\r\n", "\n").split("\n");
-    var regex = /".*?\"\s*".*?"/g;
-    for (var _i = 0, lines_1 = lines; _i < lines_1.length; _i++) {
-        var line = lines_1[_i];
-        ParseLine(line, main, language);
+    var addon_file = valve_kv_1.deserializeFile(filepath);
+    for (var _i = 0, _a = Object.entries(addon_file["lang"]["Tokens"]); _i < _a.length; _i++) {
+        var _b = _a[_i], key = _b[0], value = _b[1];
+        ParseLine(key, value.toString(), main, language);
     }
 }
-function ParseLine(line, main, language) {
-    // Ignore comments
-    var regex = /^\s*\/\//;
-    if (regex.test(line))
-        return;
-    // Ignore the Language token
-    if (line.indexOf('"Language"') != -1)
-        return;
-    // Only apply on valid lines. If this isn't any "something" "something" line, just throw it away
-    regex = /".*?\"\s*".*?"/;
-    if (!regex.test(line)) {
-        console.log("Discarding line: ", line);
+function ParseLine(key, value, main, language) {
+    // Ignore lines with `[english]` at the start of it
+    var regex = /^(?:\[english\])/;
+    if (regex.test(key)) {
         return;
     }
-    // Ignore lines with `[english]` at the start of it
-    regex = /^"(?:\[english\])/;
-    if (regex.test(line))
-        return;
     // Check if the line is an ability. If it is, stop checking    
-    if (ParseAbility(line, main, language))
+    if (ParseAbility(key, value, main, language))
         return;
     // Check if the line is a modifier. If it is, stop checking
-    if (ParseModifier(line, main, language))
+    if (ParseModifier(key, value, main, language))
         return;
     // Everything that isn't an ability or a modifier is considered a standard tooltip
-    ParseStandardTooltip(line, main, language);
+    ParseStandardTooltip(key, value, main, language);
 }
-function ParseAbility(line, main, language) {
+function ParseAbility(key, value, main, language) {
     // Check if it is an ability; return if not
-    var regex = /"DOTA_Tooltip_ability_(.*)"\s*"(.*)"/i;
-    if (!regex.test(line))
+    var regex = /DOTA_Tooltip_ability_(.*)/i;
+    if (!regex.test(key))
         return false;
-    // It is an ability! Let's get its key and value
-    var ability_key = line.match(regex)[1];
-    var ability_value = line.match(regex)[2];
+    key = key.match(regex)[1];
     if (main) {
         // Insert into the ability array
-        AbilityMapper.set(ability_key, ability_value);
+        AbilityMapper.set(key, value);
     }
     else {
-        IterateAbilitiesMapForLanguage(ability_key, ability_value, language);
+        IterateAbilitiesMapForLanguage(key, value, language);
     }
     return true;
 }
-function ParseModifier(line, main, language) {
-    var regex = /(modifier_.*)"\s*"(.*)"/i;
-    if (!regex.test(line))
+function ParseModifier(key, value, main, language) {
+    var regex = /(modifier_.*)/i;
+    if (!regex.test(key))
         return false;
-    // It is a modifier! Let's get its key and value
-    var modifier_key = line.match(regex)[1];
-    var modifier_value = line.match(regex)[2];
+    key = key.match(regex)[1];
     // Get the class of the modifier
     regex = /(\w+?)(?:_Description)?$/i;
-    var modifier_class = modifier_key.match(regex)[1];
+    var modifier_class = key.match(regex)[1];
     // Value can be either name or description, so find that out!
     var name = false;
     regex = /\w+_Description/i;
-    if (!regex.test(modifier_key))
+    if (!regex.test(key))
         name = true;
     // Main language
     if (main) {
@@ -189,10 +173,10 @@ function ParseModifier(line, main, language) {
         }
         // Add the value to the object
         if (name) {
-            modifier_object.name = modifier_value;
+            modifier_object.name = value;
         }
         else {
-            modifier_object.description = modifier_value;
+            modifier_object.description = value;
         }
         // Register the modifier in the Modifiers map
         Modifiers.set(modifier_class, modifier_object);
@@ -226,10 +210,10 @@ function ParseModifier(line, main, language) {
             }
             // Assign the object based on name or description
             if (name) {
-                language_override.name_override = modifier_value;
+                language_override.name_override = value;
             }
             else {
-                language_override.description_override = modifier_value;
+                language_override.description_override = value;
             }
             // Add the object to the array if it doesn't exist yet
             if (!existing_language) {
@@ -242,32 +226,29 @@ function ParseModifier(line, main, language) {
     }
     return true;
 }
-function ParseStandardTooltip(line, main, language) {
-    var regex = /"(.*)"\s*"(.*)"/i;
-    var tooltip_key = line.match(regex)[1];
-    var tooltip_value = line.match(regex)[2];
+function ParseStandardTooltip(key, value, main, language) {
     // Register into the map
     if (main) {
-        if (!StandardTooltips.has(tooltip_key)) {
-            StandardTooltips.set(tooltip_key, {
-                classname: tooltip_key,
-                name: tooltip_value
+        if (!StandardTooltips.has(key)) {
+            StandardTooltips.set(key, {
+                classname: key,
+                name: value
             });
         }
     }
     else {
         // Add the language to the object
-        if (StandardTooltips.has(tooltip_key)) {
+        if (StandardTooltips.has(key)) {
             // Check if the language appears in the enum
             var languageEnum = GetLanguageFromString(language);
             if (languageEnum != Language.None) {
-                var tooltip_object = StandardTooltips.get(tooltip_key);
+                var tooltip_object = StandardTooltips.get(key);
                 if (!tooltip_object.language_overrides) {
                     tooltip_object.language_overrides = [];
                 }
                 tooltip_object.language_overrides.push({
                     language: languageEnum,
-                    name_override: tooltip_value
+                    name_override: value
                 });
             }
         }
@@ -487,7 +468,7 @@ function ReuniteRemainingAbilities() {
         var value = entry[1];
         var found_map = IterateAbilitiesMap(ability, value);
         if (!found_map) {
-            Abilities.set(ability, { name: value });
+            Abilities.set(ability, { ability_classname: ability, name: value });
         }
     }
 }
@@ -674,15 +655,19 @@ function AddOutputLine(indent, text, newlines) {
     }
 }
 function TransformAbilityPercentageValues(text) {
-    text = text.replace(/%(\w+)%%%/g, "${$1}%");
+    text = text.replace(/%(\w+)%.?%%/g, "${$1}%");
+    text = text.replace(/%%.?%(\w+)%/g, "%${$1}");
     text = text.replace(/%(\w+)%/g, "${$1}");
     return text;
 }
 function TransoformModifierProperties(text) {
-    text = text.replace(/%dMODIFIER_PROPERTY_(\w+)%%%/, "{${LocalizationModifierProperty.$1}}%");
-    text = text.replace(/%dMODIFIER_PROPERTY_(\w+)%/, "{${LocalizationModifierProperty.$1}}");
-    text = text.replace(/%fMODIFIER_PROPERTY_(\w+)%%%/, "{f${LocalizationModifierProperty.$1}}%");
-    text = text.replace(/%fMODIFIER_PROPERTY_(\w+)%/, "{f${LocalizationModifierProperty.$1}}");
+    text = text.replace(/%dMODIFIER_PROPERTY_(\w+)%.?%%/g, "{${LocalizationModifierProperty.$1}}%");
+    text = text.replace(/%.?%%dMODIFIER_PROPERTY_(\w+)%/g, "%{${LocalizationModifierProperty.$1}}");
+    text = text.replace(/%dMODIFIER_PROPERTY_(\w+)%/g, "{${LocalizationModifierProperty.$1}}");
+    // Floats
+    text = text.replace(/%fMODIFIER_PROPERTY_(\w+)%.?%%/g, "{f${LocalizationModifierProperty.$1}}%");
+    text = text.replace(/%.?%%fMODIFIER_PROPERTY_(\w+)%/g, "%{f${LocalizationModifierProperty.$1}}");
+    text = text.replace(/%fMODIFIER_PROPERTY_(\w+)%/g, "{f${LocalizationModifierProperty.$1}}");
     text = JSON.stringify(text);
     text = text.substr(1, text.length - 2);
     return text;

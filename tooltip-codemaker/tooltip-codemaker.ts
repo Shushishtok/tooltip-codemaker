@@ -1,6 +1,7 @@
 import * as fs from 'fs';
 import * as path from 'path';
 import * as readline from 'readline';
+import { KVObject, deserializeFile } from "valve-kv";
 
 enum Language
 {
@@ -191,92 +192,74 @@ function ParseLocalizationFile(filepath: string, main: boolean)
     const language_regex = /addon_(\w+)/;             
     if (!language_regex.test(filepath))
     {
-        console.log("The file does not match the `addon_<language>` format!");
+        console.log("The file does not match the `addon_<language>` format. Terminating");
         return
     }
 
     const language = language_regex.exec(filepath)[1];    
+    const addon_file = deserializeFile(filepath);    
 
-    const lines = fs.readFileSync(filepath).toString().replace("\r\n", "\n").split("\n");
-    const regex = /".*?\"\s*".*?"/g;    
-
-    for (const line of lines)
-    {
-        ParseLine(line, main, language);                    
+    for (const [key, value] of Object.entries(addon_file["lang"]["Tokens"] as KVObject)) 
+    {        
+        ParseLine(key, value.toString(), main, language)    
     }
 }
 
-function ParseLine(line: string, main: boolean, language: string)
+function ParseLine(key: string, value: string, main: boolean, language: string)
 {                
-    // Ignore comments
-    let regex = /^\s*\/\//;
-    if (regex.test(line)) return;    
-
-    // Ignore the Language token
-    if (line.indexOf('"Language"') != -1) return;
-
-    // Only apply on valid lines. If this isn't any "something" "something" line, just throw it away
-    regex = /".*?\"\s*".*?"/;
-    if (!regex.test(line))
+    // Ignore lines with `[english]` at the start of it
+    const regex = /^(?:\[english\])/;
+    if (regex.test(key)) 
     {        
-        console.log("Discarding line: ", line);
         return;    
     }
-
-    // Ignore lines with `[english]` at the start of it
-    regex = /^"(?:\[english\])/;
-    if (regex.test(line)) return;    
     
     // Check if the line is an ability. If it is, stop checking    
-    if (ParseAbility(line, main, language)) return;   
+    if (ParseAbility(key, value, main, language)) return;   
     
     // Check if the line is a modifier. If it is, stop checking
-    if (ParseModifier(line, main, language)) return;
+    if (ParseModifier(key, value, main, language)) return;
     
     // Everything that isn't an ability or a modifier is considered a standard tooltip
-    ParseStandardTooltip(line, main, language);    
+    ParseStandardTooltip(key, value, main, language);    
 }
 
-function ParseAbility(line: string, main: boolean, language: string): boolean
+function ParseAbility(key: string, value: string, main: boolean, language: string): boolean
 {
     // Check if it is an ability; return if not
-    const regex = /"DOTA_Tooltip_ability_(.*)"\s*"(.*)"/i;
-    if (!regex.test(line)) return false;
-
-    // It is an ability! Let's get its key and value
-    const ability_key = line.match(regex)[1];    
-    const ability_value = line.match(regex)[2];
+    const regex = /DOTA_Tooltip_ability_(.*)/i;
+    if (!regex.test(key)) return false;
+    
+    key = key.match(regex)[1];
 
     if (main)
     {    
         // Insert into the ability array
-        AbilityMapper.set(ability_key, ability_value);
+        AbilityMapper.set(key, value);
     }
     else
     {
-        IterateAbilitiesMapForLanguage(ability_key, ability_value, language);
+        IterateAbilitiesMapForLanguage(key, value, language);
     }
 
     return true;
 }
 
-function ParseModifier(line: string, main: boolean, language: string): boolean
+function ParseModifier(key: string, value: string, main: boolean, language: string): boolean
 {
-    let regex = /(modifier_.*)"\s*"(.*)"/i;
-    if (!regex.test(line)) return false;
-    
-    // It is a modifier! Let's get its key and value
-    const modifier_key = line.match(regex)[1];
-    const modifier_value = line.match(regex)[2];    
+    let regex = /(modifier_.*)/i;
+    if (!regex.test(key)) return false;
+
+    key = key.match(regex)[1];
 
     // Get the class of the modifier
     regex = /(\w+?)(?:_Description)?$/i;
-    const modifier_class = modifier_key.match(regex)[1];                
+    const modifier_class = key.match(regex)[1];                
     
     // Value can be either name or description, so find that out!
     let name: boolean = false;
     regex = /\w+_Description/i;
-    if (!regex.test(modifier_key)) name = true;
+    if (!regex.test(key)) name = true;
 
     // Main language
     if (main)
@@ -296,16 +279,15 @@ function ParseModifier(line: string, main: boolean, language: string): boolean
                 modifier_classname: modifier_class         
             }
         }
-    
 
         // Add the value to the object
         if (name)
         {
-            modifier_object.name = modifier_value;
+            modifier_object.name = value;
         }
         else
         {
-            modifier_object.description = modifier_value;
+            modifier_object.description = value;
         }
         
         // Register the modifier in the Modifiers map
@@ -352,11 +334,11 @@ function ParseModifier(line: string, main: boolean, language: string): boolean
             // Assign the object based on name or description
             if (name)
             {
-                language_override.name_override = modifier_value;
+                language_override.name_override = value;
             }
             else
             {
-                language_override.description_override = modifier_value;
+                language_override.description_override = value;
             }
 
             // Add the object to the array if it doesn't exist yet
@@ -374,35 +356,30 @@ function ParseModifier(line: string, main: boolean, language: string): boolean
     return true;
 }
 
-function ParseStandardTooltip(line: string, main: boolean, language: string)
-{           
-    const regex = /"(.*)"\s*"(.*)"/i;    
-    
-    const tooltip_key = line.match(regex)[1];
-    const tooltip_value = line.match(regex)[2];    
-
+function ParseStandardTooltip(key: string, value: string, main: boolean, language: string)
+{   
     // Register into the map
     if (main)
     {
-        if (!StandardTooltips.has(tooltip_key))
+        if (!StandardTooltips.has(key))
         {
-            StandardTooltips.set(tooltip_key, 
+            StandardTooltips.set(key, 
             {
-               classname: tooltip_key,
-               name: tooltip_value
+               classname: key,
+               name: value
             });
         }
     }
     else
     {
         // Add the language to the object
-        if (StandardTooltips.has(tooltip_key)) 
+        if (StandardTooltips.has(key)) 
         {
             // Check if the language appears in the enum
             const languageEnum = GetLanguageFromString(language);
             if (languageEnum != Language.None)
             {
-                const tooltip_object = StandardTooltips.get(tooltip_key);
+                const tooltip_object = StandardTooltips.get(key);
                 if (!tooltip_object.language_overrides)
                 {
                     tooltip_object.language_overrides = []
@@ -410,7 +387,7 @@ function ParseStandardTooltip(line: string, main: boolean, language: string)
     
                 tooltip_object.language_overrides.push({
                     language: languageEnum,
-                    name_override: tooltip_value
+                    name_override: value
                 });
             }
         }
@@ -732,7 +709,7 @@ function ReuniteRemainingAbilities()
 
         if (!found_map)
         {
-            Abilities.set(ability, {name: value});
+            Abilities.set(ability, {ability_classname: ability, name: value});
         }
     }
 }
@@ -997,7 +974,8 @@ function AddOutputLine(indent: number, text: string, newlines?: number)
 
 function TransformAbilityPercentageValues(text: string): string
 {    
-    text = text.replace(/%(\w+)%%%/g, "${$1}%");
+    text = text.replace(/%(\w+)%.?%%/g, "${$1}%");
+    text = text.replace(/%%.?%(\w+)%/g, "%${$1}");
     text = text.replace(/%(\w+)%/g, "${$1}");
 
     return text;
@@ -1005,10 +983,15 @@ function TransformAbilityPercentageValues(text: string): string
 
 function TransoformModifierProperties(text: string): string
 {    
-    text = text.replace(/%dMODIFIER_PROPERTY_(\w+)%%%/, "{${LocalizationModifierProperty.$1}}%");
-    text = text.replace(/%dMODIFIER_PROPERTY_(\w+)%/, "{${LocalizationModifierProperty.$1}}");
-    text = text.replace(/%fMODIFIER_PROPERTY_(\w+)%%%/, "{f${LocalizationModifierProperty.$1}}%");
-    text = text.replace(/%fMODIFIER_PROPERTY_(\w+)%/, "{f${LocalizationModifierProperty.$1}}");      
+    text = text.replace(/%dMODIFIER_PROPERTY_(\w+)%.?%%/g, "{${LocalizationModifierProperty.$1}}%");
+    text = text.replace(/%.?%%dMODIFIER_PROPERTY_(\w+)%/g, "%{${LocalizationModifierProperty.$1}}");    
+    text = text.replace(/%dMODIFIER_PROPERTY_(\w+)%/g, "{${LocalizationModifierProperty.$1}}");
+
+    // Floats
+    text = text.replace(/%fMODIFIER_PROPERTY_(\w+)%.?%%/g, "{f${LocalizationModifierProperty.$1}}%");
+    text = text.replace(/%.?%%fMODIFIER_PROPERTY_(\w+)%/g, "%{f${LocalizationModifierProperty.$1}}");
+    text = text.replace(/%fMODIFIER_PROPERTY_(\w+)%/g, "{f${LocalizationModifierProperty.$1}}");          
+
     text = JSON.stringify(text);
     text = text.substr(1, text.length -2);    
 
