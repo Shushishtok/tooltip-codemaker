@@ -7,7 +7,7 @@ The Tooltip Codemaker requires NodesJS to function properly. If you don't have i
 # Installation
 1. Clone the repo to your PC and extract it to a location of your choice (outside of your addon).
 2. Go into the root folder of this repo. If you can see the `package.json` file, you're in the right place.
-3. Click on the path bar of the folder, type "cmd" and press enter. This should open the command line on the folder you're currently in. If you're not sure where is the path bar, press Alt+D to highlight it.
+3. Click on the path bar of the folder, type "cmd" and press enter. This should open the command line on the folder you're currently in. If you're not sure where the path bar is, press Alt+D to highlight it.
 4. In the command line, type `npm install` and press enter. Keep the command line open for now.
 
 # Running the Tooltip Codemaker
