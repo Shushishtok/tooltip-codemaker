@@ -11,12 +11,12 @@ The Tooltip Codemaker requires NodesJS to function properly. If you don't have i
 4. In the command line, type `npm install` and press enter. Keep the command line open for now.
 
 # Running the Tooltip Codemaker
-5. Go into the `tooltip-codemaker` folder, then to the `localization` folder and delete the `addon_english.txt` file that resides there.
-6. Put all your `addon_<language>.txt` files of your mode in this folder, for all the languages that you have localization for.
-7. In the command line, type `cd tooltip-codemaker` to move to the tooltip codemaker's folder.
-8. In the command line, type `node tooltip-codemaker.js` and press enter. 
-9. The codemaker asks you for the primary language. This is the language that you have the most localization for. Make sure to enter it exactly the same as your `addon_<language>.txt` file, for instance type `spanish` for `addon_spanish.txt`. Defaults to `english` if nothing is typed into this field. Press enter to confirm.
-10. If the script was successful, it will show you how many abilities, modifiers and standard tooltips it has processed. The output file is created inside the `tooltip-codemaker` folder.
+1. Go into the `tooltip-codemaker` folder, then to the `localization` folder and delete the `addon_english.txt` file that resides there.
+2. Put all your `addon_<language>.txt` files of your mode in this folder, for all the languages that you have localization for.
+3. In the command line, type `cd tooltip-codemaker` to move to the tooltip codemaker's folder.
+4. In the command line, type `node tooltip-codemaker.js` and press enter. 
+5. The codemaker asks you for the primary language. This is the language that you have the most localization for. Make sure to enter it exactly the same as your `addon_<language>.txt` file, for instance type `spanish` for `addon_spanish.txt`. Defaults to `english` if nothing is typed into this field. Press enter to confirm.
+6. If the script was successful, it will show you how many abilities, modifiers and standard tooltips it has processed. The output file is created inside the `tooltip-codemaker` folder.
 
 # What now?
 Assuming you installed the Tooltip Generator, put `outputCode.ts` into your addon's `resource/localization` folder. Open it and check if the editor shows any issues with the code. You might have to enable additional languages on the Tooltip Generator to have all your languages properly supported.
