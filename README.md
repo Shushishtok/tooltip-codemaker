@@ -20,3 +20,6 @@ The Tooltip Codemaker requires NodesJS to function properly. If you don't have i
 
 # What now?
 Assuming you installed the Tooltip Generator, put `outputCode.ts` into your addon's `resource/localization` folder. Open it and check if the editor shows any issues with the code. You might have to enable additional languages on the Tooltip Generator to have all your languages properly supported.
+
+# What about the Tooltip Codemaker?
+When you're done and you verified that it works as expected, you can just delete it. If you need it again in the future, just clone it again.
