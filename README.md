@@ -1,4 +1,4 @@
-# tooltip-codemaker
+# Tooltip Codemaker
  Creates tooltip localization code that works in conjuction with the tooltip generator.
 
 # Requirements
